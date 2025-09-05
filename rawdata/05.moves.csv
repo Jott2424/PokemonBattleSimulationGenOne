@@ -1,0 +1,166 @@
+pk_moves_id,fk_types_id,fk_damage_categories_id,move,description
+1,5,2,absorb,User recovers half the HP inflicted on opponent.
+2,8,2,acid,May lower opponent's Special Defense.
+3,8,3,acid-armor,Sharply raises user's Defense.
+4,11,3,agility,Sharply raises user's Speed.
+5,11,3,amnesia,Sharply raises user's Special Defense.
+6,6,2,aurora-beam,May lower opponent's Attack.
+7,1,1,barrage,Hits 2-5 times in one turn.
+8,11,3,barrier,Sharply raises user's Defense.
+9,1,1,bide,User takes damage for two turns then strikes back double.
+10,1,1,bind,"Traps opponent, damaging them for 4-5 turns."
+11,1,1,bite,May cause flinching.
+12,6,2,blizzard,May freeze opponent.
+13,1,1,body-slam,May paralyze opponent.
+14,9,1,bone-club,May cause flinching.
+15,9,1,bonemerang,Hits twice in one turn.
+16,3,2,bubble,May lower opponent's Speed.
+17,3,2,bubble-beam,May lower opponent's Speed.
+18,3,1,clamp,"Traps opponent, damaging them for 4-5 turns."
+19,1,1,comet-punch,Hits 2-5 times in one turn.
+20,14,3,confuse-ray,Confuses opponent.
+21,11,2,confusion,May confuse opponent.
+22,1,1,constrict,May lower opponent's Speed by one stage.
+23,1,3,conversion,Changes user's type to that of its first move.
+24,7,1,counter,"When hit by a Physical Attack, user strikes back with 2x power."
+25,3,1,crabhammer,High critical hit ratio.
+26,1,1,cut,
+27,1,3,defense-curl,Raises user's Defense.
+28,9,1,dig,"Digs underground on first turn, attacks on second. Can also escape from caves."
+29,1,3,disable,Opponent can't use its last attack for a few turns.
+30,1,1,dizzy-punch,May confuse opponent.
+31,7,1,double-kick,Hits twice in one turn.
+32,1,1,double-slap,Hits 2-5 times in one turn.
+33,1,3,double-team,Raises user's Evasiveness.
+34,1,1,double-edge,User receives recoil damage.
+35,15,2,dragon-rage,Always inflicts 40 HP.
+36,11,2,dream-eater,User recovers half the HP inflicted on a sleeping opponent.
+37,10,1,drill-peck,
+38,9,1,earthquake,Power is doubled if opponent is underground from using Dig.
+39,1,1,egg-bomb,
+40,2,2,ember,May burn opponent.
+41,1,1,explosion,User faints.
+42,2,2,fire-blast,May burn opponent.
+43,2,1,fire-punch,May burn opponent.
+44,2,2,fire-spin,"Traps opponent, damaging them for 4-5 turns."
+45,9,1,fissure,"One-Hit-KO, if it hits."
+46,2,2,flamethrower,May burn opponent.
+47,1,3,flash,Lowers opponent's Accuracy.
+48,10,1,fly,"Flies up on first turn, attacks on second turn."
+49,1,3,focus-energy,Increases critical hit ratio.
+50,1,1,fury-attack,Hits 2-5 times in one turn.
+51,1,1,fury-swipes,Hits 2-5 times in one turn.
+52,1,3,glare,Paralyzes opponent.
+53,1,3,growl,Lowers opponent's Attack.
+54,1,3,growth,Raises user's Attack and Special Attack.
+55,1,1,guillotine,"One-Hit-KO, if it hits."
+56,10,2,gust,Hits Pokémon using Fly/Bounce/Sky Drop with double power.
+57,1,3,harden,Raises user's Defense.
+58,6,3,haze,Resets all stat changes.
+59,1,1,headbutt,May cause flinching.
+60,7,1,high-jump-kick,"If it misses, the user loses half their HP."
+61,1,1,horn-attack,
+62,1,1,horn-drill,"One-Hit-KO, if it hits."
+63,3,2,hydro-pump,
+64,1,2,hyper-beam,User must recharge next turn.
+65,1,1,hyper-fang,May cause flinching.
+66,11,3,hypnosis,Puts opponent to sleep.
+67,6,2,ice-beam,May freeze opponent.
+68,6,1,ice-punch,May freeze opponent.
+69,7,1,jump-kick,"If it misses, the user loses half their HP."
+70,7,1,karate-chop,High critical hit ratio.
+71,11,3,kinesis,Lowers opponent's Accuracy.
+72,12,1,leech-life,User recovers half the HP inflicted on opponent.
+73,5,3,leech-seed,Drains HP from opponent each turn.
+74,1,3,leer,Lowers opponent's Defense.
+75,14,1,lick,May paralyze opponent.
+76,11,3,light-screen,Halves damage from Special attacks for 5 turns.
+77,1,3,lovely-kiss,Puts opponent to sleep.
+78,7,1,low-kick,"The heavier the opponent, the stronger the attack."
+79,11,3,meditate,Raises user's Attack.
+80,5,2,mega-drain,User recovers half the HP inflicted on opponent.
+81,1,1,mega-kick,
+82,1,1,mega-punch,
+83,1,3,metronome,User performs almost any move in the game at random.
+84,1,3,mimic,Copies the opponent's last move.
+85,1,3,minimize,Sharply raises user's Evasiveness.
+86,10,3,mirror-move,User performs the opponent's last move.
+87,6,3,mist,User's stats cannot be changed for a period of time.
+88,14,2,night-shade,Inflicts damage equal to user's level.
+89,1,1,pay-day,Money is earned after the battle.
+90,10,1,peck,
+91,5,2,petal-dance,User attacks for 2-3 turns but then becomes confused.
+92,12,1,pin-missile,Hits 2-5 times in one turn.
+93,8,3,poison-gas,Poisons opponent.
+94,8,3,poison-powder,Poisons opponent.
+95,8,1,poison-sting,May poison the opponent.
+96,1,1,pound,
+97,11,2,psybeam,May confuse opponent.
+98,11,2,psychic,May lower opponent's Special Defense.
+99,11,2,psywave,Inflicts damage 50-150% of user's level.
+100,1,1,quick-attack,User attacks first.
+101,1,1,rage,Raises user's Attack when hit.
+102,5,1,razor-leaf,High critical hit ratio.
+103,1,2,razor-wind,"Charges on first turn, attacks on second. High critical hit ratio."
+104,1,3,recover,User recovers half its max HP.
+105,11,3,reflect,Halves damage from Physical attacks for 5 turns.
+106,11,3,rest,"User sleeps for 2 turns, but user is fully healed."
+107,1,3,roar,"In battles, the opponent switches. In the wild, the Pokémon runs."
+108,13,1,rock-slide,May cause flinching.
+109,13,1,rock-throw,
+110,7,1,rolling-kick,May cause flinching.
+111,9,3,sand-attack,Lowers opponent's Accuracy.
+112,1,1,scratch,
+113,1,3,screech,Sharply lowers opponent's Defense.
+114,7,1,seismic-toss,Inflicts damage equal to user's level.
+115,1,1,self-destruct,User faints.
+116,1,3,sharpen,Raises user's Attack.
+117,1,3,sing,Puts opponent to sleep.
+118,1,1,skull-bash,"Raises Defense on first turn, attacks on second."
+119,10,1,sky-attack,"Charges on first turn, attacks on second. May cause flinching. High critical hit ratio."
+120,1,1,slam,
+121,1,1,slash,High critical hit ratio.
+122,5,3,sleep-powder,Puts opponent to sleep.
+123,8,2,sludge,May poison opponent.
+124,8,2,smog,May poison opponent.
+125,1,3,smokescreen,Lowers opponent's Accuracy.
+126,1,3,soft-boiled,User recovers half its max HP.
+127,5,2,solar-beam,"Charges on first turn, attacks on second."
+128,1,2,sonic-boom,Always inflicts 20 HP.
+129,1,1,spike-cannon,Hits 2-5 times in one turn.
+130,1,3,splash,Doesn't do ANYTHING.
+131,5,3,spore,Puts opponent to sleep.
+132,1,1,stomp,May cause flinching.
+133,1,1,strength,
+134,12,3,string-shot,Sharply lowers opponent's Speed.
+135,1,1,struggle,Only usable when all PP are gone. Hurts the user.
+136,5,3,stun-spore,Paralyzes opponent.
+137,7,1,submission,User receives recoil damage.
+138,1,3,substitute,Uses HP to creates a decoy that takes hits.
+139,1,1,super-fang,Always takes off half of the opponent's HP.
+140,1,3,supersonic,Confuses opponent.
+141,3,2,surf,Hits all adjacent Pokémon.
+142,1,2,swift,Ignores Accuracy and Evasiveness.
+143,1,3,swords-dance,Sharply raises user's Attack.
+144,1,1,tackle,
+145,1,3,tail-whip,Lowers opponent's Defense.
+146,1,1,take-down,User receives recoil damage.
+147,11,3,teleport,Allows user to flee wild battles; also warps player to last PokéCenter.
+148,1,1,thrash,User attacks for 2-3 turns but then becomes confused.
+149,4,2,thunder,May paralyze opponent.
+150,4,1,thunder-punch,May paralyze opponent.
+151,4,2,thunder-shock,May paralyze opponent.
+152,4,3,thunder-wave,Paralyzes opponent.
+153,4,2,thunderbolt,May paralyze opponent.
+154,8,3,toxic,Badly poisons opponent.
+155,1,3,transform,User takes on the form and attacks of the opponent.
+156,1,2,tri-attack,"May paralyze, burn or freeze opponent."
+157,12,1,twineedle,Hits twice in one turn. May poison opponent.
+158,5,1,vine-whip,
+159,1,1,vise-grip,
+160,3,2,water-gun,
+161,3,1,waterfall,May cause flinching.
+162,1,3,whirlwind,"In battles, the opponent switches. In the wild, the Pokémon runs."
+163,10,1,wing-attack,
+164,3,3,withdraw,Raises user's Defense.
+165,1,1,wrap,"Traps opponent, damaging them for 4-5 turns."

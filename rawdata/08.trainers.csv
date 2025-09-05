@@ -1,0 +1,1052 @@
+pk_trainers_id,fk_games_id,trainer,trainer_scenario
+1,2,Agatha,Agatha
+2,2,Beauty 1,Beauty 1
+3,2,Beauty 2,Beauty 2
+4,2,Beauty 3,Beauty 3
+5,2,Beauty 4,Beauty 4
+6,2,Beauty 5,Beauty 5
+7,2,Beauty 6,Beauty 6
+8,2,Beauty 7,Beauty 7
+9,2,Beauty 8,Beauty 8
+10,2,Beauty 9,Beauty 9
+11,2,Beauty 10,Beauty 10
+12,2,Beauty 11,Beauty 11
+13,2,Beauty 12,Beauty 12
+14,2,Beauty 13,Beauty 13
+15,2,Beauty 14,Beauty 14
+16,2,Biker 1,Biker 1
+17,2,Biker 2,Biker 2
+18,2,Biker 3,Biker 3
+19,2,Biker 4,Biker 4
+20,2,Biker 5,Biker 5
+21,2,Biker 6,Biker 6
+22,2,Biker 7,Biker 7
+23,2,Biker 8,Biker 8
+24,2,Biker 9,Biker 9
+25,2,Biker 10,Biker 10
+26,2,Biker 11,Biker 11
+27,2,Biker 12,Biker 12
+28,2,Biker 13,Biker 13
+29,2,Biker 14,Biker 14
+30,2,Biker 15,Biker 15
+31,2,Bird Keeper 1,Bird Keeper 1
+32,2,Bird Keeper 2,Bird Keeper 2
+33,2,Bird Keeper 3,Bird Keeper 3
+34,2,Bird Keeper 4,Bird Keeper 4
+35,2,Bird Keeper 5,Bird Keeper 5
+36,2,Bird Keeper 6,Bird Keeper 6
+37,2,Bird Keeper 7,Bird Keeper 7
+38,2,Bird Keeper 8,Bird Keeper 8
+39,2,Bird Keeper 9,Bird Keeper 9
+40,2,Bird Keeper 10,Bird Keeper 10
+41,2,Bird Keeper 11,Bird Keeper 11
+42,2,Bird Keeper 12,Bird Keeper 12
+43,2,Bird Keeper 13,Bird Keeper 13
+44,2,Bird Keeper 14,Bird Keeper 14
+45,2,Bird Keeper 15,Bird Keeper 15
+46,2,Blackbelt 1,Blackbelt 1
+47,2,Blackbelt 2,Blackbelt 2
+48,2,Blackbelt 3,Blackbelt 3
+49,2,Blackbelt 4,Blackbelt 4
+50,2,Blackbelt 5,Blackbelt 5
+51,2,Blackbelt 6,Blackbelt 6
+52,2,Blackbelt 7,Blackbelt 7
+53,2,Blackbelt 8,Blackbelt 8
+54,2,Blackbelt 9,Blackbelt 9
+55,2,Blaine,Blaine
+56,2,Brock,Brock
+57,2,Bruno,Bruno
+58,2,Bug Catcher 1,Bug Catcher 1
+59,2,Bug Catcher 2,Bug Catcher 2
+60,2,Bug Catcher 3,Bug Catcher 3
+61,2,Bug Catcher 4,Bug Catcher 4
+62,2,Bug Catcher 5,Bug Catcher 5
+63,2,Bug Catcher 6,Bug Catcher 6
+64,2,Bug Catcher 7,Bug Catcher 7
+65,2,Bug Catcher 8,Bug Catcher 8
+66,2,Bug Catcher 9,Bug Catcher 9
+67,2,Bug Catcher 10,Bug Catcher 10
+68,2,Bug Catcher 11,Bug Catcher 11
+69,2,Bug Catcher 12,Bug Catcher 12
+70,2,Bug Catcher 13,Bug Catcher 13
+71,2,Burglar 1,Burglar 1
+72,2,Burglar 2,Burglar 2
+73,2,Burglar 3,Burglar 3
+74,2,Burglar 4,Burglar 4
+75,2,Burglar 5,Burglar 5
+76,2,Burglar 6,Burglar 6
+77,2,Channeler 1,Channeler 1
+78,2,Channeler 2,Channeler 2
+79,2,Channeler 3,Channeler 3
+80,2,Channeler 4,Channeler 4
+81,2,Channeler 5,Channeler 5
+82,2,Channeler 6,Channeler 6
+83,2,Channeler 7,Channeler 7
+84,2,Channeler 8,Channeler 8
+85,2,Channeler 9,Channeler 9
+86,2,Channeler 10,Channeler 10
+87,2,Channeler 11,Channeler 11
+88,2,Channeler 12,Channeler 12
+89,2,Channeler 13,Channeler 13
+90,2,Channeler 14,Channeler 14
+91,2,Channeler 15,Channeler 15
+92,2,Channeler 16,Channeler 16
+93,2,Cooltrainer F 1,Cooltrainer F 1
+94,2,Cooltrainer F 2,Cooltrainer F 2
+95,2,Cooltrainer F 3,Cooltrainer F 3
+96,2,Cooltrainer F 4,Cooltrainer F 4
+97,2,Cooltrainer M 1,Cooltrainer M 1
+98,2,Cooltrainer M 2,Cooltrainer M 2
+99,2,Cooltrainer M 3,Cooltrainer M 3
+100,2,Cooltrainer M 4,Cooltrainer M 4
+101,2,Cooltrainer M 5,Cooltrainer M 5
+102,2,Cooltrainer M 6,Cooltrainer M 6
+103,2,Cue Ball 1,Cue Ball 1
+104,2,Cue Ball 2,Cue Ball 2
+105,2,Cue Ball 3,Cue Ball 3
+106,2,Cue Ball 4,Cue Ball 4
+107,2,Cue Ball 5,Cue Ball 5
+108,2,Cue Ball 6,Cue Ball 6
+109,2,Cue Ball 7,Cue Ball 7
+110,2,Cue Ball 8,Cue Ball 8
+111,2,Cue Ball 9,Cue Ball 9
+112,2,Engineer 1,Engineer 1
+113,2,Engineer 2,Engineer 2
+114,2,Erika,Erika
+115,2,Fisherman 1,Fisherman 1
+116,2,Fisherman 2,Fisherman 2
+117,2,Fisherman 3,Fisherman 3
+118,2,Fisherman 4,Fisherman 4
+119,2,Fisherman 5,Fisherman 5
+120,2,Fisherman 6,Fisherman 6
+121,2,Fisherman 7,Fisherman 7
+122,2,Fisherman 8,Fisherman 8
+123,2,Fisherman 9,Fisherman 9
+124,2,Fisherman 10,Fisherman 10
+125,2,Fisherman 11,Fisherman 11
+126,2,Gambler 1,Gambler 1
+127,2,Gambler 2,Gambler 2
+128,2,Gambler 3,Gambler 3
+129,2,Gambler 4,Gambler 4
+130,2,Gambler 5,Gambler 5
+131,2,Gambler 6,Gambler 6
+132,2,Gentleman 1,Gentleman 1
+133,2,Gentleman 2,Gentleman 2
+134,2,Gentleman 3,Gentleman 3
+135,2,Gentleman 4,Gentleman 4
+136,2,Gentleman 5,Gentleman 5
+137,2,Giovanni 1,Giovanni 1
+138,2,Giovanni 2,Giovanni 2
+139,2,Giovanni 3,Giovanni 3
+140,2,Hiker 1,Hiker 1
+141,2,Hiker 2,Hiker 2
+142,2,Hiker 3,Hiker 3
+143,2,Hiker 4,Hiker 4
+144,2,Hiker 5,Hiker 5
+145,2,Hiker 6,Hiker 6
+146,2,Hiker 7,Hiker 7
+147,2,Hiker 8,Hiker 8
+148,2,Hiker 10,Hiker 10
+149,2,Hiker 11,Hiker 11
+150,2,Hiker 12,Hiker 12
+151,2,Hiker 13,Hiker 13
+152,2,Hiker 14,Hiker 14
+153,2,Hiker 15,Hiker 15
+154,2,Hikey 9,Hikey 9
+155,2,Jr Trainer F 1,Jr Trainer F 1
+156,2,Jr Trainer F 2,Jr Trainer F 2
+157,2,Jr Trainer F 3,Jr Trainer F 3
+158,2,Jr Trainer F 4,Jr Trainer F 4
+159,2,Jr Trainer F 5,Jr Trainer F 5
+160,2,Jr Trainer F 6,Jr Trainer F 6
+161,2,Jr Trainer F 7,Jr Trainer F 7
+162,2,Jr Trainer F 8,Jr Trainer F 8
+163,2,Jr Trainer F 9,Jr Trainer F 9
+164,2,Jr Trainer F 10,Jr Trainer F 10
+165,2,Jr Trainer F 11,Jr Trainer F 11
+166,2,Jr Trainer F 12,Jr Trainer F 12
+167,2,Jr Trainer F 13,Jr Trainer F 13
+168,2,Jr Trainer F 14,Jr Trainer F 14
+169,2,Jr Trainer F 15,Jr Trainer F 15
+170,2,Jr Trainer F 16,Jr Trainer F 16
+171,2,Jr Trainer F 17,Jr Trainer F 17
+172,2,Jr Trainer F 18,Jr Trainer F 18
+173,2,Jr Trainer F 19,Jr Trainer F 19
+174,2,Jr Trainer F 20,Jr Trainer F 20
+175,2,Jr Trainer F 21,Jr Trainer F 21
+176,2,Jr Trainer F 22,Jr Trainer F 22
+177,2,Jr Trainer M 1,Jr Trainer M 1
+178,2,Jr Trainer M 2,Jr Trainer M 2
+179,2,Jr Trainer M 3,Jr Trainer M 3
+180,2,Jr Trainer M 4,Jr Trainer M 4
+181,2,Jr Trainer M 5,Jr Trainer M 5
+182,2,Jr Trainer M 6,Jr Trainer M 6
+183,2,Jr Trainer M 7,Jr Trainer M 7
+184,2,Jr Trainer M 8,Jr Trainer M 8
+185,2,Jr Trainer M 9,Jr Trainer M 9
+186,2,Jr Trainer M 10,Jr Trainer M 10
+187,2,Juggler 1,Juggler 1
+188,2,Juggler 2,Juggler 2
+189,2,Juggler 3,Juggler 3
+190,2,Juggler 4,Juggler 4
+191,2,Juggler 5,Juggler 5
+192,2,Juggler 6,Juggler 6
+193,2,Juggler 7,Juggler 7
+194,2,Koga,Koga
+195,2,Lance,Lance
+196,2,Lass 1,Lass 1
+197,2,Lass 2,Lass 2
+198,2,Lass 3,Lass 3
+199,2,Lass 4,Lass 4
+200,2,Lass 5,Lass 5
+201,2,Lass 6,Lass 6
+202,2,Lass 7,Lass 7
+203,2,Lass 8,Lass 8
+204,2,Lass 9,Lass 9
+205,2,Lass 10,Lass 10
+206,2,Lass 11,Lass 11
+207,2,Lass 12,Lass 12
+208,2,Lass 13,Lass 13
+209,2,Lass 14,Lass 14
+210,2,Lass 15,Lass 15
+211,2,Lass 16,Lass 16
+212,2,Lass 18,Lass 18
+213,2,Lorelei,Lorelei
+214,2,Lt. Surge,Lt. Surge
+215,2,Misty,Misty
+216,2,PokeManiac 1,PokeManiac 1
+217,2,PokeManiac 2,PokeManiac 2
+218,2,PokeManiac 3,PokeManiac 3
+219,2,PokeManiac 4,PokeManiac 4
+220,2,PokeManiac 5,PokeManiac 5
+221,2,PokeManiac 7,PokeManiac 7
+222,2,Pokemaniac 6,Pokemaniac 6
+223,2,Psychic 1,Psychic 1
+224,2,Psychic 2,Psychic 2
+225,2,Psychic 3,Psychic 3
+226,2,Psychic 4,Psychic 4
+227,2,Rival 1,Rival 1 - Squirtle
+228,2,Rival 1,Rival 1 - Charmander
+229,2,Rival 1,Rival 1 - Bulbasaur
+230,2,Rival 2,Rival 2 - Charmander
+231,2,Rival 2,Rival 2 - Squirtle
+232,2,Rival 2,Rival 2 - Bulbasaur
+233,2,Rival 3,Rival 3 - Bulbasaur
+234,2,Rival 3,Rival 3 - Charmander
+235,2,Rival 3,Rival 3 - Squirtle
+236,2,Rival 4,Rival 4 - Charmander
+237,2,Rival 4,Rival 4 - Squirtle
+238,2,Rival 4,Rival 4 - Bulbasaur
+239,2,Rival 5,Rival 5 - Squirtle
+240,2,Rival 5,Rival 5 - Bulbasaur
+241,2,Rival 5,Rival 5 - Charmander
+242,2,Rival 6,Rival 6 - Squirtle
+243,2,Rival 6,Rival 6 - Charmander
+244,2,Rival 6,Rival 6 - Bulbasaur
+245,2,Rival 7,Rival 7 - Charmander
+246,2,Rival 7,Rival 7 - Squirtle
+247,2,Rival 7,Rival 7 - Bulbasaur
+248,2,Rival 8,Rival 8 - Charmander
+249,2,Rival 8,Rival 8 - Squirtle
+250,2,Rival 8,Rival 8 - Bulbasaur
+251,2,Rocker 1,Rocker 1
+252,2,Rocker 2,Rocker 2
+253,2,Rocket 1,Rocket 1
+254,2,Rocket 2,Rocket 2
+255,2,Rocket 3,Rocket 3
+256,2,Rocket 4,Rocket 4
+257,2,Rocket 5,Rocket 5
+258,2,Rocket 6,Rocket 6
+259,2,Rocket 7,Rocket 7
+260,2,Rocket 8,Rocket 8
+261,2,Rocket 9,Rocket 9
+262,2,Rocket 10,Rocket 10
+263,2,Rocket 11,Rocket 11
+264,2,Rocket 12,Rocket 12
+265,2,Rocket 13,Rocket 13
+266,2,Rocket 14,Rocket 14
+267,2,Rocket 15,Rocket 15
+268,2,Rocket 16,Rocket 16
+269,2,Rocket 17,Rocket 17
+270,2,Rocket 18,Rocket 18
+271,2,Rocket 19,Rocket 19
+272,2,Rocket 20,Rocket 20
+273,2,Rocket 21,Rocket 21
+274,2,Rocket 22,Rocket 22
+275,2,Rocket 23,Rocket 23
+276,2,Rocket 24,Rocket 24
+277,2,Rocket 25,Rocket 25
+278,2,Rocket 26,Rocket 26
+279,2,Rocket 27,Rocket 27
+280,2,Rocket 28,Rocket 28
+281,2,Rocket 29,Rocket 29
+282,2,Rocket 30,Rocket 30
+283,2,Rocket 31,Rocket 31
+284,2,Rocket 32,Rocket 32
+285,2,Rocket 33,Rocket 33
+286,2,Rocket 34,Rocket 34
+287,2,Rocket 35,Rocket 35
+288,2,Rocket 36,Rocket 36
+289,2,Rocket 37,Rocket 37
+290,2,Sabrina,Sabrina
+291,2,Sailor 1,Sailor 1
+292,2,Sailor 2,Sailor 2
+293,2,Sailor 3,Sailor 3
+294,2,Sailor 4,Sailor 4
+295,2,Sailor 5,Sailor 5
+296,2,Sailor 6,Sailor 6
+297,2,Sailor 7,Sailor 7
+298,2,Sailor 8,Sailor 8
+299,2,Scientist 1,Scientist 1
+300,2,Scientist 2,Scientist 2
+301,2,Scientist 3,Scientist 3
+302,2,Scientist 4,Scientist 4
+303,2,Scientist 5,Scientist 5
+304,2,Scientist 6,Scientist 6
+305,2,Scientist 7,Scientist 7
+306,2,Scientist 8,Scientist 8
+307,2,Scientist 9,Scientist 9
+308,2,Scientist 10,Scientist 10
+309,2,Scientist 11,Scientist 11
+310,2,Scientist 12,Scientist 12
+311,2,Scientist 13,Scientist 13
+312,2,Scientist 14,Scientist 14
+313,2,Scientist 15,Scientist 15
+314,2,Super Nerd 1,Super Nerd 1
+315,2,Super Nerd 2,Super Nerd 2
+316,2,Super Nerd 3,Super Nerd 3
+317,2,Super Nerd 4,Super Nerd 4
+318,2,Super Nerd 5,Super Nerd 5
+319,2,Super Nerd 6,Super Nerd 6
+320,2,Super Nerd 7,Super Nerd 7
+321,2,Super Nerd 8,Super Nerd 8
+322,2,Super Nerd 9,Super Nerd 9
+323,2,Swimmer 1,Swimmer 1
+324,2,Swimmer 2,Swimmer 2
+325,2,Swimmer 3,Swimmer 3
+326,2,Swimmer 4,Swimmer 4
+327,2,Swimmer 5,Swimmer 5
+328,2,Swimmer 6,Swimmer 6
+329,2,Swimmer 7,Swimmer 7
+330,2,Swimmer 8,Swimmer 8
+331,2,Swimmer 9,Swimmer 9
+332,2,Swimmer 10,Swimmer 10
+333,2,Swimmer 11,Swimmer 11
+334,2,Swimmer 12,Swimmer 12
+335,2,Swimmer 13,Swimmer 13
+336,2,Swimmer 14,Swimmer 14
+337,2,Swimmer 15,Swimmer 15
+338,2,Tamer 1,Tamer 1
+339,2,Tamer 2,Tamer 2
+340,2,Tamer 3,Tamer 3
+341,2,Tamer 4,Tamer 4
+342,2,Tamer 5,Tamer 5
+343,2,Youngster 1,Youngster 1
+344,2,Youngster 2,Youngster 2
+345,2,Youngster 3,Youngster 3
+346,2,Youngster 4,Youngster 4
+347,2,Youngster 5,Youngster 5
+348,2,Youngster 6,Youngster 6
+349,2,Youngster 7,Youngster 7
+350,2,Youngster 8,Youngster 8
+351,2,Youngster 9,Youngster 9
+352,2,Youngster 10,Youngster 10
+353,2,Youngster 11,Youngster 11
+354,2,Youngster 12,Youngster 12
+355,1,Agatha,Agatha
+356,1,Beauty 1,Beauty 1
+357,1,Beauty 2,Beauty 2
+358,1,Beauty 3,Beauty 3
+359,1,Beauty 4,Beauty 4
+360,1,Beauty 5,Beauty 5
+361,1,Beauty 6,Beauty 6
+362,1,Beauty 7,Beauty 7
+363,1,Beauty 8,Beauty 8
+364,1,Beauty 9,Beauty 9
+365,1,Beauty 10,Beauty 10
+366,1,Beauty 11,Beauty 11
+367,1,Beauty 12,Beauty 12
+368,1,Beauty 13,Beauty 13
+369,1,Beauty 14,Beauty 14
+370,1,Biker 1,Biker 1
+371,1,Biker 2,Biker 2
+372,1,Biker 3,Biker 3
+373,1,Biker 4,Biker 4
+374,1,Biker 5,Biker 5
+375,1,Biker 6,Biker 6
+376,1,Biker 7,Biker 7
+377,1,Biker 8,Biker 8
+378,1,Biker 9,Biker 9
+379,1,Biker 10,Biker 10
+380,1,Biker 11,Biker 11
+381,1,Biker 12,Biker 12
+382,1,Biker 13,Biker 13
+383,1,Biker 14,Biker 14
+384,1,Biker 15,Biker 15
+385,1,Bird Keeper 1,Bird Keeper 1
+386,1,Bird Keeper 2,Bird Keeper 2
+387,1,Bird Keeper 3,Bird Keeper 3
+388,1,Bird Keeper 4,Bird Keeper 4
+389,1,Bird Keeper 5,Bird Keeper 5
+390,1,Bird Keeper 6,Bird Keeper 6
+391,1,Bird Keeper 7,Bird Keeper 7
+392,1,Bird Keeper 8,Bird Keeper 8
+393,1,Bird Keeper 9,Bird Keeper 9
+394,1,Bird Keeper 10,Bird Keeper 10
+395,1,Bird Keeper 11,Bird Keeper 11
+396,1,Bird Keeper 12,Bird Keeper 12
+397,1,Bird Keeper 13,Bird Keeper 13
+398,1,Bird Keeper 14,Bird Keeper 14
+399,1,Bird Keeper 15,Bird Keeper 15
+400,1,Blackbelt 1,Blackbelt 1
+401,1,Blackbelt 2,Blackbelt 2
+402,1,Blackbelt 3,Blackbelt 3
+403,1,Blackbelt 4,Blackbelt 4
+404,1,Blackbelt 5,Blackbelt 5
+405,1,Blackbelt 6,Blackbelt 6
+406,1,Blackbelt 7,Blackbelt 7
+407,1,Blackbelt 8,Blackbelt 8
+408,1,Blackbelt 9,Blackbelt 9
+409,1,Blaine,Blaine
+410,1,Brock,Brock
+411,1,Bruno,Bruno
+412,1,Bug Catcher 1,Bug Catcher 1
+413,1,Bug Catcher 2,Bug Catcher 2
+414,1,Bug Catcher 3,Bug Catcher 3
+415,1,Bug Catcher 4,Bug Catcher 4
+416,1,Bug Catcher 5,Bug Catcher 5
+417,1,Bug Catcher 6,Bug Catcher 6
+418,1,Bug Catcher 7,Bug Catcher 7
+419,1,Bug Catcher 8,Bug Catcher 8
+420,1,Bug Catcher 9,Bug Catcher 9
+421,1,Bug Catcher 10,Bug Catcher 10
+422,1,Bug Catcher 11,Bug Catcher 11
+423,1,Bug Catcher 12,Bug Catcher 12
+424,1,Bug Catcher 13,Bug Catcher 13
+425,1,Burglar 1,Burglar 1
+426,1,Burglar 2,Burglar 2
+427,1,Burglar 3,Burglar 3
+428,1,Burglar 4,Burglar 4
+429,1,Burglar 5,Burglar 5
+430,1,Burglar 6,Burglar 6
+431,1,Channeler 1,Channeler 1
+432,1,Channeler 2,Channeler 2
+433,1,Channeler 3,Channeler 3
+434,1,Channeler 4,Channeler 4
+435,1,Channeler 5,Channeler 5
+436,1,Channeler 6,Channeler 6
+437,1,Channeler 7,Channeler 7
+438,1,Channeler 8,Channeler 8
+439,1,Channeler 9,Channeler 9
+440,1,Channeler 10,Channeler 10
+441,1,Channeler 11,Channeler 11
+442,1,Channeler 12,Channeler 12
+443,1,Channeler 13,Channeler 13
+444,1,Channeler 14,Channeler 14
+445,1,Channeler 15,Channeler 15
+446,1,Channeler 16,Channeler 16
+447,1,Cooltrainer F 1,Cooltrainer F 1
+448,1,Cooltrainer F 2,Cooltrainer F 2
+449,1,Cooltrainer F 3,Cooltrainer F 3
+450,1,Cooltrainer F 4,Cooltrainer F 4
+451,1,Cooltrainer M 1,Cooltrainer M 1
+452,1,Cooltrainer M 2,Cooltrainer M 2
+453,1,Cooltrainer M 3,Cooltrainer M 3
+454,1,Cooltrainer M 4,Cooltrainer M 4
+455,1,Cooltrainer M 5,Cooltrainer M 5
+456,1,Cooltrainer M 6,Cooltrainer M 6
+457,1,Cue Ball 1,Cue Ball 1
+458,1,Cue Ball 2,Cue Ball 2
+459,1,Cue Ball 3,Cue Ball 3
+460,1,Cue Ball 4,Cue Ball 4
+461,1,Cue Ball 5,Cue Ball 5
+462,1,Cue Ball 6,Cue Ball 6
+463,1,Cue Ball 7,Cue Ball 7
+464,1,Cue Ball 8,Cue Ball 8
+465,1,Cue Ball 9,Cue Ball 9
+466,1,Engineer 1,Engineer 1
+467,1,Engineer 2,Engineer 2
+468,1,Erika,Erika
+469,1,Fisherman 1,Fisherman 1
+470,1,Fisherman 2,Fisherman 2
+471,1,Fisherman 3,Fisherman 3
+472,1,Fisherman 4,Fisherman 4
+473,1,Fisherman 5,Fisherman 5
+474,1,Fisherman 6,Fisherman 6
+475,1,Fisherman 7,Fisherman 7
+476,1,Fisherman 8,Fisherman 8
+477,1,Fisherman 9,Fisherman 9
+478,1,Fisherman 10,Fisherman 10
+479,1,Fisherman 11,Fisherman 11
+480,1,Gambler 1,Gambler 1
+481,1,Gambler 2,Gambler 2
+482,1,Gambler 3,Gambler 3
+483,1,Gambler 4,Gambler 4
+484,1,Gambler 5,Gambler 5
+485,1,Gambler 6,Gambler 6
+486,1,Gentleman 1,Gentleman 1
+487,1,Gentleman 2,Gentleman 2
+488,1,Gentleman 3,Gentleman 3
+489,1,Gentleman 4,Gentleman 4
+490,1,Gentleman 5,Gentleman 5
+491,1,Giovanni 1,Giovanni 1
+492,1,Giovanni 2,Giovanni 2
+493,1,Giovanni 3,Giovanni 3
+494,1,Hiker 1,Hiker 1
+495,1,Hiker 2,Hiker 2
+496,1,Hiker 3,Hiker 3
+497,1,Hiker 4,Hiker 4
+498,1,Hiker 5,Hiker 5
+499,1,Hiker 6,Hiker 6
+500,1,Hiker 7,Hiker 7
+501,1,Hiker 8,Hiker 8
+502,1,Hiker 10,Hiker 10
+503,1,Hiker 11,Hiker 11
+504,1,Hiker 12,Hiker 12
+505,1,Hiker 13,Hiker 13
+506,1,Hiker 14,Hiker 14
+507,1,Hiker 15,Hiker 15
+508,1,Hikey 9,Hikey 9
+509,1,Jr Trainer F 1,Jr Trainer F 1
+510,1,Jr Trainer F 2,Jr Trainer F 2
+511,1,Jr Trainer F 3,Jr Trainer F 3
+512,1,Jr Trainer F 4,Jr Trainer F 4
+513,1,Jr Trainer F 5,Jr Trainer F 5
+514,1,Jr Trainer F 6,Jr Trainer F 6
+515,1,Jr Trainer F 7,Jr Trainer F 7
+516,1,Jr Trainer F 8,Jr Trainer F 8
+517,1,Jr Trainer F 9,Jr Trainer F 9
+518,1,Jr Trainer F 10,Jr Trainer F 10
+519,1,Jr Trainer F 11,Jr Trainer F 11
+520,1,Jr Trainer F 12,Jr Trainer F 12
+521,1,Jr Trainer F 13,Jr Trainer F 13
+522,1,Jr Trainer F 14,Jr Trainer F 14
+523,1,Jr Trainer F 15,Jr Trainer F 15
+524,1,Jr Trainer F 16,Jr Trainer F 16
+525,1,Jr Trainer F 17,Jr Trainer F 17
+526,1,Jr Trainer F 18,Jr Trainer F 18
+527,1,Jr Trainer F 19,Jr Trainer F 19
+528,1,Jr Trainer F 20,Jr Trainer F 20
+529,1,Jr Trainer F 21,Jr Trainer F 21
+530,1,Jr Trainer F 22,Jr Trainer F 22
+531,1,Jr Trainer M 1,Jr Trainer M 1
+532,1,Jr Trainer M 2,Jr Trainer M 2
+533,1,Jr Trainer M 3,Jr Trainer M 3
+534,1,Jr Trainer M 4,Jr Trainer M 4
+535,1,Jr Trainer M 5,Jr Trainer M 5
+536,1,Jr Trainer M 6,Jr Trainer M 6
+537,1,Jr Trainer M 7,Jr Trainer M 7
+538,1,Jr Trainer M 8,Jr Trainer M 8
+539,1,Jr Trainer M 9,Jr Trainer M 9
+540,1,Jr Trainer M 10,Jr Trainer M 10
+541,1,Juggler 1,Juggler 1
+542,1,Juggler 2,Juggler 2
+543,1,Juggler 3,Juggler 3
+544,1,Juggler 4,Juggler 4
+545,1,Juggler 5,Juggler 5
+546,1,Juggler 6,Juggler 6
+547,1,Juggler 7,Juggler 7
+548,1,Koga,Koga
+549,1,Lance,Lance
+550,1,Lass 1,Lass 1
+551,1,Lass 2,Lass 2
+552,1,Lass 3,Lass 3
+553,1,Lass 4,Lass 4
+554,1,Lass 5,Lass 5
+555,1,Lass 6,Lass 6
+556,1,Lass 7,Lass 7
+557,1,Lass 8,Lass 8
+558,1,Lass 9,Lass 9
+559,1,Lass 10,Lass 10
+560,1,Lass 11,Lass 11
+561,1,Lass 12,Lass 12
+562,1,Lass 13,Lass 13
+563,1,Lass 14,Lass 14
+564,1,Lass 15,Lass 15
+565,1,Lass 16,Lass 16
+566,1,Lass 18,Lass 18
+567,1,Lorelei,Lorelei
+568,1,Lt. Surge,Lt. Surge
+569,1,Misty,Misty
+570,1,PokeManiac 1,PokeManiac 1
+571,1,PokeManiac 2,PokeManiac 2
+572,1,PokeManiac 3,PokeManiac 3
+573,1,PokeManiac 4,PokeManiac 4
+574,1,PokeManiac 5,PokeManiac 5
+575,1,PokeManiac 7,PokeManiac 7
+576,1,Pokemaniac 6,Pokemaniac 6
+577,1,Psychic 1,Psychic 1
+578,1,Psychic 2,Psychic 2
+579,1,Psychic 3,Psychic 3
+580,1,Psychic 4,Psychic 4
+581,1,Rival 1,Rival 1 - Charmander
+582,1,Rival 1,Rival 1 - Squirtle
+583,1,Rival 1,Rival 1 - Bulbasaur
+584,1,Rival 2,Rival 2 - Bulbasaur
+585,1,Rival 2,Rival 2 - Charmander
+586,1,Rival 2,Rival 2 - Squirtle
+587,1,Rival 3,Rival 3 - Squirtle
+588,1,Rival 3,Rival 3 - Charmander
+589,1,Rival 3,Rival 3 - Bulbasaur
+590,1,Rival 4,Rival 4 - Charmander
+591,1,Rival 4,Rival 4 - Squirtle
+592,1,Rival 4,Rival 4 - Bulbasaur
+593,1,Rival 5,Rival 5 - Charmander
+594,1,Rival 5,Rival 5 - Bulbasaur
+595,1,Rival 5,Rival 5 - Squirtle
+596,1,Rival 6,Rival 6 - Bulbasaur
+597,1,Rival 6,Rival 6 - Charmander
+598,1,Rival 6,Rival 6 - Squirtle
+599,1,Rival 7,Rival 7 - Squirtle
+600,1,Rival 7,Rival 7 - Bulbasaur
+601,1,Rival 7,Rival 7 - Charmander
+602,1,Rival 8,Rival 8 - Squirtle
+603,1,Rival 8,Rival 8 - Charmander
+604,1,Rival 8,Rival 8 - Bulbasaur
+605,1,Rocker 1,Rocker 1
+606,1,Rocker 2,Rocker 2
+607,1,Rocket 1,Rocket 1
+608,1,Rocket 2,Rocket 2
+609,1,Rocket 3,Rocket 3
+610,1,Rocket 4,Rocket 4
+611,1,Rocket 5,Rocket 5
+612,1,Rocket 6,Rocket 6
+613,1,Rocket 7,Rocket 7
+614,1,Rocket 8,Rocket 8
+615,1,Rocket 9,Rocket 9
+616,1,Rocket 10,Rocket 10
+617,1,Rocket 11,Rocket 11
+618,1,Rocket 12,Rocket 12
+619,1,Rocket 13,Rocket 13
+620,1,Rocket 14,Rocket 14
+621,1,Rocket 15,Rocket 15
+622,1,Rocket 16,Rocket 16
+623,1,Rocket 17,Rocket 17
+624,1,Rocket 18,Rocket 18
+625,1,Rocket 19,Rocket 19
+626,1,Rocket 20,Rocket 20
+627,1,Rocket 21,Rocket 21
+628,1,Rocket 22,Rocket 22
+629,1,Rocket 23,Rocket 23
+630,1,Rocket 24,Rocket 24
+631,1,Rocket 25,Rocket 25
+632,1,Rocket 26,Rocket 26
+633,1,Rocket 27,Rocket 27
+634,1,Rocket 28,Rocket 28
+635,1,Rocket 29,Rocket 29
+636,1,Rocket 30,Rocket 30
+637,1,Rocket 31,Rocket 31
+638,1,Rocket 32,Rocket 32
+639,1,Rocket 33,Rocket 33
+640,1,Rocket 34,Rocket 34
+641,1,Rocket 35,Rocket 35
+642,1,Rocket 36,Rocket 36
+643,1,Rocket 37,Rocket 37
+644,1,Sabrina,Sabrina
+645,1,Sailor 1,Sailor 1
+646,1,Sailor 2,Sailor 2
+647,1,Sailor 3,Sailor 3
+648,1,Sailor 4,Sailor 4
+649,1,Sailor 5,Sailor 5
+650,1,Sailor 6,Sailor 6
+651,1,Sailor 7,Sailor 7
+652,1,Sailor 8,Sailor 8
+653,1,Scientist 1,Scientist 1
+654,1,Scientist 2,Scientist 2
+655,1,Scientist 3,Scientist 3
+656,1,Scientist 4,Scientist 4
+657,1,Scientist 5,Scientist 5
+658,1,Scientist 6,Scientist 6
+659,1,Scientist 7,Scientist 7
+660,1,Scientist 8,Scientist 8
+661,1,Scientist 9,Scientist 9
+662,1,Scientist 10,Scientist 10
+663,1,Scientist 11,Scientist 11
+664,1,Scientist 12,Scientist 12
+665,1,Scientist 13,Scientist 13
+666,1,Scientist 14,Scientist 14
+667,1,Scientist 15,Scientist 15
+668,1,Super Nerd 1,Super Nerd 1
+669,1,Super Nerd 2,Super Nerd 2
+670,1,Super Nerd 3,Super Nerd 3
+671,1,Super Nerd 4,Super Nerd 4
+672,1,Super Nerd 5,Super Nerd 5
+673,1,Super Nerd 6,Super Nerd 6
+674,1,Super Nerd 7,Super Nerd 7
+675,1,Super Nerd 8,Super Nerd 8
+676,1,Super Nerd 9,Super Nerd 9
+677,1,Swimmer 1,Swimmer 1
+678,1,Swimmer 2,Swimmer 2
+679,1,Swimmer 3,Swimmer 3
+680,1,Swimmer 4,Swimmer 4
+681,1,Swimmer 5,Swimmer 5
+682,1,Swimmer 6,Swimmer 6
+683,1,Swimmer 7,Swimmer 7
+684,1,Swimmer 8,Swimmer 8
+685,1,Swimmer 9,Swimmer 9
+686,1,Swimmer 10,Swimmer 10
+687,1,Swimmer 11,Swimmer 11
+688,1,Swimmer 12,Swimmer 12
+689,1,Swimmer 13,Swimmer 13
+690,1,Swimmer 14,Swimmer 14
+691,1,Swimmer 15,Swimmer 15
+692,1,Tamer 1,Tamer 1
+693,1,Tamer 2,Tamer 2
+694,1,Tamer 3,Tamer 3
+695,1,Tamer 4,Tamer 4
+696,1,Tamer 5,Tamer 5
+697,1,Youngster 1,Youngster 1
+698,1,Youngster 2,Youngster 2
+699,1,Youngster 3,Youngster 3
+700,1,Youngster 4,Youngster 4
+701,1,Youngster 5,Youngster 5
+702,1,Youngster 6,Youngster 6
+703,1,Youngster 7,Youngster 7
+704,1,Youngster 8,Youngster 8
+705,1,Youngster 9,Youngster 9
+706,1,Youngster 10,Youngster 10
+707,1,Youngster 11,Youngster 11
+708,1,Youngster 12,Youngster 12
+709,3,Agatha,Agatha
+710,3,Beauty 1,Beauty 1
+711,3,Beauty 2,Beauty 2
+712,3,Beauty 3,Beauty 3
+713,3,Beauty 4,Beauty 4
+714,3,Beauty 5,Beauty 5
+715,3,Beauty 6,Beauty 6
+716,3,Beauty 7,Beauty 7
+717,3,Beauty 8,Beauty 8
+718,3,Beauty 9,Beauty 9
+719,3,Beauty 10,Beauty 10
+720,3,Beauty 11,Beauty 11
+721,3,Beauty 12,Beauty 12
+722,3,Beauty 13,Beauty 13
+723,3,Beauty 14,Beauty 14
+724,3,Biker 1,Biker 1
+725,3,Biker 2,Biker 2
+726,3,Biker 3,Biker 3
+727,3,Biker 4,Biker 4
+728,3,Biker 5,Biker 5
+729,3,Biker 6,Biker 6
+730,3,Biker 7,Biker 7
+731,3,Biker 8,Biker 8
+732,3,Biker 9,Biker 9
+733,3,Biker 10,Biker 10
+734,3,Biker 11,Biker 11
+735,3,Biker 12,Biker 12
+736,3,Biker 13,Biker 13
+737,3,Biker 14,Biker 14
+738,3,Biker 15,Biker 15
+739,3,Bird Keeper 1,Bird Keeper 1
+740,3,Bird Keeper 2,Bird Keeper 2
+741,3,Bird Keeper 3,Bird Keeper 3
+742,3,Bird Keeper 4,Bird Keeper 4
+743,3,Bird Keeper 5,Bird Keeper 5
+744,3,Bird Keeper 6,Bird Keeper 6
+745,3,Bird Keeper 7,Bird Keeper 7
+746,3,Bird Keeper 8,Bird Keeper 8
+747,3,Bird Keeper 9,Bird Keeper 9
+748,3,Bird Keeper 10,Bird Keeper 10
+749,3,Bird Keeper 11,Bird Keeper 11
+750,3,Bird Keeper 12,Bird Keeper 12
+751,3,Bird Keeper 13,Bird Keeper 13
+752,3,Bird Keeper 14,Bird Keeper 14
+753,3,Bird Keeper 15,Bird Keeper 15
+754,3,Blackbelt 1,Blackbelt 1
+755,3,Blackbelt 2,Blackbelt 2
+756,3,Blackbelt 3,Blackbelt 3
+757,3,Blackbelt 4,Blackbelt 4
+758,3,Blackbelt 5,Blackbelt 5
+759,3,Blackbelt 6,Blackbelt 6
+760,3,Blackbelt 7,Blackbelt 7
+761,3,Blackbelt 8,Blackbelt 8
+762,3,Blackbelt 9,Blackbelt 9
+763,3,Blaine,Blaine
+764,3,Brock,Brock
+765,3,Bruno,Bruno
+766,3,Bug Catcher 1,Bug Catcher 1
+767,3,Bug Catcher 2,Bug Catcher 2
+768,3,Bug Catcher 3,Bug Catcher 3
+769,3,Bug Catcher 4,Bug Catcher 4
+770,3,Bug Catcher 5,Bug Catcher 5
+771,3,Bug Catcher 6,Bug Catcher 6
+772,3,Bug Catcher 7,Bug Catcher 7
+773,3,Bug Catcher 8,Bug Catcher 8
+774,3,Bug Catcher 9,Bug Catcher 9
+775,3,Bug Catcher 10,Bug Catcher 10
+776,3,Bug Catcher 11,Bug Catcher 11
+777,3,Bug Catcher 12,Bug Catcher 12
+778,3,Bug Catcher 13,Bug Catcher 13
+779,3,Bug Catcher 14,Bug Catcher 14
+780,3,Burglar 1,Burglar 1
+781,3,Burglar 2,Burglar 2
+782,3,Burglar 3,Burglar 3
+783,3,Burglar 4,Burglar 4
+784,3,Burglar 5,Burglar 5
+785,3,Burglar 6,Burglar 6
+786,3,Channeler 1,Channeler 1
+787,3,Channeler 2,Channeler 2
+788,3,Channeler 3,Channeler 3
+789,3,Channeler 4,Channeler 4
+790,3,Channeler 5,Channeler 5
+791,3,Channeler 6,Channeler 6
+792,3,Channeler 7,Channeler 7
+793,3,Channeler 8,Channeler 8
+794,3,Channeler 9,Channeler 9
+795,3,Channeler 10,Channeler 10
+796,3,Channeler 11,Channeler 11
+797,3,Channeler 12,Channeler 12
+798,3,Channeler 13,Channeler 13
+799,3,Channeler 14,Channeler 14
+800,3,Channeler 15,Channeler 15
+801,3,Channeler 16,Channeler 16
+802,3,Cooltrainer F 1,Cooltrainer F 1
+803,3,Cooltrainer F 2,Cooltrainer F 2
+804,3,Cooltrainer F 3,Cooltrainer F 3
+805,3,Cooltrainer F 4,Cooltrainer F 4
+806,3,Cooltrainer M 1,Cooltrainer M 1
+807,3,Cooltrainer M 2,Cooltrainer M 2
+808,3,Cooltrainer M 3,Cooltrainer M 3
+809,3,Cooltrainer M 4,Cooltrainer M 4
+810,3,Cooltrainer M 5,Cooltrainer M 5
+811,3,Cooltrainer M 6,Cooltrainer M 6
+812,3,Cue Ball 1,Cue Ball 1
+813,3,Cue Ball 2,Cue Ball 2
+814,3,Cue Ball 3,Cue Ball 3
+815,3,Cue Ball 4,Cue Ball 4
+816,3,Cue Ball 5,Cue Ball 5
+817,3,Cue Ball 6,Cue Ball 6
+818,3,Cue Ball 7,Cue Ball 7
+819,3,Cue Ball 8,Cue Ball 8
+820,3,Cue Ball 9,Cue Ball 9
+821,3,Engineer 1,Engineer 1
+822,3,Engineer 2,Engineer 2
+823,3,Erika,Erika
+824,3,Fisherman 1,Fisherman 1
+825,3,Fisherman 2,Fisherman 2
+826,3,Fisherman 3,Fisherman 3
+827,3,Fisherman 4,Fisherman 4
+828,3,Fisherman 5,Fisherman 5
+829,3,Fisherman 6,Fisherman 6
+830,3,Fisherman 7,Fisherman 7
+831,3,Fisherman 8,Fisherman 8
+832,3,Fisherman 9,Fisherman 9
+833,3,Fisherman 10,Fisherman 10
+834,3,Fisherman 11,Fisherman 11
+835,3,Gambler 1,Gambler 1
+836,3,Gambler 2,Gambler 2
+837,3,Gambler 3,Gambler 3
+838,3,Gambler 4,Gambler 4
+839,3,Gambler 5,Gambler 5
+840,3,Gambler 6,Gambler 6
+841,3,Gentleman 1,Gentleman 1
+842,3,Gentleman 2,Gentleman 2
+843,3,Gentleman 3,Gentleman 3
+844,3,Gentleman 4,Gentleman 4
+845,3,Gentleman 5,Gentleman 5
+846,3,Giovanni 1,Giovanni 1
+847,3,Giovanni 2,Giovanni 2
+848,3,Giovanni 3,Giovanni 3
+849,3,Hiker 1,Hiker 1
+850,3,Hiker 2,Hiker 2
+851,3,Hiker 3,Hiker 3
+852,3,Hiker 4,Hiker 4
+853,3,Hiker 5,Hiker 5
+854,3,Hiker 6,Hiker 6
+855,3,Hiker 7,Hiker 7
+856,3,Hiker 8,Hiker 8
+857,3,Hiker 10,Hiker 10
+858,3,Hiker 11,Hiker 11
+859,3,Hiker 12,Hiker 12
+860,3,Hiker 13,Hiker 13
+861,3,Hiker 14,Hiker 14
+862,3,Hiker 15,Hiker 15
+863,3,Hikey 9,Hikey 9
+864,3,Jessie & James 1,Jessie & James 1
+865,3,Jessie & James 2,Jessie & James 2
+866,3,Jessie & James 3,Jessie & James 3
+867,3,Jessie & James 4,Jessie & James 4
+868,3,Jr Trainer F 1,Jr Trainer F 1
+869,3,Jr Trainer F 2,Jr Trainer F 2
+870,3,Jr Trainer F 3,Jr Trainer F 3
+871,3,Jr Trainer F 4,Jr Trainer F 4
+872,3,Jr Trainer F 5,Jr Trainer F 5
+873,3,Jr Trainer F 6,Jr Trainer F 6
+874,3,Jr Trainer F 7,Jr Trainer F 7
+875,3,Jr Trainer F 8,Jr Trainer F 8
+876,3,Jr Trainer F 9,Jr Trainer F 9
+877,3,Jr Trainer F 10,Jr Trainer F 10
+878,3,Jr Trainer F 11,Jr Trainer F 11
+879,3,Jr Trainer F 12,Jr Trainer F 12
+880,3,Jr Trainer F 13,Jr Trainer F 13
+881,3,Jr Trainer F 14,Jr Trainer F 14
+882,3,Jr Trainer F 15,Jr Trainer F 15
+883,3,Jr Trainer F 16,Jr Trainer F 16
+884,3,Jr Trainer F 17,Jr Trainer F 17
+885,3,Jr Trainer F 18,Jr Trainer F 18
+886,3,Jr Trainer F 19,Jr Trainer F 19
+887,3,Jr Trainer F 20,Jr Trainer F 20
+888,3,Jr Trainer F 21,Jr Trainer F 21
+889,3,Jr Trainer F 22,Jr Trainer F 22
+890,3,Jr Trainer M 1,Jr Trainer M 1
+891,3,Jr Trainer M 2,Jr Trainer M 2
+892,3,Jr Trainer M 3,Jr Trainer M 3
+893,3,Jr Trainer M 4,Jr Trainer M 4
+894,3,Jr Trainer M 5,Jr Trainer M 5
+895,3,Jr Trainer M 6,Jr Trainer M 6
+896,3,Jr Trainer M 7,Jr Trainer M 7
+897,3,Jr Trainer M 8,Jr Trainer M 8
+898,3,Jr Trainer M 9,Jr Trainer M 9
+899,3,Juggler 1,Juggler 1
+900,3,Juggler 2,Juggler 2
+901,3,Juggler 3,Juggler 3
+902,3,Juggler 4,Juggler 4
+903,3,Juggler 5,Juggler 5
+904,3,Juggler 6,Juggler 6
+905,3,Juggler 7,Juggler 7
+906,3,Koga,Koga
+907,3,Lance,Lance
+908,3,Lass 1,Lass 1
+909,3,Lass 2,Lass 2
+910,3,Lass 3,Lass 3
+911,3,Lass 4,Lass 4
+912,3,Lass 5,Lass 5
+913,3,Lass 6,Lass 6
+914,3,Lass 7,Lass 7
+915,3,Lass 8,Lass 8
+916,3,Lass 9,Lass 9
+917,3,Lass 10,Lass 10
+918,3,Lass 11,Lass 11
+919,3,Lass 12,Lass 12
+920,3,Lass 13,Lass 13
+921,3,Lass 14,Lass 14
+922,3,Lass 15,Lass 15
+923,3,Lass 16,Lass 16
+924,3,Lass 17,Lass 17
+925,3,Lass 18,Lass 18
+926,3,Lorelei,Lorelei
+927,3,Lt. Surge,Lt. Surge
+928,3,Misty,Misty
+929,3,PokeManiac 1,PokeManiac 1
+930,3,PokeManiac 2,PokeManiac 2
+931,3,PokeManiac 3,PokeManiac 3
+932,3,PokeManiac 4,PokeManiac 4
+933,3,PokeManiac 5,PokeManiac 5
+934,3,PokeManiac 7,PokeManiac 7
+935,3,Pokemaniac 6,Pokemaniac 6
+936,3,Psychic 1,Psychic 1
+937,3,Psychic 2,Psychic 2
+938,3,Psychic 3,Psychic 3
+939,3,Psychic 4,Psychic 4
+940,3,Rival 1,Rival 1
+941,3,Rival 2,Rival 2
+942,3,Rival 3,Rival 3
+943,3,Rival 4,Rival 4
+944,3,Rival 5,Rival 5 - Won Lab Or R22
+947,3,Rival 6,Rival 6 - Won Lab Or R22
+951,3,Rival 7,Rival 7 - Won Lab Or R22
+954,3,Rival 8,Rival 8 - Won Lab Or R22
+956,3,Rocker 1,Rocker 1
+957,3,Rocker 2,Rocker 2
+958,3,Rocket 1,Rocket 1
+959,3,Rocket 2,Rocket 2
+960,3,Rocket 3,Rocket 3
+961,3,Rocket 4,Rocket 4
+962,3,Rocket 5,Rocket 5
+963,3,Rocket 6,Rocket 6
+964,3,Rocket 7,Rocket 7
+965,3,Rocket 8,Rocket 8
+966,3,Rocket 9,Rocket 9
+967,3,Rocket 10,Rocket 10
+968,3,Rocket 11,Rocket 11
+969,3,Rocket 12,Rocket 12
+970,3,Rocket 13,Rocket 13
+971,3,Rocket 14,Rocket 14
+972,3,Rocket 15,Rocket 15
+973,3,Rocket 16,Rocket 16
+974,3,Rocket 17,Rocket 17
+975,3,Rocket 18,Rocket 18
+976,3,Rocket 19,Rocket 19
+977,3,Rocket 20,Rocket 20
+978,3,Rocket 21,Rocket 21
+979,3,Rocket 22,Rocket 22
+980,3,Rocket 23,Rocket 23
+981,3,Rocket 24,Rocket 24
+982,3,Rocket 25,Rocket 25
+983,3,Rocket 26,Rocket 26
+984,3,Rocket 27,Rocket 27
+985,3,Rocket 28,Rocket 28
+986,3,Sabrina,Sabrina
+987,3,Sailor 1,Sailor 1
+988,3,Sailor 2,Sailor 2
+989,3,Sailor 3,Sailor 3
+990,3,Sailor 4,Sailor 4
+991,3,Sailor 5,Sailor 5
+992,3,Sailor 6,Sailor 6
+993,3,Sailor 7,Sailor 7
+994,3,Sailor 8,Sailor 8
+995,3,Scientist 1,Scientist 1
+996,3,Scientist 2,Scientist 2
+997,3,Scientist 3,Scientist 3
+998,3,Scientist 4,Scientist 4
+999,3,Scientist 5,Scientist 5
+1000,3,Scientist 6,Scientist 6
+1001,3,Scientist 7,Scientist 7
+1002,3,Scientist 8,Scientist 8
+1003,3,Scientist 9,Scientist 9
+1004,3,Scientist 10,Scientist 10
+1005,3,Scientist 11,Scientist 11
+1006,3,Scientist 12,Scientist 12
+1007,3,Scientist 13,Scientist 13
+1008,3,Scientist 14,Scientist 14
+1009,3,Scientist 15,Scientist 15
+1010,3,Super Nerd 1,Super Nerd 1
+1011,3,Super Nerd 2,Super Nerd 2
+1012,3,Super Nerd 3,Super Nerd 3
+1013,3,Super Nerd 4,Super Nerd 4
+1014,3,Super Nerd 5,Super Nerd 5
+1015,3,Super Nerd 6,Super Nerd 6
+1016,3,Super Nerd 7,Super Nerd 7
+1017,3,Super Nerd 8,Super Nerd 8
+1018,3,Super Nerd 9,Super Nerd 9
+1019,3,Swimmer 1,Swimmer 1
+1020,3,Swimmer 2,Swimmer 2
+1021,3,Swimmer 3,Swimmer 3
+1022,3,Swimmer 4,Swimmer 4
+1023,3,Swimmer 5,Swimmer 5
+1024,3,Swimmer 6,Swimmer 6
+1025,3,Swimmer 7,Swimmer 7
+1026,3,Swimmer 8,Swimmer 8
+1027,3,Swimmer 9,Swimmer 9
+1028,3,Swimmer 10,Swimmer 10
+1029,3,Swimmer 11,Swimmer 11
+1030,3,Swimmer 12,Swimmer 12
+1031,3,Swimmer 13,Swimmer 13
+1032,3,Swimmer 14,Swimmer 14
+1033,3,Swimmer 15,Swimmer 15
+1034,3,Tamer 1,Tamer 1
+1035,3,Tamer 2,Tamer 2
+1036,3,Tamer 3,Tamer 3
+1037,3,Tamer 4,Tamer 4
+1038,3,Tamer 5,Tamer 5
+1039,3,Youngster 1,Youngster 1
+1040,3,Youngster 2,Youngster 2
+1041,3,Youngster 3,Youngster 3
+1042,3,Youngster 4,Youngster 4
+1043,3,Youngster 5,Youngster 5
+1044,3,Youngster 6,Youngster 6
+1045,3,Youngster 7,Youngster 7
+1046,3,Youngster 8,Youngster 8
+1047,3,Youngster 9,Youngster 9
+1048,3,Youngster 10,Youngster 10
+1049,3,Youngster 11,Youngster 11
+1050,3,Youngster 12,Youngster 12
+1051,3,Youngster 13,Youngster 13
+945,3,Rival 5,Rival 5 - Won Lab And R22
+946,3,Rival 5,Rival 5 - Lost Lab And R22
+949,3,Rival 6,Rival 6 - Lost Lab And R22
+950,3,Rival 7,Rival 7 - Lost Lab And R22
+955,3,Rival 8,Rival 8 - Lost Lab And R22
+953,3,Rival 8,Rival 8 - Won Lab And R22
+952,3,Rival 7,Rival 7 - Won Lab And R22
+948,3,Rival 6,Rival 6 - Won Lab And R22
