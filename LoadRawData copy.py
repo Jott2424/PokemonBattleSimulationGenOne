@@ -153,17 +153,30 @@ for file in sorted([file for file in os.listdir("./rawdata")]):
     table_name = file.split(".")[1]
     
 #     # Convert DataFrame to list of tuples
-    data_tuples = [tuple(x) for x in df.to_numpy()]
+    # data_tuples = [tuple(x) for x in df.to_numpy()]
     
 #     # Generate the SQL insert statement
     columns = ','.join(df.columns)
-    sql = f"INSERT INTO bronze.{table_name} ({columns}) VALUES %s"
-    print(f'INSERT INTO bronze.{table_name}')
+#     sql = f"INSERT INTO bronze.{table_name} ({columns}) VALUES %s"
+#     print(f'INSERT INTO bronze.{table_name}')
     
-    # Bulk insert
-    execute_values(cur, sql, data_tuples)
-    conn.commit()
-    print(f"{len(df)} rows inserted into bronze.{table_name} \n")
+#     # Bulk insert
+#     execute_values(cur, sql, data_tuples)
+#     conn.commit()
+#     print(f"{len(df)} rows inserted into bronze.{table_name} \n")\
+
+	#individual row upload
+    placeholders = ','.join(['%s'] * len(df.columns))
+
+    for i, row in df.iterrows():
+        values = tuple(row)
+        try:
+            sql = f"INSERT INTO bronze.{table_name} ({columns}) VALUES ({placeholders})"
+            cur.execute(sql,values)
+        except Exception as e:
+            print(f"Error at row {i}: {e}")
+            print(row)
+            break
 
 cur.close()
 conn.close()
