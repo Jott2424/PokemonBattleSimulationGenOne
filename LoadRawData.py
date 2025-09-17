@@ -9,10 +9,8 @@ conn = psycopg2.connect(
     dbname="pokemon_battlesim_g1",
     user="postgres",
     password="postgres",
-    # host="192.168.1.3",  # or your server's IP
-	host="localhost",
-    # port="17501" #5432 default
-	port=5432
+    host="192.168.1.3",  # or your server's IP
+    port="17501" #5432 default
 )
 
 # Create a cursor object
@@ -143,27 +141,26 @@ conn.commit()
 
 for file in sorted([file for file in os.listdir("./rawdata")]):
     df = pd.read_csv(f'./rawdata/{file}')
-    # df = df.where(pd.notnull(df),None) # to fix NaN issues
-    df = df.replace({np.nan:None})
+    df = df.replace({np.nan: None})  # handle NaN for SQL NULL
+    
     print(f'Reading ./rawdata/{file}')
     print(df.dtypes)
 
-    print([file.split(".")])
-#     # Determine table name from file name
+    # Determine table name from file name
     table_name = file.split(".")[1]
-    
-#     # Convert DataFrame to list of tuples
-    data_tuples = [tuple(x) for x in df.to_numpy()]
-    
-#     # Generate the SQL insert statement
+
+    # Convert DataFrame to list of native Python tuples
+    data_tuples = [tuple(x) for x in df.itertuples(index=False, name=None)]
+
+    # Generate SQL insert statement
     columns = ','.join(df.columns)
     sql = f"INSERT INTO bronze.{table_name} ({columns}) VALUES %s"
     print(f'INSERT INTO bronze.{table_name}')
-    
+
     # Bulk insert
     execute_values(cur, sql, data_tuples)
     conn.commit()
     print(f"{len(df)} rows inserted into bronze.{table_name} \n")
-
+    
 cur.close()
 conn.close()
