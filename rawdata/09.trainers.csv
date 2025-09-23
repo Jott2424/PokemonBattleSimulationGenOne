@@ -1,1059 +1,1059 @@
-pk_trainers_id,fk_games_id,trainer,trainer_scenario
-1,2,Agatha,Agatha
-2,2,Beauty 1,Beauty 1
-3,2,Beauty 2,Beauty 2
-4,2,Beauty 3,Beauty 3
-5,2,Beauty 4,Beauty 4
-6,2,Beauty 5,Beauty 5
-7,2,Beauty 6,Beauty 6
-8,2,Beauty 7,Beauty 7
-9,2,Beauty 8,Beauty 8
-10,2,Beauty 9,Beauty 9
-11,2,Beauty 10,Beauty 10
-12,2,Beauty 11,Beauty 11
-13,2,Beauty 12,Beauty 12
-14,2,Beauty 13,Beauty 13
-15,2,Beauty 14,Beauty 14
-16,2,Biker 1,Biker 1
-17,2,Biker 2,Biker 2
-18,2,Biker 3,Biker 3
-19,2,Biker 4,Biker 4
-20,2,Biker 5,Biker 5
-21,2,Biker 6,Biker 6
-22,2,Biker 7,Biker 7
-23,2,Biker 8,Biker 8
-24,2,Biker 9,Biker 9
-25,2,Biker 10,Biker 10
-26,2,Biker 11,Biker 11
-27,2,Biker 12,Biker 12
-28,2,Biker 13,Biker 13
-29,2,Biker 14,Biker 14
-30,2,Biker 15,Biker 15
-31,2,Bird Keeper 1,Bird Keeper 1
-32,2,Bird Keeper 2,Bird Keeper 2
-33,2,Bird Keeper 3,Bird Keeper 3
-34,2,Bird Keeper 4,Bird Keeper 4
-35,2,Bird Keeper 5,Bird Keeper 5
-36,2,Bird Keeper 6,Bird Keeper 6
-37,2,Bird Keeper 7,Bird Keeper 7
-38,2,Bird Keeper 8,Bird Keeper 8
-39,2,Bird Keeper 9,Bird Keeper 9
-40,2,Bird Keeper 10,Bird Keeper 10
-41,2,Bird Keeper 11,Bird Keeper 11
-42,2,Bird Keeper 12,Bird Keeper 12
-43,2,Bird Keeper 13,Bird Keeper 13
-44,2,Bird Keeper 14,Bird Keeper 14
-45,2,Bird Keeper 15,Bird Keeper 15
-46,2,Blackbelt 1,Blackbelt 1
-47,2,Blackbelt 2,Blackbelt 2
-48,2,Blackbelt 3,Blackbelt 3
-49,2,Blackbelt 4,Blackbelt 4
-50,2,Blackbelt 5,Blackbelt 5
-51,2,Blackbelt 6,Blackbelt 6
-52,2,Blackbelt 7,Blackbelt 7
-53,2,Blackbelt 8,Blackbelt 8
-54,2,Blackbelt 9,Blackbelt 9
-55,2,Blaine,Blaine
-56,2,Brock,Brock
-57,2,Bruno,Bruno
-58,2,Bug Catcher 1,Bug Catcher 1
-59,2,Bug Catcher 2,Bug Catcher 2
-60,2,Bug Catcher 3,Bug Catcher 3
-61,2,Bug Catcher 4,Bug Catcher 4
-62,2,Bug Catcher 5,Bug Catcher 5
-63,2,Bug Catcher 6,Bug Catcher 6
-64,2,Bug Catcher 7,Bug Catcher 7
-65,2,Bug Catcher 8,Bug Catcher 8
-66,2,Bug Catcher 9,Bug Catcher 9
-67,2,Bug Catcher 10,Bug Catcher 10
-68,2,Bug Catcher 11,Bug Catcher 11
-69,2,Bug Catcher 12,Bug Catcher 12
-70,2,Bug Catcher 13,Bug Catcher 13
-71,2,Burglar 1,Burglar 1
-72,2,Burglar 2,Burglar 2
-73,2,Burglar 3,Burglar 3
-74,2,Burglar 4,Burglar 4
-75,2,Burglar 5,Burglar 5
-76,2,Burglar 6,Burglar 6
-77,2,Channeler 1,Channeler 1
-78,2,Channeler 2,Channeler 2
-79,2,Channeler 3,Channeler 3
-80,2,Channeler 4,Channeler 4
-81,2,Channeler 5,Channeler 5
-82,2,Channeler 6,Channeler 6
-83,2,Channeler 7,Channeler 7
-84,2,Channeler 8,Channeler 8
-85,2,Channeler 9,Channeler 9
-86,2,Channeler 10,Channeler 10
-87,2,Channeler 11,Channeler 11
-88,2,Channeler 12,Channeler 12
-89,2,Channeler 13,Channeler 13
-90,2,Channeler 14,Channeler 14
-91,2,Channeler 15,Channeler 15
-92,2,Channeler 16,Channeler 16
-93,2,Cooltrainer F 1,Cooltrainer F 1
-94,2,Cooltrainer F 2,Cooltrainer F 2
-95,2,Cooltrainer F 3,Cooltrainer F 3
-96,2,Cooltrainer F 4,Cooltrainer F 4
-97,2,Cooltrainer M 1,Cooltrainer M 1
-98,2,Cooltrainer M 2,Cooltrainer M 2
-99,2,Cooltrainer M 3,Cooltrainer M 3
-100,2,Cooltrainer M 4,Cooltrainer M 4
-101,2,Cooltrainer M 5,Cooltrainer M 5
-102,2,Cooltrainer M 6,Cooltrainer M 6
-103,2,Cue Ball 1,Cue Ball 1
-104,2,Cue Ball 2,Cue Ball 2
-105,2,Cue Ball 3,Cue Ball 3
-106,2,Cue Ball 4,Cue Ball 4
-107,2,Cue Ball 5,Cue Ball 5
-108,2,Cue Ball 6,Cue Ball 6
-109,2,Cue Ball 7,Cue Ball 7
-110,2,Cue Ball 8,Cue Ball 8
-111,2,Cue Ball 9,Cue Ball 9
-112,2,Engineer 1,Engineer 1
-113,2,Engineer 2,Engineer 2
-114,2,Erika,Erika
-115,2,Fisherman 1,Fisherman 1
-116,2,Fisherman 2,Fisherman 2
-117,2,Fisherman 3,Fisherman 3
-118,2,Fisherman 4,Fisherman 4
-119,2,Fisherman 5,Fisherman 5
-120,2,Fisherman 6,Fisherman 6
-121,2,Fisherman 7,Fisherman 7
-122,2,Fisherman 8,Fisherman 8
-123,2,Fisherman 9,Fisherman 9
-124,2,Fisherman 10,Fisherman 10
-125,2,Fisherman 11,Fisherman 11
-126,2,Gambler 1,Gambler 1
-127,2,Gambler 2,Gambler 2
-128,2,Gambler 3,Gambler 3
-129,2,Gambler 4,Gambler 4
-130,2,Gambler 5,Gambler 5
-131,2,Gambler 6,Gambler 6
-132,2,Gentleman 1,Gentleman 1
-133,2,Gentleman 2,Gentleman 2
-134,2,Gentleman 3,Gentleman 3
-135,2,Gentleman 4,Gentleman 4
-136,2,Gentleman 5,Gentleman 5
-137,2,Giovanni 1,Giovanni 1
-138,2,Giovanni 2,Giovanni 2
-139,2,Giovanni 3,Giovanni 3
-140,2,Hiker 1,Hiker 1
-141,2,Hiker 2,Hiker 2
-142,2,Hiker 3,Hiker 3
-143,2,Hiker 4,Hiker 4
-144,2,Hiker 5,Hiker 5
-145,2,Hiker 6,Hiker 6
-146,2,Hiker 7,Hiker 7
-147,2,Hiker 8,Hiker 8
-148,2,Hiker 10,Hiker 10
-149,2,Hiker 11,Hiker 11
-150,2,Hiker 12,Hiker 12
-151,2,Hiker 13,Hiker 13
-152,2,Hiker 14,Hiker 14
-153,2,Hiker 15,Hiker 15
-154,2,Hiker 9,Hiker 9
-155,2,Jr Trainer F 1,Jr Trainer F 1
-156,2,Jr Trainer F 2,Jr Trainer F 2
-157,2,Jr Trainer F 3,Jr Trainer F 3
-158,2,Jr Trainer F 4,Jr Trainer F 4
-159,2,Jr Trainer F 5,Jr Trainer F 5
-160,2,Jr Trainer F 6,Jr Trainer F 6
-161,2,Jr Trainer F 7,Jr Trainer F 7
-162,2,Jr Trainer F 8,Jr Trainer F 8
-163,2,Jr Trainer F 9,Jr Trainer F 9
-164,2,Jr Trainer F 10,Jr Trainer F 10
-165,2,Jr Trainer F 11,Jr Trainer F 11
-166,2,Jr Trainer F 12,Jr Trainer F 12
-167,2,Jr Trainer F 13,Jr Trainer F 13
-168,2,Jr Trainer F 14,Jr Trainer F 14
-169,2,Jr Trainer F 15,Jr Trainer F 15
-170,2,Jr Trainer F 16,Jr Trainer F 16
-171,2,Jr Trainer F 17,Jr Trainer F 17
-172,2,Jr Trainer F 18,Jr Trainer F 18
-173,2,Jr Trainer F 19,Jr Trainer F 19
-174,2,Jr Trainer F 20,Jr Trainer F 20
-175,2,Jr Trainer F 21,Jr Trainer F 21
-176,2,Jr Trainer F 22,Jr Trainer F 22
-177,2,Jr Trainer M 1,Jr Trainer M 1
-178,2,Jr Trainer M 2,Jr Trainer M 2
-179,2,Jr Trainer M 3,Jr Trainer M 3
-180,2,Jr Trainer M 4,Jr Trainer M 4
-181,2,Jr Trainer M 5,Jr Trainer M 5
-182,2,Jr Trainer M 6,Jr Trainer M 6
-183,2,Jr Trainer M 7,Jr Trainer M 7
-184,2,Jr Trainer M 8,Jr Trainer M 8
-185,2,Jr Trainer M 9,Jr Trainer M 9
-186,2,Jr Trainer M 10,Jr Trainer M 10
-187,2,Juggler 1,Juggler 1
-188,2,Juggler 2,Juggler 2
-189,2,Juggler 3,Juggler 3
-190,2,Juggler 4,Juggler 4
-191,2,Juggler 5,Juggler 5
-192,2,Juggler 6,Juggler 6
-193,2,Juggler 7,Juggler 7
-194,2,Koga,Koga
-195,2,Lance,Lance
-196,2,Lass 1,Lass 1
-197,2,Lass 2,Lass 2
-198,2,Lass 3,Lass 3
-199,2,Lass 4,Lass 4
-200,2,Lass 5,Lass 5
-201,2,Lass 6,Lass 6
-202,2,Lass 7,Lass 7
-203,2,Lass 8,Lass 8
-204,2,Lass 9,Lass 9
-205,2,Lass 10,Lass 10
-206,2,Lass 11,Lass 11
-207,2,Lass 12,Lass 12
-208,2,Lass 13,Lass 13
-209,2,Lass 14,Lass 14
-210,2,Lass 15,Lass 15
-211,2,Lass 16,Lass 16
-212,2,Lass 17,Lass 17
-213,2,Lass 18,Lass 18
-214,2,Lorelei,Lorelei
-215,2,Lt. Surge,Lt. Surge
-216,2,Misty,Misty
-217,2,PokeManiac 1,PokeManiac 1
-218,2,PokeManiac 2,PokeManiac 2
-219,2,PokeManiac 3,PokeManiac 3
-220,2,PokeManiac 4,PokeManiac 4
-221,2,PokeManiac 5,PokeManiac 5
-222,2,PokeManiac 7,PokeManiac 7
-223,2,PokeManiac 6,PokeManiac 6
-224,2,Psychic 1,Psychic 1
-225,2,Psychic 2,Psychic 2
-226,2,Psychic 3,Psychic 3
-227,2,Psychic 4,Psychic 4
-228,2,Rival 1,Rival 1 - Squirtle
-229,2,Rival 1,Rival 1 - Charmander
-230,2,Rival 1,Rival 1 - Bulbasaur
-231,2,Rival 2,Rival 2 - Charmander
-232,2,Rival 2,Rival 2 - Squirtle
-233,2,Rival 2,Rival 2 - Bulbasaur
-234,2,Rival 3,Rival 3 - Bulbasaur
-235,2,Rival 3,Rival 3 - Charmander
-236,2,Rival 3,Rival 3 - Squirtle
-237,2,Rival 4,Rival 4 - Charmander
-238,2,Rival 4,Rival 4 - Squirtle
-239,2,Rival 4,Rival 4 - Bulbasaur
-240,2,Rival 5,Rival 5 - Squirtle
-241,2,Rival 5,Rival 5 - Bulbasaur
-242,2,Rival 5,Rival 5 - Charmander
-243,2,Rival 6,Rival 6 - Squirtle
-244,2,Rival 6,Rival 6 - Charmander
-245,2,Rival 6,Rival 6 - Bulbasaur
-246,2,Rival 7,Rival 7 - Charmander
-247,2,Rival 7,Rival 7 - Squirtle
-248,2,Rival 7,Rival 7 - Bulbasaur
-249,2,Rival 8,Rival 8 - Charmander
-250,2,Rival 8,Rival 8 - Squirtle
-251,2,Rival 8,Rival 8 - Bulbasaur
-252,2,Rocker 1,Rocker 1
-253,2,Rocker 2,Rocker 2
-254,2,Rocket 1,Rocket 1
-255,2,Rocket 2,Rocket 2
-256,2,Rocket 3,Rocket 3
-257,2,Rocket 4,Rocket 4
-258,2,Rocket 5,Rocket 5
-259,2,Rocket 6,Rocket 6
-260,2,Rocket 7,Rocket 7
-261,2,Rocket 8,Rocket 8
-262,2,Rocket 9,Rocket 9
-263,2,Rocket 10,Rocket 10
-264,2,Rocket 11,Rocket 11
-265,2,Rocket 12,Rocket 12
-266,2,Rocket 13,Rocket 13
-267,2,Rocket 14,Rocket 14
-268,2,Rocket 15,Rocket 15
-269,2,Rocket 16,Rocket 16
-270,2,Rocket 17,Rocket 17
-271,2,Rocket 18,Rocket 18
-272,2,Rocket 19,Rocket 19
-273,2,Rocket 20,Rocket 20
-274,2,Rocket 21,Rocket 21
-275,2,Rocket 22,Rocket 22
-276,2,Rocket 23,Rocket 23
-277,2,Rocket 24,Rocket 24
-278,2,Rocket 25,Rocket 25
-279,2,Rocket 26,Rocket 26
-280,2,Rocket 27,Rocket 27
-281,2,Rocket 28,Rocket 28
-282,2,Rocket 29,Rocket 29
-283,2,Rocket 30,Rocket 30
-284,2,Rocket 31,Rocket 31
-285,2,Rocket 32,Rocket 32
-286,2,Rocket 33,Rocket 33
-287,2,Rocket 34,Rocket 34
-288,2,Rocket 35,Rocket 35
-289,2,Rocket 36,Rocket 36
-290,2,Rocket 37,Rocket 37
-291,2,Sabrina,Sabrina
-292,2,Sailor 1,Sailor 1
-293,2,Sailor 2,Sailor 2
-294,2,Sailor 3,Sailor 3
-295,2,Sailor 4,Sailor 4
-296,2,Sailor 5,Sailor 5
-297,2,Sailor 6,Sailor 6
-298,2,Sailor 7,Sailor 7
-299,2,Sailor 8,Sailor 8
-300,2,Scientist 1,Scientist 1
-301,2,Scientist 2,Scientist 2
-302,2,Scientist 3,Scientist 3
-303,2,Scientist 4,Scientist 4
-304,2,Scientist 5,Scientist 5
-305,2,Scientist 6,Scientist 6
-306,2,Scientist 7,Scientist 7
-307,2,Scientist 8,Scientist 8
-308,2,Scientist 9,Scientist 9
-309,2,Scientist 10,Scientist 10
-310,2,Scientist 11,Scientist 11
-311,2,Scientist 12,Scientist 12
-312,2,Scientist 13,Scientist 13
-313,2,Scientist 14,Scientist 14
-314,2,Scientist 15,Scientist 15
-315,2,Scientist 16,Scientist 16
-316,2,Super Nerd 1,Super Nerd 1
-317,2,Super Nerd 2,Super Nerd 2
-318,2,Super Nerd 3,Super Nerd 3
-319,2,Super Nerd 4,Super Nerd 4
-320,2,Super Nerd 5,Super Nerd 5
-321,2,Super Nerd 6,Super Nerd 6
-322,2,Super Nerd 7,Super Nerd 7
-323,2,Super Nerd 8,Super Nerd 8
-324,2,Super Nerd 9,Super Nerd 9
-325,2,Swimmer 1,Swimmer 1
-326,2,Swimmer 2,Swimmer 2
-327,2,Swimmer 3,Swimmer 3
-328,2,Swimmer 4,Swimmer 4
-329,2,Swimmer 5,Swimmer 5
-330,2,Swimmer 6,Swimmer 6
-331,2,Swimmer 7,Swimmer 7
-332,2,Swimmer 8,Swimmer 8
-333,2,Swimmer 9,Swimmer 9
-334,2,Swimmer 10,Swimmer 10
-335,2,Swimmer 11,Swimmer 11
-336,2,Swimmer 12,Swimmer 12
-337,2,Swimmer 13,Swimmer 13
-338,2,Swimmer 14,Swimmer 14
-339,2,Swimmer 15,Swimmer 15
-340,2,Tamer 1,Tamer 1
-341,2,Tamer 2,Tamer 2
-342,2,Tamer 3,Tamer 3
-343,2,Tamer 4,Tamer 4
-344,2,Tamer 5,Tamer 5
-345,2,Youngster 1,Youngster 1
-346,2,Youngster 2,Youngster 2
-347,2,Youngster 3,Youngster 3
-348,2,Youngster 4,Youngster 4
-349,2,Youngster 5,Youngster 5
-350,2,Youngster 6,Youngster 6
-351,2,Youngster 7,Youngster 7
-352,2,Youngster 8,Youngster 8
-353,2,Youngster 9,Youngster 9
-354,2,Youngster 10,Youngster 10
-355,2,Youngster 11,Youngster 11
-356,2,Youngster 12,Youngster 12
-357,1,Agatha,Agatha
-358,1,Beauty 1,Beauty 1
-359,1,Beauty 2,Beauty 2
-360,1,Beauty 3,Beauty 3
-361,1,Beauty 4,Beauty 4
-362,1,Beauty 5,Beauty 5
-363,1,Beauty 6,Beauty 6
-364,1,Beauty 7,Beauty 7
-365,1,Beauty 8,Beauty 8
-366,1,Beauty 9,Beauty 9
-367,1,Beauty 10,Beauty 10
-368,1,Beauty 11,Beauty 11
-369,1,Beauty 12,Beauty 12
-370,1,Beauty 13,Beauty 13
-371,1,Beauty 14,Beauty 14
-372,1,Biker 1,Biker 1
-373,1,Biker 2,Biker 2
-374,1,Biker 3,Biker 3
-375,1,Biker 4,Biker 4
-376,1,Biker 5,Biker 5
-377,1,Biker 6,Biker 6
-378,1,Biker 7,Biker 7
-379,1,Biker 8,Biker 8
-380,1,Biker 9,Biker 9
-381,1,Biker 10,Biker 10
-382,1,Biker 11,Biker 11
-383,1,Biker 12,Biker 12
-384,1,Biker 13,Biker 13
-385,1,Biker 14,Biker 14
-386,1,Biker 15,Biker 15
-387,1,Bird Keeper 1,Bird Keeper 1
-388,1,Bird Keeper 2,Bird Keeper 2
-389,1,Bird Keeper 3,Bird Keeper 3
-390,1,Bird Keeper 4,Bird Keeper 4
-391,1,Bird Keeper 5,Bird Keeper 5
-392,1,Bird Keeper 6,Bird Keeper 6
-393,1,Bird Keeper 7,Bird Keeper 7
-394,1,Bird Keeper 8,Bird Keeper 8
-395,1,Bird Keeper 9,Bird Keeper 9
-396,1,Bird Keeper 10,Bird Keeper 10
-397,1,Bird Keeper 11,Bird Keeper 11
-398,1,Bird Keeper 12,Bird Keeper 12
-399,1,Bird Keeper 13,Bird Keeper 13
-400,1,Bird Keeper 14,Bird Keeper 14
-401,1,Bird Keeper 15,Bird Keeper 15
-402,1,Blackbelt 1,Blackbelt 1
-403,1,Blackbelt 2,Blackbelt 2
-404,1,Blackbelt 3,Blackbelt 3
-405,1,Blackbelt 4,Blackbelt 4
-406,1,Blackbelt 5,Blackbelt 5
-407,1,Blackbelt 6,Blackbelt 6
-408,1,Blackbelt 7,Blackbelt 7
-409,1,Blackbelt 8,Blackbelt 8
-410,1,Blackbelt 9,Blackbelt 9
-411,1,Blaine,Blaine
-412,1,Brock,Brock
-413,1,Bruno,Bruno
-414,1,Bug Catcher 1,Bug Catcher 1
-415,1,Bug Catcher 2,Bug Catcher 2
-416,1,Bug Catcher 3,Bug Catcher 3
-417,1,Bug Catcher 4,Bug Catcher 4
-418,1,Bug Catcher 5,Bug Catcher 5
-419,1,Bug Catcher 6,Bug Catcher 6
-420,1,Bug Catcher 7,Bug Catcher 7
-421,1,Bug Catcher 8,Bug Catcher 8
-422,1,Bug Catcher 9,Bug Catcher 9
-423,1,Bug Catcher 10,Bug Catcher 10
-424,1,Bug Catcher 11,Bug Catcher 11
-425,1,Bug Catcher 12,Bug Catcher 12
-426,1,Bug Catcher 13,Bug Catcher 13
-427,1,Burglar 1,Burglar 1
-428,1,Burglar 2,Burglar 2
-429,1,Burglar 3,Burglar 3
-430,1,Burglar 4,Burglar 4
-431,1,Burglar 5,Burglar 5
-432,1,Burglar 6,Burglar 6
-433,1,Channeler 1,Channeler 1
-434,1,Channeler 2,Channeler 2
-435,1,Channeler 3,Channeler 3
-436,1,Channeler 4,Channeler 4
-437,1,Channeler 5,Channeler 5
-438,1,Channeler 6,Channeler 6
-439,1,Channeler 7,Channeler 7
-440,1,Channeler 8,Channeler 8
-441,1,Channeler 9,Channeler 9
-442,1,Channeler 10,Channeler 10
-443,1,Channeler 11,Channeler 11
-444,1,Channeler 12,Channeler 12
-445,1,Channeler 13,Channeler 13
-446,1,Channeler 14,Channeler 14
-447,1,Channeler 15,Channeler 15
-448,1,Channeler 16,Channeler 16
-449,1,Cooltrainer F 1,Cooltrainer F 1
-450,1,Cooltrainer F 2,Cooltrainer F 2
-451,1,Cooltrainer F 3,Cooltrainer F 3
-452,1,Cooltrainer F 4,Cooltrainer F 4
-453,1,Cooltrainer M 1,Cooltrainer M 1
-454,1,Cooltrainer M 2,Cooltrainer M 2
-455,1,Cooltrainer M 3,Cooltrainer M 3
-456,1,Cooltrainer M 4,Cooltrainer M 4
-457,1,Cooltrainer M 5,Cooltrainer M 5
-458,1,Cooltrainer M 6,Cooltrainer M 6
-459,1,Cue Ball 1,Cue Ball 1
-460,1,Cue Ball 2,Cue Ball 2
-461,1,Cue Ball 3,Cue Ball 3
-462,1,Cue Ball 4,Cue Ball 4
-463,1,Cue Ball 5,Cue Ball 5
-464,1,Cue Ball 6,Cue Ball 6
-465,1,Cue Ball 7,Cue Ball 7
-466,1,Cue Ball 8,Cue Ball 8
-467,1,Cue Ball 9,Cue Ball 9
-468,1,Engineer 1,Engineer 1
-469,1,Engineer 2,Engineer 2
-470,1,Erika,Erika
-471,1,Fisherman 1,Fisherman 1
-472,1,Fisherman 2,Fisherman 2
-473,1,Fisherman 3,Fisherman 3
-474,1,Fisherman 4,Fisherman 4
-475,1,Fisherman 5,Fisherman 5
-476,1,Fisherman 6,Fisherman 6
-477,1,Fisherman 7,Fisherman 7
-478,1,Fisherman 8,Fisherman 8
-479,1,Fisherman 9,Fisherman 9
-480,1,Fisherman 10,Fisherman 10
-481,1,Fisherman 11,Fisherman 11
-482,1,Gambler 1,Gambler 1
-483,1,Gambler 2,Gambler 2
-484,1,Gambler 3,Gambler 3
-485,1,Gambler 4,Gambler 4
-486,1,Gambler 5,Gambler 5
-487,1,Gambler 6,Gambler 6
-488,1,Gentleman 1,Gentleman 1
-489,1,Gentleman 2,Gentleman 2
-490,1,Gentleman 3,Gentleman 3
-491,1,Gentleman 4,Gentleman 4
-492,1,Gentleman 5,Gentleman 5
-493,1,Giovanni 1,Giovanni 1
-494,1,Giovanni 2,Giovanni 2
-495,1,Giovanni 3,Giovanni 3
-496,1,Hiker 1,Hiker 1
-497,1,Hiker 2,Hiker 2
-498,1,Hiker 3,Hiker 3
-499,1,Hiker 4,Hiker 4
-500,1,Hiker 5,Hiker 5
-501,1,Hiker 6,Hiker 6
-502,1,Hiker 7,Hiker 7
-503,1,Hiker 8,Hiker 8
-504,1,Hiker 10,Hiker 10
-505,1,Hiker 11,Hiker 11
-506,1,Hiker 12,Hiker 12
-507,1,Hiker 13,Hiker 13
-508,1,Hiker 14,Hiker 14
-509,1,Hiker 15,Hiker 15
-510,1,Hiker 9,Hiker 9
-511,1,Jr Trainer F 1,Jr Trainer F 1
-512,1,Jr Trainer F 2,Jr Trainer F 2
-513,1,Jr Trainer F 3,Jr Trainer F 3
-514,1,Jr Trainer F 4,Jr Trainer F 4
-515,1,Jr Trainer F 5,Jr Trainer F 5
-516,1,Jr Trainer F 6,Jr Trainer F 6
-517,1,Jr Trainer F 7,Jr Trainer F 7
-518,1,Jr Trainer F 8,Jr Trainer F 8
-519,1,Jr Trainer F 9,Jr Trainer F 9
-520,1,Jr Trainer F 10,Jr Trainer F 10
-521,1,Jr Trainer F 11,Jr Trainer F 11
-522,1,Jr Trainer F 12,Jr Trainer F 12
-523,1,Jr Trainer F 13,Jr Trainer F 13
-524,1,Jr Trainer F 14,Jr Trainer F 14
-525,1,Jr Trainer F 15,Jr Trainer F 15
-526,1,Jr Trainer F 16,Jr Trainer F 16
-527,1,Jr Trainer F 17,Jr Trainer F 17
-528,1,Jr Trainer F 18,Jr Trainer F 18
-529,1,Jr Trainer F 19,Jr Trainer F 19
-530,1,Jr Trainer F 20,Jr Trainer F 20
-531,1,Jr Trainer F 21,Jr Trainer F 21
-532,1,Jr Trainer F 22,Jr Trainer F 22
-533,1,Jr Trainer M 1,Jr Trainer M 1
-534,1,Jr Trainer M 2,Jr Trainer M 2
-535,1,Jr Trainer M 3,Jr Trainer M 3
-536,1,Jr Trainer M 4,Jr Trainer M 4
-537,1,Jr Trainer M 5,Jr Trainer M 5
-538,1,Jr Trainer M 6,Jr Trainer M 6
-539,1,Jr Trainer M 7,Jr Trainer M 7
-540,1,Jr Trainer M 8,Jr Trainer M 8
-541,1,Jr Trainer M 9,Jr Trainer M 9
-542,1,Jr Trainer M 10,Jr Trainer M 10
-543,1,Juggler 1,Juggler 1
-544,1,Juggler 2,Juggler 2
-545,1,Juggler 3,Juggler 3
-546,1,Juggler 4,Juggler 4
-547,1,Juggler 5,Juggler 5
-548,1,Juggler 6,Juggler 6
-549,1,Juggler 7,Juggler 7
-550,1,Koga,Koga
-551,1,Lance,Lance
-552,1,Lass 1,Lass 1
-553,1,Lass 2,Lass 2
-554,1,Lass 3,Lass 3
-555,1,Lass 4,Lass 4
-556,1,Lass 5,Lass 5
-557,1,Lass 6,Lass 6
-558,1,Lass 7,Lass 7
-559,1,Lass 8,Lass 8
-560,1,Lass 9,Lass 9
-561,1,Lass 10,Lass 10
-562,1,Lass 11,Lass 11
-563,1,Lass 12,Lass 12
-564,1,Lass 13,Lass 13
-565,1,Lass 14,Lass 14
-566,1,Lass 15,Lass 15
-567,1,Lass 16,Lass 16
-568,1,Lass 17,Lass 17
-569,1,Lass 18,Lass 18
-570,1,Lorelei,Lorelei
-571,1,Lt. Surge,Lt. Surge
-572,1,Misty,Misty
-573,1,PokeManiac 1,PokeManiac 1
-574,1,PokeManiac 2,PokeManiac 2
-575,1,PokeManiac 3,PokeManiac 3
-576,1,PokeManiac 4,PokeManiac 4
-577,1,PokeManiac 5,PokeManiac 5
-578,1,PokeManiac 7,PokeManiac 7
-579,1,PokeManiac 6,PokeManiac 6
-580,1,Psychic 1,Psychic 1
-581,1,Psychic 2,Psychic 2
-582,1,Psychic 3,Psychic 3
-583,1,Psychic 4,Psychic 4
-584,1,Rival 1,Rival 1 - Charmander
-585,1,Rival 1,Rival 1 - Squirtle
-586,1,Rival 1,Rival 1 - Bulbasaur
-587,1,Rival 2,Rival 2 - Bulbasaur
-588,1,Rival 2,Rival 2 - Charmander
-589,1,Rival 2,Rival 2 - Squirtle
-590,1,Rival 3,Rival 3 - Squirtle
-591,1,Rival 3,Rival 3 - Charmander
-592,1,Rival 3,Rival 3 - Bulbasaur
-593,1,Rival 4,Rival 4 - Charmander
-594,1,Rival 4,Rival 4 - Squirtle
-595,1,Rival 4,Rival 4 - Bulbasaur
-596,1,Rival 5,Rival 5 - Charmander
-597,1,Rival 5,Rival 5 - Bulbasaur
-598,1,Rival 5,Rival 5 - Squirtle
-599,1,Rival 6,Rival 6 - Bulbasaur
-600,1,Rival 6,Rival 6 - Charmander
-601,1,Rival 6,Rival 6 - Squirtle
-602,1,Rival 7,Rival 7 - Squirtle
-603,1,Rival 7,Rival 7 - Bulbasaur
-604,1,Rival 7,Rival 7 - Charmander
-605,1,Rival 8,Rival 8 - Squirtle
-606,1,Rival 8,Rival 8 - Charmander
-607,1,Rival 8,Rival 8 - Bulbasaur
-608,1,Rocker 1,Rocker 1
-609,1,Rocker 2,Rocker 2
-610,1,Rocket 1,Rocket 1
-611,1,Rocket 2,Rocket 2
-612,1,Rocket 3,Rocket 3
-613,1,Rocket 4,Rocket 4
-614,1,Rocket 5,Rocket 5
-615,1,Rocket 6,Rocket 6
-616,1,Rocket 7,Rocket 7
-617,1,Rocket 8,Rocket 8
-618,1,Rocket 9,Rocket 9
-619,1,Rocket 10,Rocket 10
-620,1,Rocket 11,Rocket 11
-621,1,Rocket 12,Rocket 12
-622,1,Rocket 13,Rocket 13
-623,1,Rocket 14,Rocket 14
-624,1,Rocket 15,Rocket 15
-625,1,Rocket 16,Rocket 16
-626,1,Rocket 17,Rocket 17
-627,1,Rocket 18,Rocket 18
-628,1,Rocket 19,Rocket 19
-629,1,Rocket 20,Rocket 20
-630,1,Rocket 21,Rocket 21
-631,1,Rocket 22,Rocket 22
-632,1,Rocket 23,Rocket 23
-633,1,Rocket 24,Rocket 24
-634,1,Rocket 25,Rocket 25
-635,1,Rocket 26,Rocket 26
-636,1,Rocket 27,Rocket 27
-637,1,Rocket 28,Rocket 28
-638,1,Rocket 29,Rocket 29
-639,1,Rocket 30,Rocket 30
-640,1,Rocket 31,Rocket 31
-641,1,Rocket 32,Rocket 32
-642,1,Rocket 33,Rocket 33
-643,1,Rocket 34,Rocket 34
-644,1,Rocket 35,Rocket 35
-645,1,Rocket 36,Rocket 36
-646,1,Rocket 37,Rocket 37
-647,1,Sabrina,Sabrina
-648,1,Sailor 1,Sailor 1
-649,1,Sailor 2,Sailor 2
-650,1,Sailor 3,Sailor 3
-651,1,Sailor 4,Sailor 4
-652,1,Sailor 5,Sailor 5
-653,1,Sailor 6,Sailor 6
-654,1,Sailor 7,Sailor 7
-655,1,Sailor 8,Sailor 8
-656,1,Scientist 1,Scientist 1
-657,1,Scientist 2,Scientist 2
-658,1,Scientist 3,Scientist 3
-659,1,Scientist 4,Scientist 4
-660,1,Scientist 5,Scientist 5
-661,1,Scientist 6,Scientist 6
-662,1,Scientist 7,Scientist 7
-663,1,Scientist 8,Scientist 8
-664,1,Scientist 9,Scientist 9
-665,1,Scientist 10,Scientist 10
-666,1,Scientist 11,Scientist 11
-667,1,Scientist 12,Scientist 12
-668,1,Scientist 13,Scientist 13
-669,1,Scientist 14,Scientist 14
-670,1,Scientist 15,Scientist 15
-671,1,Scientist 16,Scientist 16
-672,1,Super Nerd 1,Super Nerd 1
-673,1,Super Nerd 2,Super Nerd 2
-674,1,Super Nerd 3,Super Nerd 3
-675,1,Super Nerd 4,Super Nerd 4
-676,1,Super Nerd 5,Super Nerd 5
-677,1,Super Nerd 6,Super Nerd 6
-678,1,Super Nerd 7,Super Nerd 7
-679,1,Super Nerd 8,Super Nerd 8
-680,1,Super Nerd 9,Super Nerd 9
-681,1,Swimmer 1,Swimmer 1
-682,1,Swimmer 2,Swimmer 2
-683,1,Swimmer 3,Swimmer 3
-684,1,Swimmer 4,Swimmer 4
-685,1,Swimmer 5,Swimmer 5
-686,1,Swimmer 6,Swimmer 6
-687,1,Swimmer 7,Swimmer 7
-688,1,Swimmer 8,Swimmer 8
-689,1,Swimmer 9,Swimmer 9
-690,1,Swimmer 10,Swimmer 10
-691,1,Swimmer 11,Swimmer 11
-692,1,Swimmer 12,Swimmer 12
-693,1,Swimmer 13,Swimmer 13
-694,1,Swimmer 14,Swimmer 14
-695,1,Swimmer 15,Swimmer 15
-696,1,Tamer 1,Tamer 1
-697,1,Tamer 2,Tamer 2
-698,1,Tamer 3,Tamer 3
-699,1,Tamer 4,Tamer 4
-700,1,Tamer 5,Tamer 5
-701,1,Youngster 1,Youngster 1
-702,1,Youngster 2,Youngster 2
-703,1,Youngster 3,Youngster 3
-704,1,Youngster 4,Youngster 4
-705,1,Youngster 5,Youngster 5
-706,1,Youngster 6,Youngster 6
-707,1,Youngster 7,Youngster 7
-708,1,Youngster 8,Youngster 8
-709,1,Youngster 9,Youngster 9
-710,1,Youngster 10,Youngster 10
-711,1,Youngster 11,Youngster 11
-712,1,Youngster 12,Youngster 12
-713,3,Agatha,Agatha
-714,3,Beauty 1,Beauty 1
-715,3,Beauty 2,Beauty 2
-716,3,Beauty 3,Beauty 3
-717,3,Beauty 4,Beauty 4
-718,3,Beauty 5,Beauty 5
-719,3,Beauty 6,Beauty 6
-720,3,Beauty 7,Beauty 7
-721,3,Beauty 8,Beauty 8
-722,3,Beauty 9,Beauty 9
-723,3,Beauty 10,Beauty 10
-724,3,Beauty 11,Beauty 11
-725,3,Beauty 12,Beauty 12
-726,3,Beauty 13,Beauty 13
-727,3,Beauty 14,Beauty 14
-728,3,Biker 1,Biker 1
-729,3,Biker 2,Biker 2
-730,3,Biker 3,Biker 3
-731,3,Biker 4,Biker 4
-732,3,Biker 5,Biker 5
-733,3,Biker 6,Biker 6
-734,3,Biker 7,Biker 7
-735,3,Biker 8,Biker 8
-736,3,Biker 9,Biker 9
-737,3,Biker 10,Biker 10
-738,3,Biker 11,Biker 11
-739,3,Biker 12,Biker 12
-740,3,Biker 13,Biker 13
-741,3,Biker 14,Biker 14
-742,3,Biker 15,Biker 15
-743,3,Bird Keeper 1,Bird Keeper 1
-744,3,Bird Keeper 2,Bird Keeper 2
-745,3,Bird Keeper 3,Bird Keeper 3
-746,3,Bird Keeper 4,Bird Keeper 4
-747,3,Bird Keeper 5,Bird Keeper 5
-748,3,Bird Keeper 6,Bird Keeper 6
-749,3,Bird Keeper 7,Bird Keeper 7
-750,3,Bird Keeper 8,Bird Keeper 8
-751,3,Bird Keeper 9,Bird Keeper 9
-752,3,Bird Keeper 10,Bird Keeper 10
-753,3,Bird Keeper 11,Bird Keeper 11
-754,3,Bird Keeper 12,Bird Keeper 12
-755,3,Bird Keeper 13,Bird Keeper 13
-756,3,Bird Keeper 14,Bird Keeper 14
-757,3,Bird Keeper 15,Bird Keeper 15
-758,3,Blackbelt 1,Blackbelt 1
-759,3,Blackbelt 2,Blackbelt 2
-760,3,Blackbelt 3,Blackbelt 3
-761,3,Blackbelt 4,Blackbelt 4
-762,3,Blackbelt 5,Blackbelt 5
-763,3,Blackbelt 6,Blackbelt 6
-764,3,Blackbelt 7,Blackbelt 7
-765,3,Blackbelt 8,Blackbelt 8
-766,3,Blackbelt 9,Blackbelt 9
-767,3,Blaine,Blaine
-768,3,Brock,Brock
-769,3,Bruno,Bruno
-770,3,Bug Catcher 1,Bug Catcher 1
-771,3,Bug Catcher 2,Bug Catcher 2
-772,3,Bug Catcher 3,Bug Catcher 3
-773,3,Bug Catcher 4,Bug Catcher 4
-774,3,Bug Catcher 5,Bug Catcher 5
-775,3,Bug Catcher 6,Bug Catcher 6
-776,3,Bug Catcher 7,Bug Catcher 7
-777,3,Bug Catcher 8,Bug Catcher 8
-778,3,Bug Catcher 9,Bug Catcher 9
-779,3,Bug Catcher 10,Bug Catcher 10
-780,3,Bug Catcher 11,Bug Catcher 11
-781,3,Bug Catcher 12,Bug Catcher 12
-782,3,Bug Catcher 13,Bug Catcher 13
-783,3,Bug Catcher 14,Bug Catcher 14
-784,3,Burglar 1,Burglar 1
-785,3,Burglar 2,Burglar 2
-786,3,Burglar 3,Burglar 3
-787,3,Burglar 4,Burglar 4
-788,3,Burglar 5,Burglar 5
-789,3,Burglar 6,Burglar 6
-790,3,Channeler 1,Channeler 1
-791,3,Channeler 2,Channeler 2
-792,3,Channeler 3,Channeler 3
-793,3,Channeler 4,Channeler 4
-794,3,Channeler 5,Channeler 5
-795,3,Channeler 6,Channeler 6
-796,3,Channeler 7,Channeler 7
-797,3,Channeler 8,Channeler 8
-798,3,Channeler 9,Channeler 9
-799,3,Channeler 10,Channeler 10
-800,3,Channeler 11,Channeler 11
-801,3,Channeler 12,Channeler 12
-802,3,Channeler 13,Channeler 13
-803,3,Channeler 14,Channeler 14
-804,3,Channeler 15,Channeler 15
-805,3,Channeler 16,Channeler 16
-806,3,Cooltrainer F 1,Cooltrainer F 1
-807,3,Cooltrainer F 2,Cooltrainer F 2
-808,3,Cooltrainer F 3,Cooltrainer F 3
-809,3,Cooltrainer F 4,Cooltrainer F 4
-810,3,Cooltrainer M 1,Cooltrainer M 1
-811,3,Cooltrainer M 2,Cooltrainer M 2
-812,3,Cooltrainer M 3,Cooltrainer M 3
-813,3,Cooltrainer M 4,Cooltrainer M 4
-814,3,Cooltrainer M 5,Cooltrainer M 5
-815,3,Cooltrainer M 6,Cooltrainer M 6
-816,3,Cue Ball 1,Cue Ball 1
-817,3,Cue Ball 2,Cue Ball 2
-818,3,Cue Ball 3,Cue Ball 3
-819,3,Cue Ball 4,Cue Ball 4
-820,3,Cue Ball 5,Cue Ball 5
-821,3,Cue Ball 6,Cue Ball 6
-822,3,Cue Ball 7,Cue Ball 7
-823,3,Cue Ball 8,Cue Ball 8
-824,3,Cue Ball 9,Cue Ball 9
-825,3,Engineer 1,Engineer 1
-826,3,Engineer 2,Engineer 2
-827,3,Erika,Erika
-828,3,Fisherman 1,Fisherman 1
-829,3,Fisherman 2,Fisherman 2
-830,3,Fisherman 3,Fisherman 3
-831,3,Fisherman 4,Fisherman 4
-832,3,Fisherman 5,Fisherman 5
-833,3,Fisherman 6,Fisherman 6
-834,3,Fisherman 7,Fisherman 7
-835,3,Fisherman 8,Fisherman 8
-836,3,Fisherman 9,Fisherman 9
-837,3,Fisherman 10,Fisherman 10
-838,3,Fisherman 11,Fisherman 11
-839,3,Gambler 1,Gambler 1
-840,3,Gambler 2,Gambler 2
-841,3,Gambler 3,Gambler 3
-842,3,Gambler 4,Gambler 4
-843,3,Gambler 5,Gambler 5
-844,3,Gambler 6,Gambler 6
-845,3,Gentleman 1,Gentleman 1
-846,3,Gentleman 2,Gentleman 2
-847,3,Gentleman 3,Gentleman 3
-848,3,Gentleman 4,Gentleman 4
-849,3,Gentleman 5,Gentleman 5
-850,3,Giovanni 1,Giovanni 1
-851,3,Giovanni 2,Giovanni 2
-852,3,Giovanni 3,Giovanni 3
-853,3,Hiker 1,Hiker 1
-854,3,Hiker 2,Hiker 2
-855,3,Hiker 3,Hiker 3
-856,3,Hiker 4,Hiker 4
-857,3,Hiker 5,Hiker 5
-858,3,Hiker 6,Hiker 6
-859,3,Hiker 7,Hiker 7
-860,3,Hiker 8,Hiker 8
-861,3,Hiker 10,Hiker 10
-862,3,Hiker 11,Hiker 11
-863,3,Hiker 12,Hiker 12
-864,3,Hiker 13,Hiker 13
-865,3,Hiker 14,Hiker 14
-866,3,Hiker 15,Hiker 15
-867,3,Hiker 9,Hiker 9
-868,3,Jessie & James 1,Jessie & James 1
-869,3,Jessie & James 2,Jessie & James 2
-870,3,Jessie & James 3,Jessie & James 3
-871,3,Jessie & James 4,Jessie & James 4
-872,3,Jr Trainer F 1,Jr Trainer F 1
-873,3,Jr Trainer F 2,Jr Trainer F 2
-874,3,Jr Trainer F 3,Jr Trainer F 3
-875,3,Jr Trainer F 4,Jr Trainer F 4
-876,3,Jr Trainer F 5,Jr Trainer F 5
-877,3,Jr Trainer F 6,Jr Trainer F 6
-878,3,Jr Trainer F 7,Jr Trainer F 7
-879,3,Jr Trainer F 8,Jr Trainer F 8
-880,3,Jr Trainer F 9,Jr Trainer F 9
-881,3,Jr Trainer F 10,Jr Trainer F 10
-882,3,Jr Trainer F 11,Jr Trainer F 11
-883,3,Jr Trainer F 12,Jr Trainer F 12
-884,3,Jr Trainer F 13,Jr Trainer F 13
-885,3,Jr Trainer F 14,Jr Trainer F 14
-886,3,Jr Trainer F 15,Jr Trainer F 15
-887,3,Jr Trainer F 16,Jr Trainer F 16
-888,3,Jr Trainer F 17,Jr Trainer F 17
-889,3,Jr Trainer F 18,Jr Trainer F 18
-890,3,Jr Trainer F 19,Jr Trainer F 19
-891,3,Jr Trainer F 20,Jr Trainer F 20
-892,3,Jr Trainer F 21,Jr Trainer F 21
-893,3,Jr Trainer F 22,Jr Trainer F 22
-894,3,Jr Trainer M 1,Jr Trainer M 1
-895,3,Jr Trainer M 2,Jr Trainer M 2
-896,3,Jr Trainer M 3,Jr Trainer M 3
-897,3,Jr Trainer M 4,Jr Trainer M 4
-898,3,Jr Trainer M 5,Jr Trainer M 5
-899,3,Jr Trainer M 6,Jr Trainer M 6
-900,3,Jr Trainer M 7,Jr Trainer M 7
-901,3,Jr Trainer M 8,Jr Trainer M 8
-902,3,Jr Trainer M 9,Jr Trainer M 9
-903,3,Juggler 1,Juggler 1
-904,3,Juggler 2,Juggler 2
-905,3,Juggler 3,Juggler 3
-906,3,Juggler 4,Juggler 4
-907,3,Juggler 5,Juggler 5
-908,3,Juggler 6,Juggler 6
-909,3,Juggler 7,Juggler 7
-910,3,Koga,Koga
-911,3,Lance,Lance
-912,3,Lass 1,Lass 1
-913,3,Lass 2,Lass 2
-914,3,Lass 3,Lass 3
-915,3,Lass 4,Lass 4
-916,3,Lass 5,Lass 5
-917,3,Lass 6,Lass 6
-918,3,Lass 7,Lass 7
-919,3,Lass 8,Lass 8
-920,3,Lass 9,Lass 9
-921,3,Lass 10,Lass 10
-922,3,Lass 11,Lass 11
-923,3,Lass 12,Lass 12
-924,3,Lass 13,Lass 13
-925,3,Lass 14,Lass 14
-926,3,Lass 15,Lass 15
-927,3,Lass 16,Lass 16
-928,3,Lass 17,Lass 17
-929,3,Lass 18,Lass 18
-930,3,Lass 19,Lass 19
-931,3,Lorelei,Lorelei
-932,3,Lt. Surge,Lt. Surge
-933,3,Misty,Misty
-934,3,PokeManiac 1,PokeManiac 1
-935,3,PokeManiac 2,PokeManiac 2
-936,3,PokeManiac 3,PokeManiac 3
-937,3,PokeManiac 4,PokeManiac 4
-938,3,PokeManiac 5,PokeManiac 5
-939,3,PokeManiac 7,PokeManiac 7
-940,3,PokeManiac 6,PokeManiac 6
-941,3,Psychic 1,Psychic 1
-942,3,Psychic 2,Psychic 2
-943,3,Psychic 3,Psychic 3
-944,3,Psychic 4,Psychic 4
-945,3,Rival 1,Rival 1
-946,3,Rival 2,Rival 2
-947,3,Rival 3,Rival 3
-948,3,Rival 4,Rival 4
-949,3,Rival 5,Rival 5 - Won Lab Or R22
-950,3,Rival 5,Rival 5 - Won Lab And R22
-951,3,Rival 5,Rival 5 - Lost Lab And R22
-952,3,Rival 6,Rival 6 - Won Lab Or R22
-953,3,Rival 6,Rival 6 - Won Lab And R22
-954,3,Rival 6,Rival 6 - Lost Lab And R22
-955,3,Rival 7,Rival 7 - Lost Lab And R22
-956,3,Rival 7,Rival 7 - Won Lab Or R22
-957,3,Rival 7,Rival 7 - Won Lab And R22
-958,3,Rival 8,Rival 8 - Won Lab And R22
-959,3,Rival 8,Rival 8 - Won Lab Or R22
-960,3,Rival 8,Rival 8 - Lost Lab And R22
-961,3,Rocker 1,Rocker 1
-962,3,Rocker 2,Rocker 2
-963,3,Rocket 1,Rocket 1
-964,3,Rocket 2,Rocket 2
-965,3,Rocket 3,Rocket 3
-966,3,Rocket 4,Rocket 4
-967,3,Rocket 5,Rocket 5
-968,3,Rocket 6,Rocket 6
-969,3,Rocket 7,Rocket 7
-970,3,Rocket 8,Rocket 8
-971,3,Rocket 9,Rocket 9
-972,3,Rocket 10,Rocket 10
-973,3,Rocket 11,Rocket 11
-974,3,Rocket 12,Rocket 12
-975,3,Rocket 13,Rocket 13
-976,3,Rocket 14,Rocket 14
-977,3,Rocket 15,Rocket 15
-978,3,Rocket 16,Rocket 16
-979,3,Rocket 17,Rocket 17
-980,3,Rocket 18,Rocket 18
-981,3,Rocket 19,Rocket 19
-982,3,Rocket 20,Rocket 20
-983,3,Rocket 21,Rocket 21
-984,3,Rocket 22,Rocket 22
-985,3,Rocket 23,Rocket 23
-986,3,Rocket 24,Rocket 24
-987,3,Rocket 25,Rocket 25
-988,3,Rocket 26,Rocket 26
-989,3,Rocket 27,Rocket 27
-990,3,Rocket 28,Rocket 28
-991,3,Rocket 29,Rocket 29
-992,3,Sabrina,Sabrina
-993,3,Sailor 1,Sailor 1
-994,3,Sailor 2,Sailor 2
-995,3,Sailor 3,Sailor 3
-996,3,Sailor 4,Sailor 4
-997,3,Sailor 5,Sailor 5
-998,3,Sailor 6,Sailor 6
-999,3,Sailor 7,Sailor 7
-1000,3,Sailor 8,Sailor 8
-1001,3,Scientist 1,Scientist 1
-1002,3,Scientist 2,Scientist 2
-1003,3,Scientist 3,Scientist 3
-1004,3,Scientist 4,Scientist 4
-1005,3,Scientist 5,Scientist 5
-1006,3,Scientist 6,Scientist 6
-1007,3,Scientist 7,Scientist 7
-1008,3,Scientist 8,Scientist 8
-1009,3,Scientist 9,Scientist 9
-1010,3,Scientist 10,Scientist 10
-1011,3,Scientist 11,Scientist 11
-1012,3,Scientist 12,Scientist 12
-1013,3,Scientist 13,Scientist 13
-1014,3,Scientist 14,Scientist 14
-1015,3,Scientist 15,Scientist 15
-1016,3,Scientist 16,Scientist 16
-1017,3,Super Nerd 1,Super Nerd 1
-1018,3,Super Nerd 2,Super Nerd 2
-1019,3,Super Nerd 3,Super Nerd 3
-1020,3,Super Nerd 4,Super Nerd 4
-1021,3,Super Nerd 5,Super Nerd 5
-1022,3,Super Nerd 6,Super Nerd 6
-1023,3,Super Nerd 7,Super Nerd 7
-1024,3,Super Nerd 8,Super Nerd 8
-1025,3,Super Nerd 9,Super Nerd 9
-1026,3,Swimmer 1,Swimmer 1
-1027,3,Swimmer 2,Swimmer 2
-1028,3,Swimmer 3,Swimmer 3
-1029,3,Swimmer 4,Swimmer 4
-1030,3,Swimmer 5,Swimmer 5
-1031,3,Swimmer 6,Swimmer 6
-1032,3,Swimmer 7,Swimmer 7
-1033,3,Swimmer 8,Swimmer 8
-1034,3,Swimmer 9,Swimmer 9
-1035,3,Swimmer 10,Swimmer 10
-1036,3,Swimmer 11,Swimmer 11
-1037,3,Swimmer 12,Swimmer 12
-1038,3,Swimmer 13,Swimmer 13
-1039,3,Swimmer 14,Swimmer 14
-1040,3,Swimmer 15,Swimmer 15
-1041,3,Tamer 1,Tamer 1
-1042,3,Tamer 2,Tamer 2
-1043,3,Tamer 3,Tamer 3
-1044,3,Tamer 4,Tamer 4
-1045,3,Tamer 5,Tamer 5
-1046,3,Youngster 1,Youngster 1
-1047,3,Youngster 2,Youngster 2
-1048,3,Youngster 3,Youngster 3
-1049,3,Youngster 4,Youngster 4
-1050,3,Youngster 5,Youngster 5
-1051,3,Youngster 6,Youngster 6
-1052,3,Youngster 7,Youngster 7
-1053,3,Youngster 8,Youngster 8
-1054,3,Youngster 9,Youngster 9
-1055,3,Youngster 10,Youngster 10
-1056,3,Youngster 11,Youngster 11
-1057,3,Youngster 12,Youngster 12
-1058,3,Youngster 13,Youngster 13
+"pk_trainers_id","fk_games_id","fk_trainer_types_id","short_name","long_name"
+1,2,1,Agatha,Agatha - Indigo Plateau (Blue)
+713,3,1,Agatha,Agatha - Indigo Plateau (Yellow)
+357,1,1,Agatha,Agatha - Indigo Plateau (Red)
+5,2,2,Beauty 4,Beauty - Route 13 (Blue)
+12,2,2,Beauty 11,Beauty - Route 20 (Blue)
+362,1,2,Beauty 5,Beauty - Route 13 (Red)
+363,1,2,Beauty 6,Beauty - Route 15 (Red)
+715,3,2,Beauty 2,Beauty - Celadon City (Yellow)
+722,3,2,Beauty 9,Beauty - Route 19 (Yellow)
+368,1,2,Beauty 11,Beauty - Route 20 (Red)
+366,1,2,Beauty 9,Beauty - Route 19 (Red)
+6,2,2,Beauty 5,Beauty - Route 13 (Blue)
+719,3,2,Beauty 6,Beauty - Route 15 (Yellow)
+365,1,2,Beauty 8,Beauty - Route 19 (Red)
+15,2,2,Beauty 14,Beauty - Route 20 (Blue)
+726,3,2,Beauty 13,Beauty - Route 20 (Yellow)
+11,2,2,Beauty 10,Beauty - Route 19 (Blue)
+723,3,2,Beauty 10,Beauty - Route 19 (Yellow)
+13,2,2,Beauty 12,Beauty - Route 20 (Blue)
+371,1,2,Beauty 14,Beauty - Route 20 (Red)
+4,2,2,Beauty 3,Beauty - Celadon City (Blue)
+3,2,2,Beauty 2,Beauty - Celadon City (Blue)
+370,1,2,Beauty 13,Beauty - Route 20 (Red)
+720,3,2,Beauty 7,Beauty - Route 15 (Yellow)
+718,3,2,Beauty 5,Beauty - Route 13 (Yellow)
+359,1,2,Beauty 2,Beauty - Celadon City (Red)
+364,1,2,Beauty 7,Beauty - Route 15 (Red)
+361,1,2,Beauty 4,Beauty - Route 13 (Red)
+724,3,2,Beauty 11,Beauty - Route 20 (Yellow)
+721,3,2,Beauty 8,Beauty - Route 19 (Yellow)
+360,1,2,Beauty 3,Beauty - Celadon City (Red)
+717,3,2,Beauty 4,Beauty - Route 13 (Yellow)
+7,2,2,Beauty 6,Beauty - Route 15 (Blue)
+725,3,2,Beauty 12,Beauty - Route 20 (Yellow)
+14,2,2,Beauty 13,Beauty - Route 20 (Blue)
+9,2,2,Beauty 8,Beauty - Route 19 (Blue)
+716,3,2,Beauty 3,Beauty - Celadon City (Yellow)
+8,2,2,Beauty 7,Beauty - Route 15 (Blue)
+369,1,2,Beauty 12,Beauty - Route 20 (Red)
+2,2,2,Beauty 1,Beauty - Celadon City (Blue)
+358,1,2,Beauty 1,Beauty - Celadon City (Red)
+10,2,2,Beauty 9,Beauty - Route 19 (Blue)
+714,3,2,Beauty 1,Beauty - Celadon City (Yellow)
+367,1,2,Beauty 10,Beauty - Route 19 (Red)
+727,3,2,Beauty 14,Beauty - Route 20 (Yellow)
+21,2,3,Biker 6,Biker - Route 15 (Blue)
+22,2,3,Biker 7,Biker - Route 15 (Blue)
+737,3,3,Biker 10,Biker - Route 16 (Yellow)
+739,3,3,Biker 12,Biker - Route 17 (Yellow)
+740,3,3,Biker 13,Biker - Route 17 (Yellow)
+730,3,3,Biker 3,Biker - Route 14 (Yellow)
+23,2,3,Biker 8,Biker - Route 16 (Blue)
+16,2,3,Biker 1,Biker - Route 13 (Blue)
+20,2,3,Biker 5,Biker - Route 14 (Blue)
+731,3,3,Biker 4,Biker - Route 14 (Yellow)
+373,1,3,Biker 2,Biker - Route 14 (Red)
+732,3,3,Biker 5,Biker - Route 14 (Yellow)
+729,3,3,Biker 2,Biker - Route 14 (Yellow)
+379,1,3,Biker 8,Biker - Route 16 (Red)
+26,2,3,Biker 11,Biker - Route 17 (Blue)
+385,1,3,Biker 14,Biker - Route 17 (Red)
+24,2,3,Biker 9,Biker - Route 16 (Blue)
+381,1,3,Biker 10,Biker - Route 16 (Red)
+383,1,3,Biker 12,Biker - Route 17 (Red)
+30,2,3,Biker 15,Biker - Route 17 (Blue)
+735,3,3,Biker 8,Biker - Route 16 (Yellow)
+375,1,3,Biker 4,Biker - Route 14 (Red)
+27,2,3,Biker 12,Biker - Route 17 (Blue)
+378,1,3,Biker 7,Biker - Route 15 (Red)
+738,3,3,Biker 11,Biker - Route 17 (Yellow)
+728,3,3,Biker 1,Biker - Route 13 (Yellow)
+28,2,3,Biker 13,Biker - Route 17 (Blue)
+733,3,3,Biker 6,Biker - Route 15 (Yellow)
+742,3,3,Biker 15,Biker - Route 17 (Yellow)
+736,3,3,Biker 9,Biker - Route 16 (Yellow)
+380,1,3,Biker 9,Biker - Route 16 (Red)
+18,2,3,Biker 3,Biker - Route 14 (Blue)
+25,2,3,Biker 10,Biker - Route 16 (Blue)
+377,1,3,Biker 6,Biker - Route 15 (Red)
+382,1,3,Biker 11,Biker - Route 17 (Red)
+372,1,3,Biker 1,Biker - Route 13 (Red)
+386,1,3,Biker 15,Biker - Route 17 (Red)
+19,2,3,Biker 4,Biker - Route 14 (Blue)
+29,2,3,Biker 14,Biker - Route 17 (Blue)
+734,3,3,Biker 7,Biker - Route 15 (Yellow)
+17,2,3,Biker 2,Biker - Route 14 (Blue)
+374,1,3,Biker 3,Biker - Route 14 (Red)
+384,1,3,Biker 13,Biker - Route 17 (Red)
+376,1,3,Biker 5,Biker - Route 14 (Red)
+741,3,3,Biker 14,Biker - Route 17 (Yellow)
+33,2,4,Bird Keeper 3,Bird Keeper - Route 13 (Blue)
+38,2,4,Bird Keeper 8,Bird Keeper - Route 14 (Blue)
+32,2,4,Bird Keeper 2,Bird Keeper - Route 13 (Blue)
+401,1,4,Bird Keeper 15,Bird Keeper - Route 20 (Red)
+391,1,4,Bird Keeper 5,Bird Keeper - Route 14 (Red)
+400,1,4,Bird Keeper 14,Bird Keeper - Route 18 (Red)
+40,2,4,Bird Keeper 10,Bird Keeper - Route 15 (Blue)
+743,3,4,Bird Keeper 1,Bird Keeper - Route 13 (Yellow)
+396,1,4,Bird Keeper 10,Bird Keeper - Route 15 (Red)
+44,2,4,Bird Keeper 14,Bird Keeper - Route 18 (Blue)
+747,3,4,Bird Keeper 5,Bird Keeper - Route 14 (Yellow)
+397,1,4,Bird Keeper 11,Bird Keeper - Route 15 (Red)
+754,3,4,Bird Keeper 12,Bird Keeper - Route 18 (Yellow)
+394,1,4,Bird Keeper 8,Bird Keeper - Route 14 (Red)
+389,1,4,Bird Keeper 3,Bird Keeper - Route 13 (Red)
+756,3,4,Bird Keeper 14,Bird Keeper - Route 18 (Yellow)
+45,2,4,Bird Keeper 15,Bird Keeper - Route 20 (Blue)
+42,2,4,Bird Keeper 12,Bird Keeper - Route 18 (Blue)
+387,1,4,Bird Keeper 1,Bird Keeper - Route 13 (Red)
+43,2,4,Bird Keeper 13,Bird Keeper - Route 18 (Blue)
+388,1,4,Bird Keeper 2,Bird Keeper - Route 13 (Red)
+390,1,4,Bird Keeper 4,Bird Keeper - Route 14 (Red)
+37,2,4,Bird Keeper 7,Bird Keeper - Route 14 (Blue)
+748,3,4,Bird Keeper 6,Bird Keeper - Route 14 (Yellow)
+751,3,4,Bird Keeper 9,Bird Keeper - Route 14 (Yellow)
+393,1,4,Bird Keeper 7,Bird Keeper - Route 14 (Red)
+749,3,4,Bird Keeper 7,Bird Keeper - Route 14 (Yellow)
+753,3,4,Bird Keeper 11,Bird Keeper - Route 15 (Yellow)
+35,2,4,Bird Keeper 5,Bird Keeper - Route 14 (Blue)
+41,2,4,Bird Keeper 11,Bird Keeper - Route 15 (Blue)
+34,2,4,Bird Keeper 4,Bird Keeper - Route 14 (Blue)
+745,3,4,Bird Keeper 3,Bird Keeper - Route 13 (Yellow)
+36,2,4,Bird Keeper 6,Bird Keeper - Route 14 (Blue)
+39,2,4,Bird Keeper 9,Bird Keeper - Route 14 (Blue)
+399,1,4,Bird Keeper 13,Bird Keeper - Route 18 (Red)
+755,3,4,Bird Keeper 13,Bird Keeper - Route 18 (Yellow)
+757,3,4,Bird Keeper 15,Bird Keeper - Route 20 (Yellow)
+398,1,4,Bird Keeper 12,Bird Keeper - Route 18 (Red)
+31,2,4,Bird Keeper 1,Bird Keeper - Route 13 (Blue)
+744,3,4,Bird Keeper 2,Bird Keeper - Route 13 (Yellow)
+752,3,4,Bird Keeper 10,Bird Keeper - Route 15 (Yellow)
+746,3,4,Bird Keeper 4,Bird Keeper - Route 14 (Yellow)
+392,1,4,Bird Keeper 6,Bird Keeper - Route 14 (Red)
+750,3,4,Bird Keeper 8,Bird Keeper - Route 14 (Yellow)
+395,1,4,Bird Keeper 9,Bird Keeper - Route 14 (Red)
+47,2,5,Blackbelt 2,Blackbelt - Fighting Dojo (Blue)
+766,3,5,Blackbelt 9,Blackbelt - Victory Road – 2F (Yellow)
+762,3,5,Blackbelt 5,Blackbelt - Fighting Dojo (Yellow)
+403,1,5,Blackbelt 2,Blackbelt - Fighting Dojo (Red)
+406,1,5,Blackbelt 5,Blackbelt - Fighting Dojo (Red)
+50,2,5,Blackbelt 5,Blackbelt - Fighting Dojo (Blue)
+404,1,5,Blackbelt 3,Blackbelt - Fighting Dojo (Red)
+758,3,5,Blackbelt 1,Blackbelt - Fighting Dojo (Yellow)
+764,3,5,Blackbelt 7,Blackbelt - Viridian City (Yellow)
+53,2,5,Blackbelt 8,Blackbelt - Viridian City (Blue)
+51,2,5,Blackbelt 6,Blackbelt - Viridian City (Blue)
+759,3,5,Blackbelt 2,Blackbelt - Fighting Dojo (Yellow)
+760,3,5,Blackbelt 3,Blackbelt - Fighting Dojo (Yellow)
+52,2,5,Blackbelt 7,Blackbelt - Viridian City (Blue)
+48,2,5,Blackbelt 3,Blackbelt - Fighting Dojo (Blue)
+763,3,5,Blackbelt 6,Blackbelt - Viridian City (Yellow)
+410,1,5,Blackbelt 9,Blackbelt - Victory Road – 2F (Red)
+54,2,5,Blackbelt 9,Blackbelt - Victory Road – 2F (Blue)
+402,1,5,Blackbelt 1,Blackbelt - Fighting Dojo (Red)
+49,2,5,Blackbelt 4,Blackbelt - Fighting Dojo (Blue)
+405,1,5,Blackbelt 4,Blackbelt - Fighting Dojo (Red)
+761,3,5,Blackbelt 4,Blackbelt - Fighting Dojo (Yellow)
+407,1,5,Blackbelt 6,Blackbelt - Viridian City (Red)
+765,3,5,Blackbelt 8,Blackbelt - Viridian City (Yellow)
+409,1,5,Blackbelt 8,Blackbelt - Viridian City (Red)
+408,1,5,Blackbelt 7,Blackbelt - Viridian City (Red)
+46,2,5,Blackbelt 1,Blackbelt - Fighting Dojo (Blue)
+55,2,6,Blaine,Blaine - Cinnabar Island (Blue)
+767,3,6,Blaine,Blaine - Cinnabar Island (Yellow)
+411,1,6,Blaine,Blaine - Cinnabar Island (Red)
+56,2,7,Brock,Brock - Pewter City (Blue)
+768,3,7,Brock,Brock - Pewter City (Yellow)
+412,1,7,Brock,Brock - Pewter City (Red)
+413,1,8,Bruno,Bruno - Indigo Plateau (Red)
+57,2,8,Bruno,Bruno - Indigo Plateau (Blue)
+769,3,8,Bruno,Bruno - Indigo Plateau (Yellow)
+782,3,9,Bug Catcher 13,Bug Catcher - Route 9 (Yellow)
+69,2,9,Bug Catcher 12,Bug Catcher - Route 9 (Blue)
+771,3,9,Bug Catcher 2,Bug Catcher - Viridian Forest (Yellow)
+777,3,9,Bug Catcher 8,Bug Catcher - Mt. Moon - 1F (Yellow)
+772,3,9,Bug Catcher 3,Bug Catcher - Viridian Forest (Yellow)
+773,3,9,Bug Catcher 4,Bug Catcher - Viridian Forest (Yellow)
+66,2,9,Bug Catcher 9,Bug Catcher - Route 24 (Blue)
+68,2,9,Bug Catcher 11,Bug Catcher - Route 6 (Blue)
+423,1,9,Bug Catcher 10,Bug Catcher - Route 6 (Red)
+418,1,9,Bug Catcher 5,Bug Catcher - Route 3 (Red)
+415,1,9,Bug Catcher 2,Bug Catcher - Viridian Forest (Red)
+63,2,9,Bug Catcher 6,Bug Catcher - Route 3 (Blue)
+60,2,9,Bug Catcher 3,Bug Catcher - Viridian Forest (Blue)
+58,2,9,Bug Catcher 1,Bug Catcher - Viridian Forest (Blue)
+424,1,9,Bug Catcher 11,Bug Catcher - Route 6 (Red)
+781,3,9,Bug Catcher 12,Bug Catcher - Route 6 (Yellow)
+61,2,9,Bug Catcher 4,Bug Catcher - Route 3 (Blue)
+414,1,9,Bug Catcher 1,Bug Catcher - Viridian Forest (Red)
+770,3,9,Bug Catcher 1,Bug Catcher - Viridian Forest (Yellow)
+783,3,9,Bug Catcher 14,Bug Catcher - Route 9 (Yellow)
+419,1,9,Bug Catcher 6,Bug Catcher - Route 3 (Red)
+70,2,9,Bug Catcher 13,Bug Catcher - Route 9 (Blue)
+774,3,9,Bug Catcher 5,Bug Catcher - Route 3 (Yellow)
+59,2,9,Bug Catcher 2,Bug Catcher - Viridian Forest (Blue)
+416,1,9,Bug Catcher 3,Bug Catcher - Viridian Forest (Red)
+780,3,9,Bug Catcher 11,Bug Catcher - Route 6 (Yellow)
+422,1,9,Bug Catcher 9,Bug Catcher - Route 24 (Red)
+425,1,9,Bug Catcher 12,Bug Catcher - Route 9 (Red)
+62,2,9,Bug Catcher 5,Bug Catcher - Route 3 (Blue)
+778,3,9,Bug Catcher 9,Bug Catcher - Mt. Moon - 1F (Yellow)
+420,1,9,Bug Catcher 7,Bug Catcher - Mt. Moon - 1F (Red)
+417,1,9,Bug Catcher 4,Bug Catcher - Route 3 (Red)
+65,2,9,Bug Catcher 8,Bug Catcher - Mt. Moon - 1F (Blue)
+64,2,9,Bug Catcher 7,Bug Catcher - Mt. Moon - 1F (Blue)
+775,3,9,Bug Catcher 6,Bug Catcher - Route 3 (Yellow)
+426,1,9,Bug Catcher 13,Bug Catcher - Route 9 (Red)
+776,3,9,Bug Catcher 7,Bug Catcher - Route 3 (Yellow)
+779,3,9,Bug Catcher 10,Bug Catcher - Route 24 (Yellow)
+421,1,9,Bug Catcher 8,Bug Catcher - Mt. Moon - 1F (Red)
+67,2,9,Bug Catcher 10,Bug Catcher - Route 6 (Blue)
+785,3,10,Burglar 2,Burglar - Pokemon Mansion - 2F (Yellow)
+71,2,10,Burglar 1,Burglar - Pokemon Mansion - 3F (Blue)
+786,3,10,Burglar 3,Burglar - Pokemon Mansion - B1F (Yellow)
+76,2,10,Burglar 6,Burglar - Cinnabar Island (Blue)
+784,3,10,Burglar 1,Burglar - Pokemon Mansion - 3F (Yellow)
+72,2,10,Burglar 2,Burglar - Pokemon Mansion - 2F (Blue)
+74,2,10,Burglar 4,Burglar - Cinnabar Island (Blue)
+430,1,10,Burglar 4,Burglar - Cinnabar Island (Red)
+789,3,10,Burglar 6,Burglar - Cinnabar Island (Yellow)
+73,2,10,Burglar 3,Burglar - Pokemon Mansion - B1F (Blue)
+429,1,10,Burglar 3,Burglar - Pokemon Mansion - B1F (Red)
+428,1,10,Burglar 2,Burglar - Pokemon Mansion - 2F (Red)
+787,3,10,Burglar 4,Burglar - Cinnabar Island (Yellow)
+75,2,10,Burglar 5,Burglar - Cinnabar Island (Blue)
+432,1,10,Burglar 6,Burglar - Cinnabar Island (Red)
+788,3,10,Burglar 5,Burglar - Cinnabar Island (Yellow)
+431,1,10,Burglar 5,Burglar - Cinnabar Island (Red)
+427,1,10,Burglar 1,Burglar - Pokemon Mansion - 3F (Red)
+801,3,11,Channeler 12,Channeler - Pokemon Tower - 6F (Yellow)
+77,2,11,Channeler 1,Channeler - Pokemon Tower - 3F (Blue)
+794,3,11,Channeler 5,Channeler - Pokemon Tower - 4F (Yellow)
+85,2,11,Channeler 9,Channeler - Pokemon Tower - 5F (Blue)
+805,3,11,Channeler 16,Channeler - Saffron City (Yellow)
+800,3,11,Channeler 11,Channeler - Pokemon Tower - 6F (Yellow)
+795,3,11,Channeler 6,Channeler - Pokemon Tower - 4F (Yellow)
+88,2,11,Channeler 12,Channeler - Pokemon Tower - 6F (Blue)
+86,2,11,Channeler 10,Channeler - Pokemon Tower - 5F (Blue)
+435,1,11,Channeler 3,Channeler - Pokemon Tower - 3F (Red)
+79,2,11,Channeler 3,Channeler - Pokemon Tower - 3F (Blue)
+791,3,11,Channeler 2,Channeler - Pokemon Tower - 3F (Yellow)
+446,1,11,Channeler 14,Channeler - Saffron City (Red)
+792,3,11,Channeler 3,Channeler - Pokemon Tower - 3F (Yellow)
+436,1,11,Channeler 4,Channeler - Pokemon Tower - 4F (Red)
+437,1,11,Channeler 5,Channeler - Pokemon Tower - 4F (Red)
+441,1,11,Channeler 9,Channeler - Pokemon Tower - 5F (Red)
+89,2,11,Channeler 13,Channeler - Pokemon Tower - 6F (Blue)
+444,1,11,Channeler 12,Channeler - Pokemon Tower - 6F (Red)
+797,3,11,Channeler 8,Channeler - Pokemon Tower - 5F (Yellow)
+90,2,11,Channeler 14,Channeler - Saffron City (Blue)
+798,3,11,Channeler 9,Channeler - Pokemon Tower - 5F (Yellow)
+802,3,11,Channeler 13,Channeler - Pokemon Tower - 6F (Yellow)
+440,1,11,Channeler 8,Channeler - Pokemon Tower - 5F (Red)
+92,2,11,Channeler 16,Channeler - Saffron City (Blue)
+438,1,11,Channeler 6,Channeler - Pokemon Tower - 4F (Red)
+83,2,11,Channeler 7,Channeler - Pokemon Tower - 5F (Blue)
+448,1,11,Channeler 16,Channeler - Saffron City (Red)
+80,2,11,Channeler 4,Channeler - Pokemon Tower - 4F (Blue)
+78,2,11,Channeler 2,Channeler - Pokemon Tower - 3F (Blue)
+81,2,11,Channeler 5,Channeler - Pokemon Tower - 4F (Blue)
+796,3,11,Channeler 7,Channeler - Pokemon Tower - 5F (Yellow)
+803,3,11,Channeler 14,Channeler - Saffron City (Yellow)
+84,2,11,Channeler 8,Channeler - Pokemon Tower - 5F (Blue)
+790,3,11,Channeler 1,Channeler - Pokemon Tower - 3F (Yellow)
+439,1,11,Channeler 7,Channeler - Pokemon Tower - 5F (Red)
+445,1,11,Channeler 13,Channeler - Pokemon Tower - 6F (Red)
+443,1,11,Channeler 11,Channeler - Pokemon Tower - 6F (Red)
+799,3,11,Channeler 10,Channeler - Pokemon Tower - 5F (Yellow)
+793,3,11,Channeler 4,Channeler - Pokemon Tower - 4F (Yellow)
+82,2,11,Channeler 6,Channeler - Pokemon Tower - 4F (Blue)
+442,1,11,Channeler 10,Channeler - Pokemon Tower - 5F (Red)
+447,1,11,Channeler 15,Channeler - Saffron City (Red)
+434,1,11,Channeler 2,Channeler - Pokemon Tower - 3F (Red)
+87,2,11,Channeler 11,Channeler - Pokemon Tower - 6F (Blue)
+433,1,11,Channeler 1,Channeler - Pokemon Tower - 3F (Red)
+91,2,11,Channeler 15,Channeler - Saffron City (Blue)
+804,3,11,Channeler 15,Channeler - Saffron City (Yellow)
+451,1,12,Cooltrainer F 3,Cooltrainer F - Victory Road – 3F (Red)
+96,2,12,Cooltrainer F 4,Cooltrainer F - Victory Road – 3F (Blue)
+809,3,12,Cooltrainer F 4,Cooltrainer F - Victory Road – 3F (Yellow)
+806,3,12,Cooltrainer F 1,Cooltrainer F - Celadon City (Yellow)
+95,2,12,Cooltrainer F 3,Cooltrainer F - Victory Road – 3F (Blue)
+94,2,12,Cooltrainer F 2,Cooltrainer F - Victory Road – 1F (Blue)
+449,1,12,Cooltrainer F 1,Cooltrainer F - Celadon City (Red)
+808,3,12,Cooltrainer F 3,Cooltrainer F - Victory Road – 3F (Yellow)
+450,1,12,Cooltrainer F 2,Cooltrainer F - Victory Road – 1F (Red)
+807,3,12,Cooltrainer F 2,Cooltrainer F - Victory Road – 1F (Yellow)
+93,2,12,Cooltrainer F 1,Cooltrainer F - Celadon City (Blue)
+452,1,12,Cooltrainer F 4,Cooltrainer F - Victory Road – 3F (Red)
+102,2,13,Cooltrainer M 6,Cooltrainer M - Victory Road – 3F (Blue)
+456,1,13,Cooltrainer M 4,Cooltrainer M - Victory Road – 1F (Red)
+458,1,13,Cooltrainer M 6,Cooltrainer M - Victory Road – 3F (Red)
+98,2,13,Cooltrainer M 2,Cooltrainer M - Viridian City (Blue)
+811,3,13,Cooltrainer M 2,Cooltrainer M - Viridian City (Yellow)
+457,1,13,Cooltrainer M 5,Cooltrainer M - Victory Road – 3F (Red)
+101,2,13,Cooltrainer M 5,Cooltrainer M - Victory Road – 3F (Blue)
+812,3,13,Cooltrainer M 3,Cooltrainer M - Viridian City (Yellow)
+813,3,13,Cooltrainer M 4,Cooltrainer M - Victory Road – 1F (Yellow)
+97,2,13,Cooltrainer M 1,Cooltrainer M - Viridian City (Blue)
+100,2,13,Cooltrainer M 4,Cooltrainer M - Victory Road – 1F (Blue)
+454,1,13,Cooltrainer M 2,Cooltrainer M - Viridian City (Red)
+453,1,13,Cooltrainer M 1,Cooltrainer M - Viridian City (Red)
+815,3,13,Cooltrainer M 6,Cooltrainer M - Victory Road – 3F (Yellow)
+455,1,13,Cooltrainer M 3,Cooltrainer M - Viridian City (Red)
+814,3,13,Cooltrainer M 5,Cooltrainer M - Victory Road – 3F (Yellow)
+99,2,13,Cooltrainer M 3,Cooltrainer M - Viridian City (Blue)
+810,3,13,Cooltrainer M 1,Cooltrainer M - Viridian City (Yellow)
+464,1,14,Cue Ball 6,Cue Ball - Route 17 (Red)
+823,3,14,Cue Ball 8,Cue Ball - Route 17 (Yellow)
+105,2,14,Cue Ball 3,Cue Ball - Route 16 (Blue)
+111,2,14,Cue Ball 9,Cue Ball - Route 21 (Blue)
+820,3,14,Cue Ball 5,Cue Ball - Route 17 (Yellow)
+821,3,14,Cue Ball 6,Cue Ball - Route 17 (Yellow)
+108,2,14,Cue Ball 6,Cue Ball - Route 17 (Blue)
+462,1,14,Cue Ball 4,Cue Ball - Route 17 (Red)
+465,1,14,Cue Ball 7,Cue Ball - Route 17 (Red)
+103,2,14,Cue Ball 1,Cue Ball - Route 16 (Blue)
+467,1,14,Cue Ball 9,Cue Ball - Route 21 (Red)
+107,2,14,Cue Ball 5,Cue Ball - Route 17 (Blue)
+461,1,14,Cue Ball 3,Cue Ball - Route 16 (Red)
+109,2,14,Cue Ball 7,Cue Ball - Route 17 (Blue)
+110,2,14,Cue Ball 8,Cue Ball - Route 17 (Blue)
+459,1,14,Cue Ball 1,Cue Ball - Route 16 (Red)
+817,3,14,Cue Ball 2,Cue Ball - Route 16 (Yellow)
+819,3,14,Cue Ball 4,Cue Ball - Route 17 (Yellow)
+818,3,14,Cue Ball 3,Cue Ball - Route 16 (Yellow)
+466,1,14,Cue Ball 8,Cue Ball - Route 17 (Red)
+463,1,14,Cue Ball 5,Cue Ball - Route 17 (Red)
+106,2,14,Cue Ball 4,Cue Ball - Route 17 (Blue)
+824,3,14,Cue Ball 9,Cue Ball - Route 21 (Yellow)
+816,3,14,Cue Ball 1,Cue Ball - Route 16 (Yellow)
+822,3,14,Cue Ball 7,Cue Ball - Route 17 (Yellow)
+104,2,14,Cue Ball 2,Cue Ball - Route 16 (Blue)
+460,1,14,Cue Ball 2,Cue Ball - Route 16 (Red)
+468,1,15,Engineer 1,Engineer - Route 11 (Red)
+469,1,15,Engineer 2,Engineer - Route 11 (Red)
+826,3,15,Engineer 2,Engineer - Route 11 (Yellow)
+825,3,15,Engineer 1,Engineer - Route 11 (Yellow)
+113,2,15,Engineer 2,Engineer - Route 11 (Blue)
+112,2,15,Engineer 1,Engineer - Route 11 (Blue)
+114,2,16,Erika,Erika - Celadon City (Blue)
+827,3,16,Erika,Erika - Celadon City (Yellow)
+470,1,16,Erika,Erika - Celadon City (Red)
+474,1,17,Fisherman 4,Fisherman - Route 12 (Red)
+473,1,17,Fisherman 3,Fisherman - Route 12 (Red)
+116,2,17,Fisherman 2,Fisherman - S.S. Anne - 2F (Blue)
+480,1,17,Fisherman 10,Fisherman - Route 21 (Red)
+119,2,17,Fisherman 5,Fisherman - Route 12 (Blue)
+829,3,17,Fisherman 2,Fisherman - S.S. Anne - 2F (Yellow)
+125,2,17,Fisherman 11,Fisherman - Route 21 (Blue)
+123,2,17,Fisherman 9,Fisherman - Route 21 (Blue)
+477,1,17,Fisherman 7,Fisherman - Route 12 (Red)
+834,3,17,Fisherman 7,Fisherman - Route 12 (Yellow)
+124,2,17,Fisherman 10,Fisherman - Route 21 (Blue)
+472,1,17,Fisherman 2,Fisherman - S.S. Anne - 2F (Red)
+475,1,17,Fisherman 5,Fisherman - Route 12 (Red)
+831,3,17,Fisherman 4,Fisherman - Route 12 (Yellow)
+117,2,17,Fisherman 3,Fisherman - Route 12 (Blue)
+120,2,17,Fisherman 6,Fisherman - Route 12 (Blue)
+837,3,17,Fisherman 10,Fisherman - Route 21 (Yellow)
+836,3,17,Fisherman 9,Fisherman - Route 21 (Yellow)
+471,1,17,Fisherman 1,Fisherman - S.S. Anne - B1F (Red)
+479,1,17,Fisherman 9,Fisherman - Route 21 (Red)
+115,2,17,Fisherman 1,Fisherman - S.S. Anne - B1F (Blue)
+835,3,17,Fisherman 8,Fisherman - Route 21 (Yellow)
+830,3,17,Fisherman 3,Fisherman - Route 12 (Yellow)
+476,1,17,Fisherman 6,Fisherman - Route 12 (Red)
+122,2,17,Fisherman 8,Fisherman - Route 21 (Blue)
+833,3,17,Fisherman 6,Fisherman - Route 12 (Yellow)
+832,3,17,Fisherman 5,Fisherman - Route 12 (Yellow)
+478,1,17,Fisherman 8,Fisherman - Route 21 (Red)
+118,2,17,Fisherman 4,Fisherman - Route 12 (Blue)
+828,3,17,Fisherman 1,Fisherman - S.S. Anne - B1F (Yellow)
+121,2,17,Fisherman 7,Fisherman - Route 12 (Blue)
+838,3,17,Fisherman 11,Fisherman - Route 21 (Yellow)
+481,1,17,Fisherman 11,Fisherman - Route 21 (Red)
+841,3,18,Gambler 3,Gambler - Route 11 (Yellow)
+127,2,18,Gambler 2,Gambler - Route 11 (Blue)
+844,3,18,Gambler 6,Gambler - Route 8 (Yellow)
+840,3,18,Gambler 2,Gambler - Route 11 (Yellow)
+130,2,18,Gambler 5,Gambler - Route 8 (Blue)
+128,2,18,Gambler 3,Gambler - Route 11 (Blue)
+486,1,18,Gambler 5,Gambler - Route 8 (Red)
+129,2,18,Gambler 4,Gambler - Route 11 (Blue)
+484,1,18,Gambler 3,Gambler - Route 11 (Red)
+842,3,18,Gambler 4,Gambler - Route 11 (Yellow)
+131,2,18,Gambler 6,Gambler - Route 8 (Blue)
+482,1,18,Gambler 1,Gambler - Route 11 (Red)
+487,1,18,Gambler 6,Gambler - Route 8 (Red)
+483,1,18,Gambler 2,Gambler - Route 11 (Red)
+839,3,18,Gambler 1,Gambler - Route 11 (Yellow)
+843,3,18,Gambler 5,Gambler - Route 8 (Yellow)
+126,2,18,Gambler 1,Gambler - Route 11 (Blue)
+485,1,18,Gambler 4,Gambler - Route 11 (Red)
+491,1,19,Gentleman 4,Gentleman - S.S. Anne - 2F (Red)
+489,1,19,Gentleman 2,Gentleman - S.S. Anne - 1F (Red)
+847,3,19,Gentleman 3,Gentleman - S.S. Anne - 2F (Yellow)
+133,2,19,Gentleman 2,Gentleman - S.S. Anne - 1F (Blue)
+848,3,19,Gentleman 4,Gentleman - S.S. Anne - 2F (Yellow)
+845,3,19,Gentleman 1,Gentleman - S.S. Anne - 1F (Yellow)
+132,2,19,Gentleman 1,Gentleman - S.S. Anne - 1F (Blue)
+492,1,19,Gentleman 5,Gentleman - Vermilion City (Red)
+846,3,19,Gentleman 2,Gentleman - S.S. Anne - 1F (Yellow)
+135,2,19,Gentleman 4,Gentleman - S.S. Anne - 2F (Blue)
+488,1,19,Gentleman 1,Gentleman - S.S. Anne - 1F (Red)
+136,2,19,Gentleman 5,Gentleman - Vermilion City (Blue)
+490,1,19,Gentleman 3,Gentleman - S.S. Anne - 2F (Red)
+849,3,19,Gentleman 5,Gentleman - Vermilion City (Yellow)
+134,2,19,Gentleman 3,Gentleman - S.S. Anne - 2F (Blue)
+494,1,20,Giovanni 2,Giovanni - Silph Co. - 11F (Red)
+137,2,20,Giovanni 1,Giovanni - Team Rocket Hideout - B4F (Blue)
+493,1,20,Giovanni 1,Giovanni - Team Rocket Hideout - B4F (Red)
+138,2,20,Giovanni 2,Giovanni - Silph Co. - 11F (Blue)
+495,1,20,Giovanni 3,Giovanni - Viridian City (Red)
+851,3,20,Giovanni 2,Giovanni - Silph Co. - 11F (Yellow)
+139,2,20,Giovanni 3,Giovanni - Viridian City (Blue)
+852,3,20,Giovanni 3,Giovanni - Viridian City (Yellow)
+850,3,20,Giovanni 1,Giovanni - Team Rocket Hideout - B4F (Yellow)
+142,2,21,Hiker 3,Hiker - Route 25 (Blue)
+853,3,21,Hiker 1,Hiker - Mt. Moon - 1F (Yellow)
+864,3,21,Hiker 13,Hiker - Rock Tunnel - B1F (Yellow)
+504,1,21,Hiker 10,Hiker - Rock Tunnel - 1F (Red)
+861,3,21,Hiker 10,Hiker - Rock Tunnel - 1F (Yellow)
+867,3,21,Hiker 9,Hiker - Rock Tunnel - B1F (Yellow)
+149,2,21,Hiker 11,Hiker - Rock Tunnel - 1F (Blue)
+503,1,21,Hiker 8,Hiker - Rock Tunnel - B1F (Red)
+496,1,21,Hiker 1,Hiker - Mt. Moon - 1F (Red)
+150,2,21,Hiker 12,Hiker - Rock Tunnel - 1F (Blue)
+143,2,21,Hiker 4,Hiker - Route 25 (Blue)
+508,1,21,Hiker 14,Hiker - Route 10 (Red)
+505,1,21,Hiker 11,Hiker - Rock Tunnel - 1F (Red)
+865,3,21,Hiker 14,Hiker - Route 10 (Yellow)
+510,1,21,Hiker 9,Hiker - Rock Tunnel - B1F (Red)
+154,2,21,Hiker 9,Hiker - Rock Tunnel - B1F (Blue)
+857,3,21,Hiker 5,Hiker - Route 9 (Yellow)
+145,2,21,Hiker 6,Hiker - Route 9 (Blue)
+140,2,21,Hiker 1,Hiker - Mt. Moon - 1F (Blue)
+866,3,21,Hiker 15,Hiker - Route 10 (Yellow)
+141,2,21,Hiker 2,Hiker - Route 25 (Blue)
+501,1,21,Hiker 6,Hiker - Route 9 (Red)
+148,2,21,Hiker 10,Hiker - Rock Tunnel - 1F (Blue)
+147,2,21,Hiker 8,Hiker - Rock Tunnel - B1F (Blue)
+854,3,21,Hiker 2,Hiker - Route 25 (Yellow)
+509,1,21,Hiker 15,Hiker - Route 10 (Red)
+497,1,21,Hiker 2,Hiker - Route 25 (Red)
+498,1,21,Hiker 3,Hiker - Route 25 (Red)
+506,1,21,Hiker 12,Hiker - Rock Tunnel - 1F (Red)
+153,2,21,Hiker 15,Hiker - Route 10 (Blue)
+152,2,21,Hiker 14,Hiker - Route 10 (Blue)
+855,3,21,Hiker 3,Hiker - Route 25 (Yellow)
+502,1,21,Hiker 7,Hiker - Route 9 (Red)
+146,2,21,Hiker 7,Hiker - Route 9 (Blue)
+856,3,21,Hiker 4,Hiker - Route 25 (Yellow)
+500,1,21,Hiker 5,Hiker - Route 9 (Red)
+858,3,21,Hiker 6,Hiker - Route 9 (Yellow)
+499,1,21,Hiker 4,Hiker - Route 25 (Red)
+862,3,21,Hiker 11,Hiker - Rock Tunnel - 1F (Yellow)
+507,1,21,Hiker 13,Hiker - Rock Tunnel - B1F (Red)
+863,3,21,Hiker 12,Hiker - Rock Tunnel - 1F (Yellow)
+859,3,21,Hiker 7,Hiker - Route 9 (Yellow)
+144,2,21,Hiker 5,Hiker - Route 9 (Blue)
+151,2,21,Hiker 13,Hiker - Rock Tunnel - B1F (Blue)
+860,3,21,Hiker 8,Hiker - Rock Tunnel - B1F (Yellow)
+870,3,22,Jessie & James 3,Jessie & James - Pokemon Tower - 7F (Yellow)
+871,3,22,Jessie & James 4,Jessie & James - Silph Co. - 11F (Yellow)
+868,3,22,Jessie & James 1,Jessie & James - Mt. Moon - B2F (Yellow)
+869,3,22,Jessie & James 2,Jessie & James - Team Rocket Hideout - B4F (Yellow)
+889,3,23,Jr Trainer F 18,Jr Trainer F - Route 15 (Yellow)
+174,2,23,Jr Trainer F 20,Jr Trainer F - Route 15 (Blue)
+888,3,23,Jr Trainer F 17,Jr Trainer F - Route 15 (Yellow)
+531,1,23,Jr Trainer F 21,Jr Trainer F - Route 20 (Red)
+513,1,23,Jr Trainer F 3,Jr Trainer F - Route 6 (Red)
+528,1,23,Jr Trainer F 18,Jr Trainer F - Route 15 (Red)
+883,3,23,Jr Trainer F 12,Jr Trainer F - Route 10 (Yellow)
+873,3,23,Jr Trainer F 2,Jr Trainer F - Route 6 (Yellow)
+885,3,23,Jr Trainer F 14,Jr Trainer F - Route 13 (Yellow)
+157,2,23,Jr Trainer F 3,Jr Trainer F - Route 6 (Blue)
+874,3,23,Jr Trainer F 3,Jr Trainer F - Route 6 (Yellow)
+515,1,23,Jr Trainer F 5,Jr Trainer F - Route 9 (Red)
+523,1,23,Jr Trainer F 13,Jr Trainer F - Celadon City (Red)
+879,3,23,Jr Trainer F 8,Jr Trainer F - Rock Tunnel - B1F (Yellow)
+877,3,23,Jr Trainer F 6,Jr Trainer F - Route 10 (Yellow)
+886,3,23,Jr Trainer F 15,Jr Trainer F - Route 13 (Yellow)
+162,2,23,Jr Trainer F 8,Jr Trainer F - Rock Tunnel - B1F (Blue)
+884,3,23,Jr Trainer F 13,Jr Trainer F - Celadon City (Yellow)
+164,2,23,Jr Trainer F 10,Jr Trainer F - Rock Tunnel - 1F (Blue)
+519,1,23,Jr Trainer F 9,Jr Trainer F - Rock Tunnel - 1F (Red)
+522,1,23,Jr Trainer F 12,Jr Trainer F - Route 10 (Red)
+512,1,23,Jr Trainer F 2,Jr Trainer F - Route 6 (Red)
+530,1,23,Jr Trainer F 20,Jr Trainer F - Route 15 (Red)
+872,3,23,Jr Trainer F 1,Jr Trainer F - Cerulean City (Yellow)
+529,1,23,Jr Trainer F 19,Jr Trainer F - Route 15 (Red)
+161,2,23,Jr Trainer F 7,Jr Trainer F - Rock Tunnel - B1F (Blue)
+875,3,23,Jr Trainer F 4,Jr Trainer F - Route 9 (Yellow)
+511,1,23,Jr Trainer F 1,Jr Trainer F - Cerulean City (Red)
+876,3,23,Jr Trainer F 5,Jr Trainer F - Route 9 (Yellow)
+517,1,23,Jr Trainer F 7,Jr Trainer F - Rock Tunnel - B1F (Red)
+176,2,23,Jr Trainer F 22,Jr Trainer F - Route 20 (Blue)
+516,1,23,Jr Trainer F 6,Jr Trainer F - Route 10 (Red)
+170,2,23,Jr Trainer F 16,Jr Trainer F - Route 13 (Blue)
+526,1,23,Jr Trainer F 16,Jr Trainer F - Route 13 (Red)
+893,3,23,Jr Trainer F 22,Jr Trainer F - Route 20 (Yellow)
+527,1,23,Jr Trainer F 17,Jr Trainer F - Route 15 (Red)
+167,2,23,Jr Trainer F 13,Jr Trainer F - Celadon City (Blue)
+887,3,23,Jr Trainer F 16,Jr Trainer F - Route 13 (Yellow)
+175,2,23,Jr Trainer F 21,Jr Trainer F - Route 20 (Blue)
+518,1,23,Jr Trainer F 8,Jr Trainer F - Rock Tunnel - B1F (Red)
+168,2,23,Jr Trainer F 14,Jr Trainer F - Route 13 (Blue)
+163,2,23,Jr Trainer F 9,Jr Trainer F - Rock Tunnel - 1F (Blue)
+532,1,23,Jr Trainer F 22,Jr Trainer F - Route 20 (Red)
+882,3,23,Jr Trainer F 11,Jr Trainer F - Rock Tunnel - 1F (Yellow)
+169,2,23,Jr Trainer F 15,Jr Trainer F - Route 13 (Blue)
+881,3,23,Jr Trainer F 10,Jr Trainer F - Rock Tunnel - 1F (Yellow)
+159,2,23,Jr Trainer F 5,Jr Trainer F - Route 9 (Blue)
+173,2,23,Jr Trainer F 19,Jr Trainer F - Route 15 (Blue)
+514,1,23,Jr Trainer F 4,Jr Trainer F - Route 9 (Red)
+892,3,23,Jr Trainer F 21,Jr Trainer F - Route 20 (Yellow)
+166,2,23,Jr Trainer F 12,Jr Trainer F - Route 10 (Blue)
+158,2,23,Jr Trainer F 4,Jr Trainer F - Route 9 (Blue)
+880,3,23,Jr Trainer F 9,Jr Trainer F - Rock Tunnel - 1F (Yellow)
+156,2,23,Jr Trainer F 2,Jr Trainer F - Route 6 (Blue)
+165,2,23,Jr Trainer F 11,Jr Trainer F - Rock Tunnel - 1F (Blue)
+524,1,23,Jr Trainer F 14,Jr Trainer F - Route 13 (Red)
+520,1,23,Jr Trainer F 10,Jr Trainer F - Rock Tunnel - 1F (Red)
+172,2,23,Jr Trainer F 18,Jr Trainer F - Route 15 (Blue)
+171,2,23,Jr Trainer F 17,Jr Trainer F - Route 15 (Blue)
+878,3,23,Jr Trainer F 7,Jr Trainer F - Rock Tunnel - B1F (Yellow)
+160,2,23,Jr Trainer F 6,Jr Trainer F - Route 10 (Blue)
+521,1,23,Jr Trainer F 11,Jr Trainer F - Rock Tunnel - 1F (Red)
+890,3,23,Jr Trainer F 19,Jr Trainer F - Route 15 (Yellow)
+155,2,23,Jr Trainer F 1,Jr Trainer F - Cerulean City (Blue)
+525,1,23,Jr Trainer F 15,Jr Trainer F - Route 13 (Red)
+891,3,23,Jr Trainer F 20,Jr Trainer F - Route 15 (Yellow)
+536,1,24,Jr Trainer M 4,Jr Trainer M - Route 25 (Red)
+534,1,24,Jr Trainer M 2,Jr Trainer M - Route 24 (Red)
+897,3,24,Jr Trainer M 4,Jr Trainer M - Route 25 (Yellow)
+183,2,24,Jr Trainer M 7,Jr Trainer M - Route 9 (Blue)
+541,1,24,Jr Trainer M 9,Jr Trainer M - Route 12 (Red)
+542,1,24,Jr Trainer M 10,Jr Trainer M - Route 13 (Red)
+900,3,24,Jr Trainer M 7,Jr Trainer M - Route 9 (Yellow)
+899,3,24,Jr Trainer M 6,Jr Trainer M - Route 6 (Yellow)
+182,2,24,Jr Trainer M 6,Jr Trainer M - Route 6 (Blue)
+537,1,24,Jr Trainer M 5,Jr Trainer M - Route 6 (Red)
+179,2,24,Jr Trainer M 3,Jr Trainer M - Route 24 (Blue)
+533,1,24,Jr Trainer M 1,Jr Trainer M - Pewter City (Red)
+894,3,24,Jr Trainer M 1,Jr Trainer M - Pewter City (Yellow)
+184,2,24,Jr Trainer M 8,Jr Trainer M - Route 9 (Blue)
+898,3,24,Jr Trainer M 5,Jr Trainer M - Route 6 (Yellow)
+896,3,24,Jr Trainer M 3,Jr Trainer M - Route 24 (Yellow)
+901,3,24,Jr Trainer M 8,Jr Trainer M - Route 12 (Yellow)
+895,3,24,Jr Trainer M 2,Jr Trainer M - Route 24 (Yellow)
+180,2,24,Jr Trainer M 4,Jr Trainer M - Route 25 (Blue)
+186,2,24,Jr Trainer M 10,Jr Trainer M - Route 13 (Blue)
+535,1,24,Jr Trainer M 3,Jr Trainer M - Route 24 (Red)
+540,1,24,Jr Trainer M 8,Jr Trainer M - Route 9 (Red)
+539,1,24,Jr Trainer M 7,Jr Trainer M - Route 9 (Red)
+538,1,24,Jr Trainer M 6,Jr Trainer M - Route 6 (Red)
+185,2,24,Jr Trainer M 9,Jr Trainer M - Route 12 (Blue)
+178,2,24,Jr Trainer M 2,Jr Trainer M - Route 24 (Blue)
+177,2,24,Jr Trainer M 1,Jr Trainer M - Pewter City (Blue)
+181,2,24,Jr Trainer M 5,Jr Trainer M - Route 6 (Blue)
+902,3,24,Jr Trainer M 9,Jr Trainer M - Route 13 (Yellow)
+189,2,25,Juggler 3,Juggler - Fuchsia City (Blue)
+546,1,25,Juggler 4,Juggler - Fuchsia City (Red)
+543,1,25,Juggler 1,Juggler - Fuchsia City (Red)
+907,3,25,Juggler 5,Juggler - Silph Co. - 5F (Yellow)
+545,1,25,Juggler 3,Juggler - Fuchsia City (Red)
+188,2,25,Juggler 2,Juggler - Fuchsia City (Blue)
+904,3,25,Juggler 2,Juggler - Fuchsia City (Yellow)
+549,1,25,Juggler 7,Juggler - Victory Road – 2F (Red)
+544,1,25,Juggler 2,Juggler - Fuchsia City (Red)
+548,1,25,Juggler 6,Juggler - Victory Road – 2F (Red)
+187,2,25,Juggler 1,Juggler - Fuchsia City (Blue)
+190,2,25,Juggler 4,Juggler - Fuchsia City (Blue)
+547,1,25,Juggler 5,Juggler - Silph Co. - 5F (Red)
+905,3,25,Juggler 3,Juggler - Fuchsia City (Yellow)
+903,3,25,Juggler 1,Juggler - Fuchsia City (Yellow)
+906,3,25,Juggler 4,Juggler - Fuchsia City (Yellow)
+909,3,25,Juggler 7,Juggler - Victory Road – 2F (Yellow)
+192,2,25,Juggler 6,Juggler - Victory Road – 2F (Blue)
+193,2,25,Juggler 7,Juggler - Victory Road – 2F (Blue)
+908,3,25,Juggler 6,Juggler - Victory Road – 2F (Yellow)
+191,2,25,Juggler 5,Juggler - Silph Co. - 5F (Blue)
+550,1,26,Koga,Koga - Fuchsia City (Red)
+194,2,26,Koga,Koga - Fuchsia City (Blue)
+910,3,26,Koga,Koga - Fuchsia City (Yellow)
+195,2,27,Lance,Lance - Indigo Plateau (Blue)
+551,1,27,Lance,Lance - Indigo Plateau (Red)
+911,3,27,Lance,Lance - Indigo Plateau (Yellow)
+921,3,28,Lass 10,Lass - Route 25 (Yellow)
+197,2,28,Lass 2,Lass - Route 3 (Blue)
+209,2,28,Lass 14,Lass - Route 8 (Blue)
+557,1,28,Lass 6,Lass - Route 24 (Red)
+555,1,28,Lass 4,Lass - Mt. Moon - 1F (Red)
+926,3,28,Lass 15,Lass - Route 8 (Yellow)
+556,1,28,Lass 5,Lass - Mt. Moon - 1F (Red)
+914,3,28,Lass 3,Lass - Route 3 (Yellow)
+919,3,28,Lass 8,Lass - Route 25 (Yellow)
+554,1,28,Lass 3,Lass - Route 3 (Red)
+206,2,28,Lass 11,Lass - S.S. Anne - 2F (Blue)
+208,2,28,Lass 13,Lass - Route 8 (Blue)
+922,3,28,Lass 11,Lass - S.S. Anne - 1F (Yellow)
+199,2,28,Lass 4,Lass - Mt. Moon - 1F (Blue)
+917,3,28,Lass 6,Lass - Mt. Moon - 1F (Yellow)
+201,2,28,Lass 6,Lass - Route 24 (Blue)
+927,3,28,Lass 16,Lass - Route 8 (Yellow)
+562,1,28,Lass 11,Lass - S.S. Anne - 2F (Red)
+205,2,28,Lass 10,Lass - S.S. Anne - 1F (Blue)
+560,1,28,Lass 9,Lass - Route 25 (Red)
+924,3,28,Lass 13,Lass - Route 8 (Yellow)
+918,3,28,Lass 7,Lass - Route 24 (Yellow)
+569,1,28,Lass 18,Lass - Route 4 (Red)
+928,3,28,Lass 17,Lass - Celadon City (Yellow)
+923,3,28,Lass 12,Lass - S.S. Anne - 2F (Yellow)
+558,1,28,Lass 7,Lass - Route 25 (Red)
+210,2,28,Lass 15,Lass - Route 8 (Blue)
+553,1,28,Lass 2,Lass - Route 3 (Red)
+568,1,28,Lass 17,Lass - Celadon City (Red)
+203,2,28,Lass 8,Lass - Route 24 (Blue)
+913,3,28,Lass 2,Lass - Route 3 (Yellow)
+920,3,28,Lass 9,Lass - Route 24 (Yellow)
+559,1,28,Lass 8,Lass - Route 24 (Red)
+565,1,28,Lass 14,Lass - Route 8 (Red)
+200,2,28,Lass 5,Lass - Mt. Moon - 1F (Blue)
+211,2,28,Lass 16,Lass - Celadon City (Blue)
+930,3,28,Lass 19,Lass - Route 4 (Yellow)
+929,3,28,Lass 18,Lass - Celadon City (Yellow)
+212,2,28,Lass 17,Lass - Celadon City (Blue)
+566,1,28,Lass 15,Lass - Route 8 (Red)
+564,1,28,Lass 13,Lass - Route 8 (Red)
+196,2,28,Lass 1,Lass - Route 3 (Blue)
+916,3,28,Lass 5,Lass - Mt. Moon - 1F (Yellow)
+915,3,28,Lass 4,Lass - Route 3 (Yellow)
+207,2,28,Lass 12,Lass - Route 8 (Blue)
+552,1,28,Lass 1,Lass - Route 3 (Red)
+563,1,28,Lass 12,Lass - Route 8 (Red)
+198,2,28,Lass 3,Lass - Route 3 (Blue)
+204,2,28,Lass 9,Lass - Route 25 (Blue)
+925,3,28,Lass 14,Lass - Route 8 (Yellow)
+912,3,28,Lass 1,Lass - Viridian Forest (Yellow)
+561,1,28,Lass 10,Lass - S.S. Anne - 1F (Red)
+567,1,28,Lass 16,Lass - Celadon City (Red)
+202,2,28,Lass 7,Lass - Route 25 (Blue)
+213,2,28,Lass 18,Lass - Route 4 (Blue)
+214,2,29,Lorelei,Lorelei - Indigo Plateau (Blue)
+570,1,29,Lorelei,Lorelei - Indigo Plateau (Red)
+931,3,29,Lorelei,Lorelei - Indigo Plateau (Yellow)
+932,3,30,Lt. Surge,Lt. Surge - Vermilion City (Yellow)
+571,1,30,Lt. Surge,Lt. Surge - Vermilion City (Red)
+215,2,30,Lt. Surge,Lt. Surge - Vermilion City (Blue)
+933,3,31,Misty,Misty - Cerulean City (Yellow)
+216,2,31,Misty,Misty - Cerulean City (Blue)
+572,1,31,Misty,Misty - Cerulean City (Red)
+221,2,32,PokeManiac 5,PokeManiac - Route 10 (Blue)
+936,3,32,PokeManiac 3,PokeManiac - Rock Tunnel - B1F (Yellow)
+938,3,32,PokeManiac 5,PokeManiac - Route 10 (Yellow)
+576,1,32,PokeManiac 4,PokeManiac - Rock Tunnel - B1F (Red)
+219,2,32,PokeManiac 3,PokeManiac - Rock Tunnel - B1F (Blue)
+934,3,32,PokeManiac 1,PokeManiac - Rock Tunnel - 1F (Yellow)
+218,2,32,PokeManiac 2,PokeManiac - Rock Tunnel - B1F (Blue)
+222,2,32,PokeManiac 7,PokeManiac - Victory Road – 2F (Blue)
+574,1,32,PokeManiac 2,PokeManiac - Rock Tunnel - B1F (Red)
+579,1,32,PokeManiac 6,PokeManiac - Fuchsia City (Red)
+217,2,32,PokeManiac 1,PokeManiac - Rock Tunnel - 1F (Blue)
+935,3,32,PokeManiac 2,PokeManiac - Rock Tunnel - B1F (Yellow)
+939,3,32,PokeManiac 7,PokeManiac - Victory Road – 2F (Yellow)
+937,3,32,PokeManiac 4,PokeManiac - Rock Tunnel - B1F (Yellow)
+575,1,32,PokeManiac 3,PokeManiac - Rock Tunnel - B1F (Red)
+940,3,32,PokeManiac 6,PokeManiac - Fuchsia City (Yellow)
+577,1,32,PokeManiac 5,PokeManiac - Route 10 (Red)
+223,2,32,PokeManiac 6,PokeManiac - Fuchsia City (Blue)
+573,1,32,PokeManiac 1,PokeManiac - Rock Tunnel - 1F (Red)
+220,2,32,PokeManiac 4,PokeManiac - Rock Tunnel - B1F (Blue)
+578,1,32,PokeManiac 7,PokeManiac - Victory Road – 2F (Red)
+227,2,33,Psychic 4,Psychic - Saffron City (Blue)
+224,2,33,Psychic 1,Psychic - Saffron City (Blue)
+582,1,33,Psychic 3,Psychic - Saffron City (Red)
+944,3,33,Psychic 4,Psychic - Saffron City (Yellow)
+225,2,33,Psychic 2,Psychic - Saffron City (Blue)
+942,3,33,Psychic 2,Psychic - Saffron City (Yellow)
+580,1,33,Psychic 1,Psychic - Saffron City (Red)
+581,1,33,Psychic 2,Psychic - Saffron City (Red)
+941,3,33,Psychic 1,Psychic - Saffron City (Yellow)
+943,3,33,Psychic 3,Psychic - Saffron City (Yellow)
+226,2,33,Psychic 3,Psychic - Saffron City (Blue)
+583,1,33,Psychic 4,Psychic - Saffron City (Red)
+233,2,34,Rival 2,Rival - Route 22 (Blue - Squirtle Chosen)
+596,1,34,Rival 5,Rival - Pokemon Tower - 2F (Red - Bulbasaur Chosen)
+592,1,34,Rival 3,Rival - Cerulean City (Red - Squirtle Chosen)
+585,1,34,Rival 1,Rival - Pallet Town (Red - Charmander Chosen)
+951,3,34,Rival 5,Rival - Pokemon Tower - 2F (Yellow - Lost Lab And Route 22)
+230,2,34,Rival 1,Rival - Pallet Town (Blue - Squirtle Chosen)
+234,2,34,Rival 3,Rival - Cerulean City (Blue - Squirtle Chosen)
+601,1,34,Rival 6,Rival - Silph Co. - 7F (Red - Charmander Chosen)
+236,2,34,Rival 3,Rival - Cerulean City (Blue - Charmander Chosen)
+956,3,34,Rival 7,Rival - Route 22 (Yellow - Won Lab Or Route 22)
+587,1,34,Rival 2,Rival - Route 22 (Red - Squirtle Chosen)
+606,1,34,Rival 8,Rival - Indigo Plateau (Red - Bulbasaur Chosen)
+235,2,34,Rival 3,Rival - Cerulean City (Blue - Bulbasaur Chosen)
+959,3,34,Rival 8,Rival - Indigo Plateau (Yellow - Won Lab Or Route 22)
+241,2,34,Rival 5,Rival - Pokemon Tower - 2F (Blue - Squirtle Chosen)
+598,1,34,Rival 5,Rival - Pokemon Tower - 2F (Red - Charmander Chosen)
+237,2,34,Rival 4,Rival - S.S. Anne - 2F (Blue - Bulbasaur Chosen)
+249,2,34,Rival 8,Rival - Indigo Plateau (Blue - Bulbasaur Chosen)
+949,3,34,Rival 5,Rival - Pokemon Tower - 2F (Yellow - Won Lab Or Route 22)
+238,2,34,Rival 4,Rival - S.S. Anne - 2F (Blue - Charmander Chosen)
+244,2,34,Rival 6,Rival - Silph Co. - 7F (Blue - Bulbasaur Chosen)
+958,3,34,Rival 8,Rival - Indigo Plateau (Yellow - Won Lab And Route 22)
+229,2,34,Rival 1,Rival - Pallet Town (Blue - Bulbasaur Chosen)
+599,1,34,Rival 6,Rival - Silph Co. - 7F (Red - Squirtle Chosen)
+251,2,34,Rival 8,Rival - Indigo Plateau (Blue - Squirtle Chosen)
+604,1,34,Rival 7,Rival - Route 22 (Red - Bulbasaur Chosen)
+600,1,34,Rival 6,Rival - Silph Co. - 7F (Red - Bulbasaur Chosen)
+228,2,34,Rival 1,Rival - Pallet Town (Blue - Charmander Chosen)
+250,2,34,Rival 8,Rival - Indigo Plateau (Blue - Charmander Chosen)
+947,3,34,Rival 3,Rival - Cerulean City (Yellow)
+240,2,34,Rival 5,Rival - Pokemon Tower - 2F (Blue - Charmander Chosen)
+232,2,34,Rival 2,Rival - Route 22 (Blue - Charmander Chosen)
+960,3,34,Rival 8,Rival - Indigo Plateau (Yellow - Lost Lab And Route 22)
+953,3,34,Rival 6,Rival - Silph Co. - 7F (Yellow - Won Lab And Route 22)
+242,2,34,Rival 5,Rival - Pokemon Tower - 2F (Blue - Bulbasaur Chosen)
+597,1,34,Rival 5,Rival - Pokemon Tower - 2F (Red - Squirtle Chosen)
+231,2,34,Rival 2,Rival - Route 22 (Blue - Bulbasaur Chosen)
+605,1,34,Rival 8,Rival - Indigo Plateau (Red - Charmander Chosen)
+593,1,34,Rival 4,Rival - S.S. Anne - 2F (Red - Bulbasaur Chosen)
+603,1,34,Rival 7,Rival - Route 22 (Red - Squirtle Chosen)
+586,1,34,Rival 1,Rival - Pallet Town (Red - Squirtle Chosen)
+948,3,34,Rival 4,Rival - S.S. Anne - 2F (Yellow)
+594,1,34,Rival 4,Rival - S.S. Anne - 2F (Red - Charmander Chosen)
+239,2,34,Rival 4,Rival - S.S. Anne - 2F (Blue - Squirtle Chosen)
+595,1,34,Rival 4,Rival - S.S. Anne - 2F (Red - Squirtle Chosen)
+243,2,34,Rival 6,Rival - Silph Co. - 7F (Blue - Charmander Chosen)
+945,3,34,Rival 1,Rival - Pallet Town (Yellow)
+955,3,34,Rival 7,Rival - Route 22 (Yellow - Lost Lab And Route 22)
+584,1,34,Rival 1,Rival - Pallet Town (Red - Bulbasaur Chosen)
+246,2,34,Rival 7,Rival - Route 22 (Blue - Bulbasaur Chosen)
+952,3,34,Rival 6,Rival - Silph Co. - 7F (Yellow - Won Lab Or Route 22)
+950,3,34,Rival 5,Rival - Pokemon Tower - 2F (Yellow - Won Lab And Route 22)
+245,2,34,Rival 6,Rival - Silph Co. - 7F (Blue - Squirtle Chosen)
+588,1,34,Rival 2,Rival - Route 22 (Red - Bulbasaur Chosen)
+957,3,34,Rival 7,Rival - Route 22 (Yellow - Won Lab And Route 22)
+247,2,34,Rival 7,Rival - Route 22 (Blue - Charmander Chosen)
+591,1,34,Rival 3,Rival - Cerulean City (Red - Bulbasaur Chosen)
+602,1,34,Rival 7,Rival - Route 22 (Red - Charmander Chosen)
+248,2,34,Rival 7,Rival - Route 22 (Blue - Squirtle Chosen)
+954,3,34,Rival 6,Rival - Silph Co. - 7F (Yellow - Lost Lab And Route 22)
+589,1,34,Rival 2,Rival - Route 22 (Red - Charmander Chosen)
+946,3,34,Rival 2,Rival - Route 22 (Yellow)
+590,1,34,Rival 3,Rival - Cerulean City (Red - Charmander Chosen)
+607,1,34,Rival 8,Rival - Indigo Plateau (Red - Squirtle Chosen)
+253,2,35,Rocker 2,Rocker - Route 12 (Blue)
+961,3,35,Rocker 1,Rocker - Vermilion City (Yellow)
+608,1,35,Rocker 1,Rocker - Vermilion City (Red)
+609,1,35,Rocker 2,Rocker - Route 12 (Red)
+962,3,35,Rocker 2,Rocker - Route 12 (Yellow)
+252,2,35,Rocker 1,Rocker - Vermilion City (Blue)
+981,3,36,Rocket 19,Rocket - Silph Co. - 3F (Yellow)
+640,1,36,Rocket 31,Rocket - Silph Co. - 7F (Red)
+973,3,36,Rocket 11,Rocket - Team Rocket Hideout - B3F (Yellow)
+261,2,36,Rocket 8,Rocket - Team Rocket Hideout - B1F (Blue)
+255,2,36,Rocket 2,Rocket - Mt. Moon - B2F (Blue)
+983,3,36,Rocket 21,Rocket - Silph Co. - 6F (Yellow)
+260,2,36,Rocket 7,Rocket - Celadon Game Corner (Blue)
+616,1,36,Rocket 7,Rocket - Celadon Game Corner (Red)
+613,1,36,Rocket 4,Rocket - Mt. Moon - B2F (Red)
+273,2,36,Rocket 20,Rocket - Pokemon Tower - 7F (Blue)
+278,2,36,Rocket 25,Rocket - Silph Co. - 3F (Blue)
+639,1,36,Rocket 30,Rocket - Silph Co. - 7F (Red)
+633,1,36,Rocket 24,Rocket - Silph Co. - 2F (Red)
+641,1,36,Rocket 32,Rocket - Silph Co. - 7F (Red)
+619,1,36,Rocket 10,Rocket - Team Rocket Hideout - B2F (Red)
+627,1,36,Rocket 18,Rocket - Team Rocket Hideout - B1F (Red)
+283,2,36,Rocket 30,Rocket - Silph Co. - 7F (Blue)
+629,1,36,Rocket 20,Rocket - Pokemon Tower - 7F (Red)
+264,2,36,Rocket 11,Rocket - Team Rocket Hideout - B3F (Blue)
+963,3,36,Rocket 1,Rocket - Mt. Moon - B2F (Yellow)
+970,3,36,Rocket 8,Rocket - Team Rocket Hideout - B1F (Yellow)
+984,3,36,Rocket 22,Rocket - Silph Co. - 4F (Yellow)
+271,2,36,Rocket 18,Rocket - Team Rocket Hideout - B1F (Blue)
+620,1,36,Rocket 11,Rocket - Team Rocket Hideout - B3F (Red)
+617,1,36,Rocket 8,Rocket - Team Rocket Hideout - B1F (Red)
+623,1,36,Rocket 14,Rocket - Team Rocket Hideout - B1F (Red)
+263,2,36,Rocket 10,Rocket - Team Rocket Hideout - B2F (Blue)
+637,1,36,Rocket 28,Rocket - Silph Co. - 6F (Red)
+626,1,36,Rocket 17,Rocket - Team Rocket Hideout - B4F (Red)
+287,2,36,Rocket 34,Rocket - Silph Co. - 8F (Blue)
+256,2,36,Rocket 3,Rocket - Mt. Moon - B2F (Blue)
+979,3,36,Rocket 17,Rocket - Silph Co. - 2F (Yellow)
+284,2,36,Rocket 31,Rocket - Silph Co. - 7F (Blue)
+258,2,36,Rocket 5,Rocket - Route 24 (Blue)
+266,2,36,Rocket 13,Rocket - Team Rocket Hideout - B4F (Blue)
+966,3,36,Rocket 4,Rocket - Route 24 (Yellow)
+254,2,36,Rocket 1,Rocket - Mt. Moon - B2F (Blue)
+965,3,36,Rocket 3,Rocket - Mt. Moon - B2F (Yellow)
+634,1,36,Rocket 25,Rocket - Silph Co. - 3F (Red)
+618,1,36,Rocket 9,Rocket - Team Rocket Hideout - B1F (Red)
+990,3,36,Rocket 28,Rocket - Silph Co. - 9F (Yellow)
+991,3,36,Rocket 29,Rocket - Silph Co. - 9F (Yellow)
+275,2,36,Rocket 22,Rocket - Silph Co. - 5F (Blue)
+964,3,36,Rocket 2,Rocket - Mt. Moon - B2F (Yellow)
+630,1,36,Rocket 21,Rocket - Pokemon Tower - 7F (Red)
+277,2,36,Rocket 24,Rocket - Silph Co. - 2F (Blue)
+280,2,36,Rocket 27,Rocket - Silph Co. - 4F (Blue)
+282,2,36,Rocket 29,Rocket - Silph Co. - 6F (Blue)
+645,1,36,Rocket 36,Rocket - Silph Co. - 9F (Red)
+611,1,36,Rocket 2,Rocket - Mt. Moon - B2F (Red)
+642,1,36,Rocket 33,Rocket - Silph Co. - 8F (Red)
+968,3,36,Rocket 6,Rocket - Celadon Game Corner (Yellow)
+972,3,36,Rocket 10,Rocket - Team Rocket Hideout - B3F (Yellow)
+982,3,36,Rocket 20,Rocket - Silph Co. - 4F (Yellow)
+281,2,36,Rocket 28,Rocket - Silph Co. - 6F (Blue)
+636,1,36,Rocket 27,Rocket - Silph Co. - 4F (Red)
+632,1,36,Rocket 23,Rocket - Silph Co. - 2F (Red)
+288,2,36,Rocket 35,Rocket - Silph Co. - 9F (Blue)
+971,3,36,Rocket 9,Rocket - Team Rocket Hideout - B2F (Yellow)
+272,2,36,Rocket 19,Rocket - Pokemon Tower - 7F (Blue)
+989,3,36,Rocket 27,Rocket - Silph Co. - 8F (Yellow)
+622,1,36,Rocket 13,Rocket - Team Rocket Hideout - B4F (Red)
+985,3,36,Rocket 23,Rocket - Silph Co. - 6F (Yellow)
+978,3,36,Rocket 16,Rocket - Silph Co. - 5F (Yellow)
+625,1,36,Rocket 16,Rocket - Team Rocket Hideout - B4F (Red)
+631,1,36,Rocket 22,Rocket - Silph Co. - 5F (Red)
+975,3,36,Rocket 13,Rocket - Team Rocket Hideout - B1F (Yellow)
+289,2,36,Rocket 36,Rocket - Silph Co. - 9F (Blue)
+646,1,36,Rocket 37,Rocket - Silph Co. - 11F (Red)
+980,3,36,Rocket 18,Rocket - Silph Co. - 2F (Yellow)
+268,2,36,Rocket 15,Rocket - Team Rocket Hideout - B1F (Blue)
+967,3,36,Rocket 5,Rocket - Cerulean City (Yellow)
+974,3,36,Rocket 12,Rocket - Team Rocket Hideout - B4F (Yellow)
+279,2,36,Rocket 26,Rocket - Silph Co. - 4F (Blue)
+643,1,36,Rocket 34,Rocket - Silph Co. - 8F (Red)
+257,2,36,Rocket 4,Rocket - Mt. Moon - B2F (Blue)
+638,1,36,Rocket 29,Rocket - Silph Co. - 6F (Red)
+624,1,36,Rocket 15,Rocket - Team Rocket Hideout - B1F (Red)
+286,2,36,Rocket 33,Rocket - Silph Co. - 8F (Blue)
+274,2,36,Rocket 21,Rocket - Pokemon Tower - 7F (Blue)
+259,2,36,Rocket 6,Rocket - Cerulean City (Blue)
+610,1,36,Rocket 1,Rocket - Mt. Moon - B2F (Red)
+269,2,36,Rocket 16,Rocket - Team Rocket Hideout - B4F (Blue)
+267,2,36,Rocket 14,Rocket - Team Rocket Hideout - B1F (Blue)
+615,1,36,Rocket 6,Rocket - Cerulean City (Red)
+987,3,36,Rocket 25,Rocket - Silph Co. - 7F (Yellow)
+628,1,36,Rocket 19,Rocket - Pokemon Tower - 7F (Red)
+988,3,36,Rocket 26,Rocket - Silph Co. - 8F (Yellow)
+635,1,36,Rocket 26,Rocket - Silph Co. - 4F (Red)
+977,3,36,Rocket 15,Rocket - Team Rocket Hideout - B1F (Yellow)
+285,2,36,Rocket 32,Rocket - Silph Co. - 7F (Blue)
+969,3,36,Rocket 7,Rocket - Team Rocket Hideout - B1F (Yellow)
+270,2,36,Rocket 17,Rocket - Team Rocket Hideout - B4F (Blue)
+976,3,36,Rocket 14,Rocket - Team Rocket Hideout - B1F (Yellow)
+621,1,36,Rocket 12,Rocket - Team Rocket Hideout - B3F (Red)
+265,2,36,Rocket 12,Rocket - Team Rocket Hideout - B3F (Blue)
+290,2,36,Rocket 37,Rocket - Silph Co. - 11F (Blue)
+614,1,36,Rocket 5,Rocket - Route 24 (Red)
+276,2,36,Rocket 23,Rocket - Silph Co. - 2F (Blue)
+644,1,36,Rocket 35,Rocket - Silph Co. - 9F (Red)
+262,2,36,Rocket 9,Rocket - Team Rocket Hideout - B1F (Blue)
+612,1,36,Rocket 3,Rocket - Mt. Moon - B2F (Red)
+986,3,36,Rocket 24,Rocket - Silph Co. - 7F (Yellow)
+647,1,37,Sabrina,Sabrina - Saffron City (Red)
+992,3,37,Sabrina,Sabrina - Saffron City (Yellow)
+291,2,37,Sabrina,Sabrina - Saffron City (Blue)
+296,2,38,Sailor 5,Sailor - S.S. Anne - B1F (Blue)
+655,1,38,Sailor 8,Sailor - Vermilion City (Red)
+996,3,38,Sailor 4,Sailor - S.S. Anne - B1F (Yellow)
+653,1,38,Sailor 6,Sailor - S.S. Anne - B1F (Red)
+652,1,38,Sailor 5,Sailor - S.S. Anne - B1F (Red)
+649,1,38,Sailor 2,Sailor - S.S. Anne - B1F (Red)
+299,2,38,Sailor 8,Sailor - Vermilion City (Blue)
+999,3,38,Sailor 7,Sailor - S.S. Anne - 3F (Yellow)
+295,2,38,Sailor 4,Sailor - S.S. Anne - B1F (Blue)
+292,2,38,Sailor 1,Sailor - S.S. Anne - B1F (Blue)
+297,2,38,Sailor 6,Sailor - S.S. Anne - B1F (Blue)
+997,3,38,Sailor 5,Sailor - S.S. Anne - B1F (Yellow)
+998,3,38,Sailor 6,Sailor - S.S. Anne - 3F (Yellow)
+993,3,38,Sailor 1,Sailor - S.S. Anne - B1F (Yellow)
+651,1,38,Sailor 4,Sailor - S.S. Anne - B1F (Red)
+1000,3,38,Sailor 8,Sailor - Vermilion City (Yellow)
+994,3,38,Sailor 2,Sailor - S.S. Anne - B1F (Yellow)
+648,1,38,Sailor 1,Sailor - S.S. Anne - B1F (Red)
+293,2,38,Sailor 2,Sailor - S.S. Anne - B1F (Blue)
+298,2,38,Sailor 7,Sailor - S.S. Anne - B1F (Blue)
+650,1,38,Sailor 3,Sailor - S.S. Anne - B1F (Red)
+995,3,38,Sailor 3,Sailor - S.S. Anne - B1F (Yellow)
+654,1,38,Sailor 7,Sailor - S.S. Anne - B1F (Red)
+294,2,38,Sailor 3,Sailor - S.S. Anne - B1F (Blue)
+658,1,39,Scientist 3,Scientist - Silph Co. - 3F (Red)
+667,1,39,Scientist 12,Scientist - Silph Co. - 10F (Red)
+661,1,39,Scientist 6,Scientist - Silph Co. - 5F (Red)
+306,2,39,Scientist 7,Scientist - Silph Co. - 6F (Blue)
+301,2,39,Scientist 2,Scientist - Silph Co. - 2F (Blue)
+664,1,39,Scientist 9,Scientist - Silph Co. - 7F (Red)
+1004,3,39,Scientist 4,Scientist - Silph Co. - 4F (Yellow)
+666,1,39,Scientist 11,Scientist - Silph Co. - 10F (Red)
+670,1,39,Scientist 15,Scientist - Pokemon Mansion - 1F (Red)
+313,2,39,Scientist 14,Scientist - Pokemon Mansion - 3F (Blue)
+668,1,39,Scientist 13,Scientist - Silph Co. - 11F (Red)
+315,2,39,Scientist 16,Scientist - Pokemon Mansion - B1F (Blue)
+660,1,39,Scientist 5,Scientist - Silph Co. - 5F (Red)
+1005,3,39,Scientist 5,Scientist - Silph Co. - 5F (Yellow)
+1015,3,39,Scientist 15,Scientist - Pokemon Mansion - 1F (Yellow)
+1001,3,39,Scientist 1,Scientist - Silph Co. - 2F (Yellow)
+1002,3,39,Scientist 2,Scientist - Silph Co. - 2F (Yellow)
+300,2,39,Scientist 1,Scientist - Silph Co. - 2F (Blue)
+1009,3,39,Scientist 9,Scientist - Silph Co. - 7F (Yellow)
+669,1,39,Scientist 14,Scientist - Pokemon Mansion - 3F (Red)
+1011,3,39,Scientist 11,Scientist - Silph Co. - 10F (Yellow)
+302,2,39,Scientist 3,Scientist - Silph Co. - 3F (Blue)
+1013,3,39,Scientist 13,Scientist - Silph Co. - 11F (Yellow)
+662,1,39,Scientist 7,Scientist - Silph Co. - 6F (Red)
+307,2,39,Scientist 8,Scientist - Silph Co. - 8F (Blue)
+1003,3,39,Scientist 3,Scientist - Silph Co. - 3F (Yellow)
+659,1,39,Scientist 4,Scientist - Silph Co. - 4F (Red)
+657,1,39,Scientist 2,Scientist - Silph Co. - 2F (Red)
+312,2,39,Scientist 13,Scientist - Silph Co. - 11F (Blue)
+671,1,39,Scientist 16,Scientist - Pokemon Mansion - B1F (Red)
+1014,3,39,Scientist 14,Scientist - Pokemon Mansion - 3F (Yellow)
+665,1,39,Scientist 10,Scientist - Silph Co. - 9F (Red)
+656,1,39,Scientist 1,Scientist - Silph Co. - 2F (Red)
+1008,3,39,Scientist 8,Scientist - Silph Co. - 8F (Yellow)
+305,2,39,Scientist 6,Scientist - Silph Co. - 5F (Blue)
+663,1,39,Scientist 8,Scientist - Silph Co. - 8F (Red)
+309,2,39,Scientist 10,Scientist - Silph Co. - 9F (Blue)
+1007,3,39,Scientist 7,Scientist - Silph Co. - 6F (Yellow)
+310,2,39,Scientist 11,Scientist - Silph Co. - 10F (Blue)
+308,2,39,Scientist 9,Scientist - Silph Co. - 7F (Blue)
+1006,3,39,Scientist 6,Scientist - Silph Co. - 5F (Yellow)
+303,2,39,Scientist 4,Scientist - Silph Co. - 4F (Blue)
+1012,3,39,Scientist 12,Scientist - Silph Co. - 10F (Yellow)
+304,2,39,Scientist 5,Scientist - Silph Co. - 5F (Blue)
+1010,3,39,Scientist 10,Scientist - Silph Co. - 9F (Yellow)
+1016,3,39,Scientist 16,Scientist - Pokemon Mansion - B1F (Yellow)
+314,2,39,Scientist 15,Scientist - Pokemon Mansion - 1F (Blue)
+311,2,39,Scientist 12,Scientist - Silph Co. - 10F (Blue)
+1025,3,40,Super Nerd 9,Super Nerd - Cinnabar Island (Yellow)
+316,2,40,Super Nerd 1,Super Nerd - Mt. Moon - 1F (Blue)
+1021,3,40,Super Nerd 5,Super Nerd - Route 8 (Yellow)
+1020,3,40,Super Nerd 4,Super Nerd - Route 8 (Yellow)
+680,1,40,Super Nerd 9,Super Nerd - Cinnabar Island (Red)
+1023,3,40,Super Nerd 7,Super Nerd - Cinnabar Island (Yellow)
+674,1,40,Super Nerd 3,Super Nerd - Route 8 (Red)
+318,2,40,Super Nerd 3,Super Nerd - Route 8 (Blue)
+320,2,40,Super Nerd 5,Super Nerd - Route 8 (Blue)
+673,1,40,Super Nerd 2,Super Nerd - Mt. Moon - B2F (Red)
+678,1,40,Super Nerd 7,Super Nerd - Cinnabar Island (Red)
+321,2,40,Super Nerd 6,Super Nerd - Cinnabar Island (Blue)
+1017,3,40,Super Nerd 1,Super Nerd - Mt. Moon - 1F (Yellow)
+1024,3,40,Super Nerd 8,Super Nerd - Cinnabar Island (Yellow)
+1018,3,40,Super Nerd 2,Super Nerd - Mt. Moon - B2F (Yellow)
+319,2,40,Super Nerd 4,Super Nerd - Route 8 (Blue)
+1022,3,40,Super Nerd 6,Super Nerd - Cinnabar Island (Yellow)
+317,2,40,Super Nerd 2,Super Nerd - Mt. Moon - B2F (Blue)
+676,1,40,Super Nerd 5,Super Nerd - Route 8 (Red)
+1019,3,40,Super Nerd 3,Super Nerd - Route 8 (Yellow)
+324,2,40,Super Nerd 9,Super Nerd - Cinnabar Island (Blue)
+675,1,40,Super Nerd 4,Super Nerd - Route 8 (Red)
+679,1,40,Super Nerd 8,Super Nerd - Cinnabar Island (Red)
+322,2,40,Super Nerd 7,Super Nerd - Cinnabar Island (Blue)
+677,1,40,Super Nerd 6,Super Nerd - Cinnabar Island (Red)
+672,1,40,Super Nerd 1,Super Nerd - Mt. Moon - 1F (Red)
+323,2,40,Super Nerd 8,Super Nerd - Cinnabar Island (Blue)
+1033,3,41,Swimmer 8,Swimmer - Route 19 (Yellow)
+1026,3,41,Swimmer 1,Swimmer - Cerulean City (Yellow)
+693,1,41,Swimmer 13,Swimmer - Route 21 (Red)
+685,1,41,Swimmer 5,Swimmer - Route 19 (Red)
+1035,3,41,Swimmer 10,Swimmer - Route 20 (Yellow)
+333,2,41,Swimmer 9,Swimmer - Route 20 (Blue)
+691,1,41,Swimmer 11,Swimmer - Route 20 (Red)
+1032,3,41,Swimmer 7,Swimmer - Route 19 (Yellow)
+338,2,41,Swimmer 14,Swimmer - Route 21 (Blue)
+1037,3,41,Swimmer 12,Swimmer - Route 21 (Yellow)
+695,1,41,Swimmer 15,Swimmer - Route 21 (Red)
+683,1,41,Swimmer 3,Swimmer - Route 19 (Red)
+1031,3,41,Swimmer 6,Swimmer - Route 19 (Yellow)
+326,2,41,Swimmer 2,Swimmer - Route 19 (Blue)
+334,2,41,Swimmer 10,Swimmer - Route 20 (Blue)
+328,2,41,Swimmer 4,Swimmer - Route 19 (Blue)
+337,2,41,Swimmer 13,Swimmer - Route 21 (Blue)
+694,1,41,Swimmer 14,Swimmer - Route 21 (Red)
+1034,3,41,Swimmer 9,Swimmer - Route 20 (Yellow)
+682,1,41,Swimmer 2,Swimmer - Route 19 (Red)
+335,2,41,Swimmer 11,Swimmer - Route 20 (Blue)
+688,1,41,Swimmer 8,Swimmer - Route 19 (Red)
+687,1,41,Swimmer 7,Swimmer - Route 19 (Red)
+329,2,41,Swimmer 5,Swimmer - Route 19 (Blue)
+690,1,41,Swimmer 10,Swimmer - Route 20 (Red)
+1038,3,41,Swimmer 13,Swimmer - Route 21 (Yellow)
+1039,3,41,Swimmer 14,Swimmer - Route 21 (Yellow)
+332,2,41,Swimmer 8,Swimmer - Route 19 (Blue)
+1029,3,41,Swimmer 4,Swimmer - Route 19 (Yellow)
+339,2,41,Swimmer 15,Swimmer - Route 21 (Blue)
+336,2,41,Swimmer 12,Swimmer - Route 21 (Blue)
+692,1,41,Swimmer 12,Swimmer - Route 21 (Red)
+327,2,41,Swimmer 3,Swimmer - Route 19 (Blue)
+325,2,41,Swimmer 1,Swimmer - Cerulean City (Blue)
+331,2,41,Swimmer 7,Swimmer - Route 19 (Blue)
+684,1,41,Swimmer 4,Swimmer - Route 19 (Red)
+1036,3,41,Swimmer 11,Swimmer - Route 20 (Yellow)
+681,1,41,Swimmer 1,Swimmer - Cerulean City (Red)
+1028,3,41,Swimmer 3,Swimmer - Route 19 (Yellow)
+330,2,41,Swimmer 6,Swimmer - Route 19 (Blue)
+1040,3,41,Swimmer 15,Swimmer - Route 21 (Yellow)
+1030,3,41,Swimmer 5,Swimmer - Route 19 (Yellow)
+686,1,41,Swimmer 6,Swimmer - Route 19 (Red)
+1027,3,41,Swimmer 2,Swimmer - Route 19 (Yellow)
+689,1,41,Swimmer 9,Swimmer - Route 20 (Red)
+1045,3,42,Tamer 5,Tamer - Victory Road – 2F (Yellow)
+343,2,42,Tamer 4,Tamer - Viridian City (Blue)
+700,1,42,Tamer 5,Tamer - Victory Road – 2F (Red)
+344,2,42,Tamer 5,Tamer - Victory Road – 2F (Blue)
+340,2,42,Tamer 1,Tamer - Fuchsia City (Blue)
+699,1,42,Tamer 4,Tamer - Viridian City (Red)
+341,2,42,Tamer 2,Tamer - Fuchsia City (Blue)
+1043,3,42,Tamer 3,Tamer - Viridian City (Yellow)
+697,1,42,Tamer 2,Tamer - Fuchsia City (Red)
+698,1,42,Tamer 3,Tamer - Viridian City (Red)
+1044,3,42,Tamer 4,Tamer - Viridian City (Yellow)
+1042,3,42,Tamer 2,Tamer - Fuchsia City (Yellow)
+1041,3,42,Tamer 1,Tamer - Fuchsia City (Yellow)
+342,2,42,Tamer 3,Tamer - Viridian City (Blue)
+696,1,42,Tamer 1,Tamer - Fuchsia City (Red)
+345,2,43,Youngster 1,Youngster - Route 3 (Blue)
+704,1,43,Youngster 4,Youngster - Route 24 (Red)
+355,2,43,Youngster 11,Youngster - Route 11 (Blue)
+707,1,43,Youngster 7,Youngster - Route 25 (Red)
+354,2,43,Youngster 10,Youngster - Route 11 (Blue)
+347,2,43,Youngster 3,Youngster - Mt. Moon - 1F (Blue)
+1057,3,43,Youngster 12,Youngster - Route 11 (Yellow)
+1055,3,43,Youngster 10,Youngster - Route 11 (Yellow)
+1048,3,43,Youngster 3,Youngster - Mt. Moon - 1F (Yellow)
+1051,3,43,Youngster 6,Youngster - Route 25 (Yellow)
+352,2,43,Youngster 8,Youngster - S.S. Anne - 1F (Blue)
+1056,3,43,Youngster 11,Youngster - Route 11 (Yellow)
+701,1,43,Youngster 1,Youngster - Route 3 (Red)
+349,2,43,Youngster 5,Youngster - Route 25 (Blue)
+703,1,43,Youngster 3,Youngster - Mt. Moon - 1F (Red)
+346,2,43,Youngster 2,Youngster - Route 3 (Blue)
+353,2,43,Youngster 9,Youngster - Route 11 (Blue)
+711,1,43,Youngster 11,Youngster - Route 11 (Red)
+1058,3,43,Youngster 13,Youngster - Route 9 (Yellow)
+708,1,43,Youngster 8,Youngster - S.S. Anne - 1F (Red)
+702,1,43,Youngster 2,Youngster - Route 3 (Red)
+1053,3,43,Youngster 8,Youngster - S.S. Anne - 1F (Yellow)
+1052,3,43,Youngster 7,Youngster - Route 25 (Yellow)
+351,2,43,Youngster 7,Youngster - Route 25 (Blue)
+706,1,43,Youngster 6,Youngster - Route 25 (Red)
+1049,3,43,Youngster 4,Youngster - Route 24 (Yellow)
+1054,3,43,Youngster 9,Youngster - Route 11 (Yellow)
+710,1,43,Youngster 10,Youngster - Route 11 (Red)
+1050,3,43,Youngster 5,Youngster - Route 25 (Yellow)
+350,2,43,Youngster 6,Youngster - Route 25 (Blue)
+348,2,43,Youngster 4,Youngster - Route 24 (Blue)
+356,2,43,Youngster 12,Youngster - Route 11 (Blue)
+1046,3,43,Youngster 1,Youngster - Route 3 (Yellow)
+712,1,43,Youngster 12,Youngster - Route 11 (Red)
+705,1,43,Youngster 5,Youngster - Route 25 (Red)
+1047,3,43,Youngster 2,Youngster - Route 3 (Yellow)
+709,1,43,Youngster 9,Youngster - Route 11 (Red)
