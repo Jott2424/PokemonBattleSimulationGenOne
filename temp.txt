@@ -1,0 +1,9 @@
+with cte_trainers as (select pk_trainers_id from bronze.trainers)
+insert into silver.battles_to_sim
+select
+row_number() over (order by t1.pk_trainers_id, t2.pk_trainers_id) as pk_battles_id,
+t1.pk_trainers_id as fk_trainers_id_one,
+t2.pk_trainers_id as fk_trainers_id_two
+from cte_trainers t1
+cross join cte_trainers t2
+limit 1

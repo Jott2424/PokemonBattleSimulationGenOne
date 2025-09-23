@@ -3,15 +3,29 @@ from psycopg2.extras import execute_values
 import os
 import pandas as pd
 import numpy as np
+import json
+import numpy as np
+
+####################################
+# config & variables
+####################################
+with open("config.json") as f:
+    config = json.load(f)
+
+host     = config["databaseCredentials"]["host"]
+port     = config["databaseCredentials"]["port"]
+database = config["databaseCredentials"]["database"]
+username = config["databaseCredentials"]["username"]
+password = config["databaseCredentials"]["password"]
 
 # Database connection parameters
 conn = psycopg2.connect(
-    dbname="pokemon_battlesim_g1",
-    user="postgres",
-    password="postgres",
-    host="192.168.1.3",  # or your server's IP
-    port="17501" #5432 default
-)
+        host=host,
+        port=port,
+        database=database,
+        user=username,
+        password=password
+    )
 
 # Create a cursor object
 cur = conn.cursor()
@@ -123,6 +137,33 @@ CREATE TABLE IF NOT EXISTS bronze.trainers_teams (
     CONSTRAINT trainers_teams_moves2_fk FOREIGN KEY (fk_move2_id) REFERENCES bronze.moves(pk_moves_id),
     CONSTRAINT trainers_teams_moves3_fk FOREIGN KEY (fk_move3_id) REFERENCES bronze.moves(pk_moves_id),
     CONSTRAINT trainers_teams_moves4_fk FOREIGN KEY (fk_move4_id) REFERENCES bronze.moves(pk_moves_id)
+);
+
+CREATE TABLE IF NOT EXISTS bronze.moves_stats (
+	pk_moves_stats_id smallserial NOT NULL,
+	fk_moves_id int2 NOT NULL,
+	power int2 NULL,
+    accuracy int2 NULL,
+    pp int2 NULL,
+	CONSTRAINT moves_stats_pk PRIMARY KEY (pk_moves_stats_id),
+    CONSTRAINT moves_stats_moves_fk FOREIGN KEY (fk_moves_id) REFERENCES bronze.moves(pk_moves_id)
+);
+
+CREATE TABLE IF NOT EXISTS silver.battles_to_sim (
+	pk_battles_to_sim_id serial NOT NULL,
+	fk_trainers_id_one int NOT null,
+    fk_trainers_id_two int NOT null,
+	CONSTRAINT battles_to_sim_pk PRIMARY KEY (pk_battles_to_sim_id),
+    CONSTRAINT trainers_trainers_1 FOREIGN KEY (fk_trainers_id_one) REFERENCES bronze.trainers(pk_trainers_id),
+    CONSTRAINT trainers_trainers_2 FOREIGN KEY (fk_trainers_id_two) REFERENCES bronze.trainers(pk_trainers_id)
+);
+
+CREATE TABLE IF NOT EXISTS silver.battles_sim_results (
+	pk_battles_sim_results_id serial NOT NULL,
+    fk_battles_to_sim_id int NOT NULL,
+    seed int NOT NULL,
+	CONSTRAINT battles_sim_results_pk PRIMARY KEY (pk_battles_sim_results_id),
+    CONSTRAINT battles_sim_results_battles_to_sim FOREIGN KEY (fk_battles_to_sim_id) REFERENCES silver.battles_to_sim(pk_battles_to_sim_id)
 );
 
 """
