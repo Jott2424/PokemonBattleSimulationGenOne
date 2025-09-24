@@ -1,7 +1,6 @@
 class Trainer:
-    def __init__(self, id, team, items):
+    def __init__(self, id, team):
         self.id = id
-        self.items = items
 
         #pokemon attributes, need to be updated after every turn
         self.team_st = team
@@ -20,8 +19,6 @@ class Trainer:
 
         #turn logic attributes
         self.prevent_swap = False
-        self.prevent_items = False
-        self.activepokemon_itemusedcounter = 0
 
 
 

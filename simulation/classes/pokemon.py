@@ -4,14 +4,14 @@ class Pokemon:
     def __init__(self, pokemon_details: dict):
         self.id = pokemon_details['id']
         self.level = pokemon_details['level']
+        self.type_ids = pokemon_details['type_ids']
         self.types = pokemon_details['types']
         self.moves = pokemon_details['moves']
-        self.attributes = pokemon_details['attributes']
-        self.partyorder_st = pokemon_details['partyorder']
-        self.partyorder_cur = pokemon_details['partyorder']
+        self.party_order_st = pokemon_details['party_order']
+        self.party_order_cur = pokemon_details['party_order']
         
         self.concious = True
-        self.flag_active = 0
+        self.active = False
         self.focus_energy_active = False
         self.status_condition_active = False
         self.status_condition = None
@@ -25,14 +25,9 @@ class Pokemon:
         self.confused = False
         
         #immutable
-        self.moves_st = {move.id: {"type": move.type,
-                                   "power": move.power,
-                                   "accuracy": move.accuracy,
-                                   "pp": move.powerpoints,
-                                   "damagecategory": move.damagecategory} 
-                                   for move in self.moves}
+        self.moves_st = self.moves
         #mutable
-        self.moves_cur = self.moves_st
+        self.moves_cur = self.moves
 
         # stats dictionary
         self.stats = {

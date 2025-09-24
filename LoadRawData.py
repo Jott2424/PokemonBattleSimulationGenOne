@@ -99,13 +99,21 @@ CREATE TABLE IF NOT EXISTS bronze.pokemon_stats (
     CONSTRAINT pokemon_pokemon_stats_fk FOREIGN KEY (fk_pokemon_id) REFERENCES bronze.pokemon(pk_pokemon_id)
 );
 
+CREATE TABLE IF NOT EXISTS bronze.trainer_types (
+	pk_trainer_types_id smallserial NOT NULL,
+	trainer_type varchar(15) NOT NULL,
+	CONSTRAINT trainer_types_pk PRIMARY KEY (pk_trainer_types_id)
+);
+
 CREATE TABLE IF NOT EXISTS bronze.trainers (
 	pk_trainers_id smallserial NOT NULL,
 	fk_games_id int4 NULL,
-	trainer varchar(25) NOT NULL,
-	trainer_scenario varchar(31) NOT null,
+	fk_trainer_types_id int4 NOT NULL,
+	short_name varchar(16) NOT NULL,
+	long_name varchar(59) NOT NULL,
 	CONSTRAINT trainers_pk PRIMARY KEY (pk_trainers_id),
-    CONSTRAINT trainers_games_fk FOREIGN KEY (fk_games_id) REFERENCES bronze.games(pk_games_id)
+    CONSTRAINT trainers_games_fk FOREIGN KEY (fk_games_id) REFERENCES bronze.games(pk_games_id),
+	CONSTRAINT trainers_trainer_types_fk FOREIGN KEY (fk_trainer_types_id) REFERENCES bronze.trainer_types(pk_trainer_types_id)
 );
 
 CREATE TABLE IF NOT EXISTS bronze.rival_scenarios (

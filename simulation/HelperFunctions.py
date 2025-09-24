@@ -30,8 +30,7 @@ def get_battles_to_sim_pks(host,port,database,username,password):
     cursor.close()
     conn.close()
 
-    # Return the trainer ids 
-    # (1,2)
+    # Return the battle pks
     return results
 #-----------------------------------------------------------------------------------------------------------------------------------------------#
 def check_battle_already_simulated(host,port,database,username,password,fk_battles_to_sim_id,seed):
@@ -46,7 +45,7 @@ def check_battle_already_simulated(host,port,database,username,password,fk_battl
     )
     cursor = conn.cursor()
 
-    # Query the trainers in this battle number
+    # Query the trainers in this battle number using this seed
     query = f"""
     SELECT pk_battles_sim_results_id
     FROM silver.battles_sim_results
@@ -63,8 +62,7 @@ def check_battle_already_simulated(host,port,database,username,password,fk_battl
     cursor.close()
     conn.close()
 
-    # Return the trainer ids 
-    # (1,2)
+    # Return true/false
     return results
 #-----------------------------------------------------------------------------------------------------------------------------------------------#
 def get_trainers_in_battle(host,port,database,username,password,battlenum):
@@ -98,133 +96,167 @@ def get_trainers_in_battle(host,port,database,username,password,battlenum):
     # (1,2)
     return results
 
-# #-----------------------------------------------------------------------------------------------------------------------------------------------#
-# def get_moveStats(credentials, moveIDs): 
-#     import psycopg2 #remove this down the line, make this a module/package
+#-----------------------------------------------------------------------------------------------------------------------------------------------#
+def get_move_stats(host,port,database,username,password,moves): 
+    import psycopg2
 
-#     conn = psycopg2.connect(
-#         host=credentials[0],
-#         port=credentials[1],
-#         database=credentials[2],
-#         user=credentials[3],
-#         password=credentials[4]
-#     )
-#     cursor = conn.cursor()
+    conn = psycopg2.connect(
+        host=host,
+        port=port,
+        database=database,
+        user=username,
+        password=password
+    )
+    cursor = conn.cursor()
 
-#     # Query the moves
-#     query = f"""
-#     SELECT pk_move_id, fk_type_id, power, accuracy, power_points as powerpoints, fk_damage_category_id as damagecategory
-#     FROM genone_pokedex_ingested.moves t1
-#     LEFT JOIN genone_pokedex_ingested.moves_stats t2 on t1.pk_move_id = t2.fk_move_id 
-#     WHERE pk_move_id in {moveIDs}
-#     """
+    moves_str = f"({','.join(map(str,moves))})"
 
-#     cursor.execute(query)
+    # Query the trainers in this battle number
+    query = f"""
+    SELECT ms.fk_moves_id, ms.pp, ms.power, ms.accuracy, m.fk_damage_categories_id as mdc_id, mdc.damage_category, m.move, m.fk_types_id, t.type
+    FROM bronze.moves_stats ms
+    join bronze.moves m on ms.fk_moves_id = m.pk_moves_id
+    join bronze.moves_damage_categories mdc on m.fk_damage_categories_id = mdc.pk_move_damage_categories_id
+    join bronze.types t on m.fk_types_id = t.pk_types_id
+    WHERE fk_moves_id in {moves_str}
+    """
 
-#     # Create a nested dictionary from the results
-#     moveStats = {}
-#     for row in cursor.fetchall():
-#         pk_move_id = row[0]
-#         fk_type_id = row[1]
-#         power = row[2]
-#         accuracy = row[3]
-#         powerpoints = row[4]
-#         damagecategory = row[5]
+    cursor.execute(query)
 
-#         moveStats[pk_move_id] = [fk_type_id, power, accuracy, powerpoints, damagecategory]
+    #convert results to a dict
+    colnames = [desc[0] for desc in cursor.description]
+    rows = [dict(zip(colnames,row)) for row in cursor.fetchall()]
+    results = {row['fk_moves_id']: row for row in rows}
 
-#     # Close the connection
-#     cursor.close()
-#     conn.close()
+    # Close the connection
+    cursor.close()
+    conn.close()
 
-#     return moveStats
+    return results
 
-# #-----------------------------------------------------------------------------------------------------------------------------------------------#
-# def get_pokemonInBattle(credentials, trainerID): 
-#     import psycopg2 #remove this down the line, make this a module/package
+#-----------------------------------------------------------------------------------------------------------------------------------------------#
+def get_pokemon_stats(host,port,database,username,password,pokemon): 
+    import psycopg2
 
-#     conn = psycopg2.connect(
-#         host=credentials[0],
-#         port=credentials[1],
-#         database=credentials[2],
-#         user=credentials[3],
-#         password=credentials[4]
-#     )
-#     cursor = conn.cursor()
+    conn = psycopg2.connect(
+        host=host,
+        port=port,
+        database=database,
+        user=username,
+        password=password
+    )
+    cursor = conn.cursor()
 
-#     # Query the pokemon for this trainerid
-#     query = f"""
-#     SELECT fk_trainer_id, pk_pokemon_id, fk_move1_id, fk_move2_id, fk_move3_id, fk_move4_id, party_order, level, fk_type_one_id, fk_type_two_id, hp, attack, defense, special, speed
-#     FROM genone_pokedex_ingested.trainers_teams t1
-#     LEFT JOIN genone_pokedex_ingested.pokemon t2 on t1.fk_pokemon_id = t2.pk_pokemon_id
-#     LEFT JOIN genone_pokedex_ingested.pokemon_stats t3 on t1.fk_pokemon_id = t3.fk_pokemon_id
-#     WHERE fk_trainer_id = {trainerID}
-#     ORDER BY t1.fk_trainer_id, t1.party_order
-#     """
+    pokemon_str = f"({','.join(map(str,pokemon))})"
 
-#     cursor.execute(query)
+    # Query the trainers in this battle number
+    query = f"""
+    SELECT ps.fk_pokemon_id as id, ps.hp, ps.attack, ps.defense, ps.speed, ps.special
+    FROM bronze.pokemon_stats ps
+    WHERE fk_pokemon_id in {pokemon_str}
+    """
 
-#     #create an empty dictionary 
-#     pokemon_in_battle={}
+    cursor.execute(query)
 
-#     # loop through each row returned from the sql query, and fill in the dictionary one by one
-#     for row in cursor.fetchall():
-#         # trainer_id = row[0]
-#         party_order = row[6]
-#         pokemon_id = row[1]
-#         level = row[7]
-#         types = [row[8], row[9]]
-#         moveIDs = (row[2], row[3], row[4], row[5])
-#         #get moves by passing list of moves this trainers pokemon has
-#         moves = get_moveStats(credentials,moveIDs)
-#         stats = [row[10],row[11],row[12],row[13],row[14]]
+    #convert results to a dict
+    colnames = [desc[0] for desc in cursor.description]
+    rows = [dict(zip(colnames,row)) for row in cursor.fetchall()]
+    results = {row['id']: row for row in rows}
 
-#         # If the trainer doesn't already exist in the dictionary, initialize their list
-#         # if trainer_id not in pokemon_in_battle:
-#         #     pokemon_in_battle[trainer_id] = {}
+    # Close the connection
+    cursor.close()
+    conn.close()
 
-#         # Store Pokémon information by trainer id and by party order
-#         # pokemon_in_battle[trainer_id][party_order] = {
-#         pokemon_in_battle[party_order] = {
-#         "pokemon_id": pokemon_id,
-#         "level": level,
-#         "types": types,
-#         "moves": moves,
-#         "stats": stats
-#         }
-
-#     # Close the connection
-#     cursor.close()
-#     conn.close()
-
-#     return pokemon_in_battle
+    return results
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------#
 def get_trainer_team(host,port,database,username,password,trainer_id):
-    
+    import psycopg2
 
-    #loop through by party order in the passed dict
-    for partyorder in dict:
-        pokemon_id = dict[partyorder]['pokemon_id']
-        level = dict[partyorder]['level']
-        types = dict[partyorder]['types']
-        moves_dict = dict[partyorder]['moves']
-        stats = dict[partyorder]['stats']
-        attributes = [0,0,0] # does this need to be hardcoded?
+    conn = psycopg2.connect(
+        host=host,
+        port=port,
+        database=database,
+        user=username,
+        password=password
+    )
+    cursor = conn.cursor()
 
-        #empty list the init_moves will be appended to
-        moves_list = []
-        for move_id, move_stats in moves_dict.items():   
-            #init the move         
-            move_instance = Move(move_id, move_stats)
-            moves_list.append(move_instance)
+    # Query the trainers in this battle number
+    query = f"""
+    SELECT party_order, fk_pokemon_id as id, fk_move1_id, fk_move2_id, fk_move3_id, fk_move4_id, level, p.fk_types_id_one, p.fk_types_id_two, t1.type as Type1, t2.type as Type2
+    FROM bronze.trainers_teams tt
+    join bronze.pokemon p on tt.fk_pokemon_id = p.pk_pokemon_id
+    join bronze.types t1 on p.fk_types_id_one = t1.pk_types_id
+    join bronze.types t2 on p.fk_types_id_two = t2.pk_types_id
 
-        #init the pokemon
-        pokemon_instance = Pokemon(partyorder,pokemon_id,level,types,moves_list,stats,attributes)
-        team.append(pokemon_instance)
+    WHERE fk_trainers_id = {trainer_id}
+    """
 
-    return team
+    cursor.execute(query)
+
+    #convert results to a list of dicts
+    colnames = [desc[0] for desc in cursor.description]
+    results = [dict(zip(colnames,row)) for row in cursor.fetchall()]
+
+    # Close the cursor and connection
+    cursor.close()
+    conn.close()
+
+    return results
+
 # #-----------------------------------------------------------------------------------------------------------------------------------------------#
+def init_trainer(host,port,database,username,password,trainer_id):
+    from HelperFunctions import get_trainer_team, get_pokemon_stats
+
+    #get the list of pokemon on the trainers team
+    team = get_trainer_team(host,port,database,username,password,trainer_id)
+    # print(trainer_team)
+
+    #get distinct list of pokemon ids, and get base stats
+    pokemon_ids = list(dict.fromkeys(row['id'] for row in team))
+    pokemon_stats = get_pokemon_stats(host,port,database,username,password,pokemon_ids)
+
+    #get distinct list of moves and get base stats
+    move_ids = list({row[key] for row in team for key in ['fk_move1_id','fk_move2_id','fk_move3_id','fk_move4_id']})
+    move_stats = get_move_stats(host,port,database,username,password,move_ids)
+    
+    trainer_team = []
+    for pokemon_dict in team:
+        print(pokemon_dict)
+        #prep data to init pokemon class
+        pokemon_details = {}
+        pokemon_details['id'] = pokemon_dict['id']
+        pokemon_details['level'] = pokemon_dict['level']
+        pokemon_details['type_ids'] = [pokemon_dict['fk_types_id_one'],pokemon_dict['fk_types_id_two']]
+        pokemon_details['types'] = [pokemon_dict['type1'],pokemon_dict['type2']]
+        pokemon_details['partyorder'] = pokemon_dict['party_order']
+
+        #list of this pokemons moves out of the full list of all moves
+        pokemon_moves_ids_list = list(pokemon_dict[key] for key in ['fk_move1_id','fk_move2_id','fk_move3_id','fk_move4_id'])
+        pokemon_moves_dict = {k:v for k,v in move_stats.items() if k in pokemon_moves_ids_list}
+        # print(move_stats)
+        # print(pokemon_moves_ids_list)
+        # print(pokemon_moves_stats)
+        pokemon = init_pokemon(pokemon_details, pokemon_moves_dict)
+        # print(pokemon)
+    
+    # print(move_stats)
+    # print(pokemon_stats)
+
+# #-----------------------------------------------------------------------------------------------------------------------------------------------#
+def init_pokemon(pokemon_details, moves_dict):
+    print(pokemon_details)
+    # print(move_stats)
+    for move,details in moves_dict.items():
+        
+        print(move, details)
+
+
+
+
+
+
 # def get_typeMatchups(credentials, table): 
 #     import psycopg2 #remove this down the line, make this a module/package
 

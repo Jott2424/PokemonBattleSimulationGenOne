@@ -9,7 +9,9 @@ import numpy as np
 ####################################
 # config & variables
 ####################################
-with open("config.json") as f:
+# need to run from PokemonBattleSimulationGenOne folder
+
+with open("./config.json") as f:
     config = json.load(f)
 
 seed     = config["seed"]
@@ -23,6 +25,7 @@ password = config["databaseCredentials"]["password"]
 # prep
 ####################################
 battles_to_sim = hf.get_battles_to_sim_pks(host,port,database,username,password)
+
 if not battles_to_sim:
     print('No battles found to sim')
     exit
@@ -37,10 +40,18 @@ for battlenum in battles_to_sim:
     if not battle_already_simulated:
         #get Trainers in this battle
         trainersInBattle = hf.get_trainers_in_battle(host,port,database,username,password,battlenum)
-        print(f'Trainers in battle #{battlenum} are {trainersInBattle[0]}')
+        print(f'Trainers in battle #{battlenum} are {trainersInBattle}')
 
-        #get each trainers pokemon and init them
-        # trainer1 = trainer()
+        #init trainers, pokemon, and moves
+        trainer1 = hf.init_trainer(host,port,database,username,password,trainersInBattle[0])
+        trainer2 = hf.init_trainer(host,port,database,username,password,trainersInBattle[1])
+
+        # print(trainer1)
+        # print(trainer2)
+
+
+
+
 #     trainer1_pokemon = init_trainerTeams(get_pokemonInBattle(credentials, trainersInBattle[0]))
 #     trainer2_pokemon = init_trainerTeams(get_pokemonInBattle(credentials, trainersInBattle[1]))
 
