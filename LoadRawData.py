@@ -157,6 +157,16 @@ CREATE TABLE IF NOT EXISTS bronze.moves_stats (
     CONSTRAINT moves_stats_moves_fk FOREIGN KEY (fk_moves_id) REFERENCES bronze.moves(pk_moves_id)
 );
 
+CREATE TABLE IF NOT EXISTS bronze.types_effectiveness (
+	pk_types_effectiveness_id smallserial NOT NULL,
+	fk_types_id_a int2 NOT NULL,
+	fk_types_id_d int2 NULL,
+    multiplier decimal(4,2) NULL,
+	CONSTRAINT types_effectiveness_pk PRIMARY KEY (pk_types_effectiveness_id),
+    CONSTRAINT types_effectiveness_types_1 FOREIGN KEY (fk_types_id_a) REFERENCES bronze.types(pk_types_id),
+    CONSTRAINT types_effectiveness_types_2 FOREIGN KEY (fk_types_id_d) REFERENCES bronze.types(pk_types_id)
+);
+
 CREATE TABLE IF NOT EXISTS silver.battles_to_sim (
 	pk_battles_to_sim_id serial NOT NULL,
 	fk_trainers_id_one int NOT null,

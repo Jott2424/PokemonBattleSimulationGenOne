@@ -1,5 +1,6 @@
 {
     "seed":42,
+    "maxturns":1,
     "databaseCredentials":{
         "host":"127.0.0.1",
         "port":"5432", 

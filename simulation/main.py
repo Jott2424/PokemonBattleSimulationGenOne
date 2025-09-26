@@ -5,6 +5,7 @@
 import HelperFunctions as hf
 import json
 import numpy as np
+from classes.battle import Battle
 
 ####################################
 # config & variables
@@ -20,6 +21,7 @@ port     = config["databaseCredentials"]["port"]
 database = config["databaseCredentials"]["database"]
 username = config["databaseCredentials"]["username"]
 password = config["databaseCredentials"]["password"]
+maxturns = config["maxturns"]
 
 ####################################
 # prep
@@ -29,6 +31,12 @@ battles_to_sim = hf.get_battles_to_sim_pks(host,port,database,username,password)
 if not battles_to_sim:
     print('No battles found to sim')
     exit
+
+type_chart = hf.get_type_chart(host,port,database,username,password)
+#need to add a list of all moves, to pass in the event of metronome used.
+# metronome_moves = hf.get_all_moves(host,port,database,username,password)
+metronome_moves = {}
+
 ####################################
 # loop through battles
 ####################################
@@ -37,33 +45,24 @@ for battlenum in battles_to_sim:
 
     #  check if battle has been simulated with this seed already
     battle_already_simulated = hf.check_battle_already_simulated(host,port,database,username,password,battlenum,seed)
+
     if not battle_already_simulated:
         #get Trainers in this battle
         trainersInBattle = hf.get_trainers_in_battle(host,port,database,username,password,battlenum)
         print(f'Trainers in battle #{battlenum} are {trainersInBattle}')
 
         #init trainers, pokemon, and moves
-        trainer1 = hf.init_trainer(host,port,database,username,password,trainersInBattle[0])
-        trainer2 = hf.init_trainer(host,port,database,username,password,trainersInBattle[1])
+        trainer1 = hf.init_trainer(host,port,database,username,password,trainersInBattle[0],seed,type_chart)
+        trainer2 = hf.init_trainer(host,port,database,username,password,trainersInBattle[1],seed,type_chart)
 
-        # print(trainer1)
-        # print(trainer2)
+        battle = Battle(battlenum, trainer1, trainer2, maxturns, seed, metronome_moves)
 
-
-
-
-#     trainer1_pokemon = init_trainerTeams(get_pokemonInBattle(credentials, trainersInBattle[0]))
-#     trainer2_pokemon = init_trainerTeams(get_pokemonInBattle(credentials, trainersInBattle[1]))
-
-#     #init each trainer
-#     trainer1 = Trainer(trainersInBattle[0],trainer1_pokemon,[])
-#     # print(trainer1)
-#     trainer2 = Trainer(trainersInBattle[1],trainer2_pokemon,[])
-
-#     #init the battle
-#     battle = Battle(battlenum,trainer1,trainer2)
-
-#     battle.get_typeChart(credentials)
+        while not battle.winner and battle.turn <= maxturns:
+            print(battle.turn,maxturns)
+            battle.commence()
+    
+    else:
+        print(f'Battle #{battlenum} already simulated')
 
 
 
