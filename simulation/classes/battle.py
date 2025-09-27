@@ -35,7 +35,7 @@ class Battle:
 
         print(f"Battle {self.id} initialized: Trainer {trainer1.id} vs Trainer {trainer2.id}\n")
     
-    def commence(self):
+    def commence(self,seed):
         attacker = None
         defender = None
 
@@ -59,17 +59,21 @@ class Battle:
             trainer.decide_attack(defender)
             #decide which move to use
         
+        #for those swapping, decide swap target
+        # for trainer in self.this_turn_swaps:
+        #     print(f'{trainer.id} is swapping for ')
+        
         #execute swaps first
         for trainer in self.this_turn_swaps:
             print(f'{trainer.id} is swapping')
         
         #evaluate to see if either attacker picked a priority move and sort the order accordingly
-        
+
         for trainer in self.this_turn_attacks:
             attacker = self.trainer1 if trainer.id == self.trainer1.id else self.trainer2
             defender = self.trainer2 if attacker == self.trainer1 else self.trainer1
             # print(f'{attacker.id} is attacking with {trainer.this_turn_attack}')
-            self.execute_attack(attacker,defender)
+            self.execute_attack(attacker,defender,seed)
 
         self.turn+=1
         self.reset_this_turn_actions()
@@ -78,22 +82,44 @@ class Battle:
         self.this_turn_attacks = []
         self.this_turn_swaps = []
 
-    def execute_attack(self,attacker,defender):
-        
+    def execute_attack(self,attacker,defender,seed):
         """order of events 
             1. Evaluate if defender active pokemon is able to be hit (flying, digging, etc)
             2. Evaluate Accuracy
             3. Evaluate critical hit
             4. Evaluate Damage
+            5. Apply Move Specific Functions
             """
         
-        accuracy_check = self.accuracy_check(attacker,defender)
+        #check if pokemon is hittable
+
+        #check if this attack with hit (accuracy)
+        accuracy_check = self.accuracy_check(attacker,defender,seed)
+        if not accuracy_check:
+            exit
+        
+        #evaluate crit
+
+        #evaluate damage amount
+
+        #apply move functions dynamically
+        for function in trainer.activepokemon.this_turn_attack.functions():
+            #need to figure out how to tell python to run a function dynamically
+            self.executefunction(function)
+            
+        trainer.activepokemon.this_turn_attack()
+        self.execute_move_raise_or_lower_health(attacker,defender,20)
+
         # self.calc_damage(attacker,defender):
 
 
-    def accuracy_check(self,attacker,defender):
+    def accuracy_check(self,attacker,defender,seed):
         import math
         import random
+
+        if seed is not None:
+            random.seed(seed)
+
         move_accuracy = attacker.this_turn_attack.accuracy
         attacker_accuracy = attacker.activepokemon.stat_modifiers['accuracy']['modifier']
         defender_evasion = defender.activepokemon.stat_modifiers['evasiveness']['modifier']
@@ -118,6 +144,37 @@ class Battle:
             self.gen_one_miss = False
             attacker.this_turn_accuracy = False
             return False
+        
+
+    def execute_move_raise_or_lower_health(self, target, amount_to_raise_or_lower, raise_or_lower):
+        if raise_or_lower == 'lower':
+            target.activepokemon.stats['hp']['current'] = max(0,(target.activepokemon.stats['hp']['current']-amount_to_raise_or_lower))
+        elif raise_or_lower == 'raise':
+            target.activepokemon.stats['hp']['current'] = min(target.activepokemon.stats['hp']['start'],(target.activepokemon.stats['hp']['current']+amount_to_raise_or_lower))
+    
+    def execute_move_raise_or_lower_stat(self, target, stat_to_raise_or_lower, raise_or_lower):
+            target.activepokemon.update_stat(self, stat_to_raise_or_lower, raise_or_lower)
+
+    def determine_if_a_thing_will_happen(self,probability,seed)
+        import random
+        if seed is not None:
+            random.seed(seed)
+        check_value = random.randint(0,255)
+        return check_value <= probability
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #     def lorelei_decide_action(self, attacker, defender):
 #         import random

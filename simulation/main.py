@@ -59,7 +59,7 @@ for battlenum in battles_to_sim:
 
         while not battle.winner and battle.turn <= maxturns:
             print(battle.turn,maxturns)
-            battle.commence()
+            battle.commence(seed)
     
     else:
         print(f'Battle #{battlenum} already simulated')

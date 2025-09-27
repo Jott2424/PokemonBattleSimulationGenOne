@@ -2,9 +2,7 @@ class Pokemon:
     def __init__(self, pokemon_details: dict):
         self.id = pokemon_details['id']
         self.level = pokemon_details['level']
-        # self.type_ids = pokemon_details['type_ids']
         self.type_ids = [pokemon_details['fk_types_id_one'],pokemon_details['fk_types_id_two']]
-        # self.types = pokemon_details['types']
         self.types = [pokemon_details['type1'],pokemon_details['type2']]
         self.moves = pokemon_details['moves']
         self.party_order_st = pokemon_details['party_order']
@@ -75,25 +73,24 @@ class Pokemon:
         return int((basestat + IV) * 2 * level // 100) + level + 10
 
     def update_stat(self, stat_name, action):
-        """Update a stat modifier (increase/decrease)"""
-        # Define stage-to-percentage mapping
+        """Update a stat modifier (raise/lower)"""
+        # Predefined stage-to-percentage mapping
         stage_to_percent = {
             -6: 0.25, -5: 0.29, -4: 0.33, -3: 0.4, -2: 0.5,
             -1: 0.66, 0: 1.0, 1: 1.5, 2: 2.0, 3: 2.5,
             4: 3.0, 5: 3.5, 6: 4.0,
         }
+        # Update the stage and modifier
+        current_stage = self.stat_modifiers[stat_name]["stage"]
+        new_stage = max(min(current_stage + (1 if action == "raise" else -1), 6), -6)
+        self.stat_modifiers[stat_name]["stage"] = new_stage
+        self.stat_modifiers[stat_name]["modifier"] = stage_to_percent[new_stage]
 
-    #     # Update the stage and modifier
-    #     current_stage = self.stat_modifiers[stat_name]["stage"]
-    #     new_stage = max(min(current_stage + (1 if action == "increase" else -1), 6), -6)
-    #     self.stat_modifiers[stat_name]["stage"] = new_stage
-    #     self.stat_modifiers[stat_name]["modifier"] = stage_to_percent[new_stage]
-
-    #     # Update the corresponding modifier for accuracy/evasion
-    #     if stat_name == "accuracy":
-    #         self.accuracy_modifier = stage_to_percent[new_stage]
-    #     elif stat_name == "evasiveness":
-    #         self.evasion_modifier = stage_to_percent[new_stage]
+        # Update the corresponding modifier for accuracy/evasion
+        if stat_name == "accuracy":
+            self.accuracy_modifier = stage_to_percent[new_stage]
+        elif stat_name == "evasiveness":
+            self.evasion_modifier = stage_to_percent[new_stage]
 
     # def reset_stats(self):
     #     """Reset all stat modifiers to normal"""
