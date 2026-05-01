@@ -12,11 +12,11 @@ import numpy as np
 with open("config.json") as f:
     config = json.load(f)
 
-host     = config["databaseCredentials"]["host"]
-port     = config["databaseCredentials"]["port"]
-database = config["databaseCredentials"]["database"]
-username = config["databaseCredentials"]["username"]
-password = config["databaseCredentials"]["password"]
+host     = config["database"]["host"]
+port     = config["database"]["port"]
+database = config["database"]["dbname"]
+username = config["database"]["user"]
+password = config["database"]["password"]
 
 # Database connection parameters
 conn = psycopg2.connect(
