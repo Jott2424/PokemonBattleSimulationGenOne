@@ -9,7 +9,9 @@ import numpy as np
 ####################################
 # config & variables
 ####################################
-with open("config.json") as f:
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+with open(os.path.join(SCRIPT_DIR, "config.json")) as f:
     config = json.load(f)
 
 host     = config["database"]["host"]
@@ -171,17 +173,13 @@ CREATE TABLE IF NOT EXISTS silver.battles_to_sim (
 	pk_battles_to_sim_id serial NOT NULL,
 	fk_trainers_id_one int NOT null,
     fk_trainers_id_two int NOT null,
+    logic_profile_trainer1 varchar(50) NOT NULL DEFAULT 'random',
+    logic_profile_trainer2 varchar(50) NOT NULL DEFAULT 'random',
+    status varchar(10) NOT NULL DEFAULT 'pending',
+    claimed_at timestamp NULL,
 	CONSTRAINT battles_to_sim_pk PRIMARY KEY (pk_battles_to_sim_id),
     CONSTRAINT trainers_trainers_1 FOREIGN KEY (fk_trainers_id_one) REFERENCES bronze.trainers(pk_trainers_id),
     CONSTRAINT trainers_trainers_2 FOREIGN KEY (fk_trainers_id_two) REFERENCES bronze.trainers(pk_trainers_id)
-);
-
-CREATE TABLE IF NOT EXISTS silver.battles_sim_results (
-	pk_battles_sim_results_id serial NOT NULL,
-    fk_battles_to_sim_id int NOT NULL,
-    seed int NOT NULL,
-	CONSTRAINT battles_sim_results_pk PRIMARY KEY (pk_battles_sim_results_id),
-    CONSTRAINT battles_sim_results_battles_to_sim FOREIGN KEY (fk_battles_to_sim_id) REFERENCES silver.battles_to_sim(pk_battles_to_sim_id)
 );
 
 """
@@ -198,11 +196,13 @@ print("Tables created successfully")
 conn.commit()
 
 
-for file in sorted([file for file in os.listdir("./rawdata")]):
-    df = pd.read_csv(f'./rawdata/{file}')
+RAWDATA_DIR = os.path.join(SCRIPT_DIR, "rawdata")
+
+for file in sorted([file for file in os.listdir(RAWDATA_DIR)]):
+    df = pd.read_csv(os.path.join(RAWDATA_DIR, file))
     df = df.replace({np.nan: None})  # handle NaN for SQL NULL
     
-    print(f'Reading ./rawdata/{file}')
+    print(f'Reading {file}')
     print(df.dtypes)
 
     # Determine table name from file name
