@@ -116,3 +116,72 @@ CREATE TABLE IF NOT EXISTS sim_battle_decisions (
 );
 
 CREATE INDEX IF NOT EXISTS idx_decisions_battle_id ON sim_battle_decisions (fk_battle_id);
+
+-- -----------------------------------------------------------------------
+-- Decision-model recording gaps — the battle engine already tracks all of
+-- this state in memory (models/pokemon.py, battle/battle.py) but never
+-- wrote it out to sim_battle_decisions.
+-- -----------------------------------------------------------------------
+ALTER TABLE sim_battle_decisions
+    ADD COLUMN IF NOT EXISTS opp_atk_stage SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_def_stage SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_spe_stage SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_spc_stage SMALLINT,
+    ADD COLUMN IF NOT EXISTS active_reflect_turns SMALLINT,
+    ADD COLUMN IF NOT EXISTS active_light_screen_turns SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_reflect_turns SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_light_screen_turns SMALLINT,
+    ADD COLUMN IF NOT EXISTS active_substitute_hp SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_substitute_hp SMALLINT,
+    ADD COLUMN IF NOT EXISTS active_is_seeded BOOLEAN,
+    ADD COLUMN IF NOT EXISTS opp_is_seeded BOOLEAN,
+    ADD COLUMN IF NOT EXISTS active_toxic_counter SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_toxic_counter SMALLINT,
+    ADD COLUMN IF NOT EXISTS active_pokemon_remaining SMALLINT,
+    ADD COLUMN IF NOT EXISTS opp_pokemon_remaining SMALLINT,
+    ADD COLUMN IF NOT EXISTS active_bench_pokemon_ids SMALLINT[],
+    ADD COLUMN IF NOT EXISTS opp_bench_pokemon_ids SMALLINT[];
+
+-- =============================================================================
+-- Theoretical (synthetic) trainers — kept fully separate from bronze trainers.
+-- IDs start at 20000, well clear of real trainers (currently max 1058).
+-- =============================================================================
+CREATE SEQUENCE IF NOT EXISTS theoretical_trainers_id_seq AS smallint START WITH 20000;
+
+CREATE TABLE IF NOT EXISTS theoretical_trainers (
+    pk_theoretical_trainers_id  SMALLINT     PRIMARY KEY DEFAULT nextval('theoretical_trainers_id_seq'),
+    label                       VARCHAR(200) NOT NULL,
+    created_at                  TIMESTAMP    NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS theoretical_trainers_teams (
+    pk_theoretical_trainers_teams_id SERIAL   PRIMARY KEY,
+    fk_theoretical_trainers_id       SMALLINT NOT NULL REFERENCES theoretical_trainers(pk_theoretical_trainers_id),
+    fk_pokemon_id                    SMALLINT NOT NULL REFERENCES pokemon(pk_pokemon_id),
+    party_order                      SMALLINT NOT NULL,
+    level                             SMALLINT NOT NULL,
+    fk_move1_id                      SMALLINT NOT NULL REFERENCES moves(pk_moves_id),
+    fk_move2_id                      SMALLINT REFERENCES moves(pk_moves_id),
+    fk_move3_id                      SMALLINT REFERENCES moves(pk_moves_id),
+    fk_move4_id                      SMALLINT REFERENCES moves(pk_moves_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_theoretical_teams_trainer_id
+    ON theoretical_trainers_teams (fk_theoretical_trainers_id);
+
+-- Parallel queue table — battles_to_sim has a real FK to trainers.pk_trainers_id,
+-- so it cannot hold theoretical (>=20000) trainer ids. This table has no such FK,
+-- since a row may reference either a real trainer or a theoretical one.
+CREATE TABLE IF NOT EXISTS theoretical_battles_to_sim (
+    pk_theoretical_battles_to_sim_id SERIAL       PRIMARY KEY,
+    fk_trainers_id_one               INTEGER      NOT NULL,
+    fk_trainers_id_two               INTEGER      NOT NULL,
+    logic_profile_trainer1           VARCHAR(50)  NOT NULL,
+    logic_profile_trainer2           VARCHAR(50)  NOT NULL,
+    status                           VARCHAR(10)  NOT NULL DEFAULT 'pending',
+    claimed_at                       TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_theoretical_battles_to_sim_status
+    ON theoretical_battles_to_sim (status)
+    WHERE status = 'pending';

@@ -13,6 +13,12 @@ def _load_db_config():
         return json.load(f)["database"]
 
 
+def open_connection():
+    """Raw connection for long-lived reuse — caller manages commit/rollback/close."""
+    cfg = _load_db_config()
+    return psycopg2.connect(**cfg)
+
+
 @contextmanager
 def get_connection():
     cfg = _load_db_config()

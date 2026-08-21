@@ -23,14 +23,18 @@ import sys
 import time
 import traceback
 
+import psycopg2
+
 # Make output/ the import root when run as `python main.py`
 sys.path.insert(0, os.path.dirname(__file__))
 
-from db.connection import get_connection
+from db.connection import get_connection, open_connection
 from logic import load_profile
 from models.trainer import Trainer
-from repository.trainer_repo import (claim_next_battle, get_trainer, get_move_by_name,
-                                     mark_battle_done, requeue_stale_battles)
+from repository.trainer_repo import (claim_next_battle, claim_next_theoretical_battle, get_trainer,
+                                     get_move_by_name, get_type_chart, mark_battle_done,
+                                     mark_theoretical_battle_done, requeue_stale_battles,
+                                     requeue_stale_theoretical_battles)
 from battle.battle import Battle
 from recorder.battle_recorder import result_to_record, append_to_jsonl, flush_records_to_db
 
@@ -57,69 +61,92 @@ def _worker(args: tuple):
     buffer = []
     battles_run = 0
 
-    while True:
-        battle_row = None
-        try:
-            with get_connection() as conn:
+    # One long-lived connection per worker instead of opening/closing per
+    # operation — cuts connection churn (handshake + backend fork) way down.
+    conn = open_connection()
+    type_chart = get_type_chart(conn)  # static table, loaded once per worker
+    conn.commit()
+
+    def _move_loader(move_name: str):
+        move = get_move_by_name(conn, move_name)
+        conn.commit()
+        return move
+
+    try:
+        while True:
+            battle_row = None
+            is_theoretical = False
+            try:
                 # Sweep stale battles on startup (only worker 0 does this)
                 if worker_id == 0 and battles_run == 0:
                     requeue_stale_battles(conn)
+                    requeue_stale_theoretical_battles(conn)
+                    conn.commit()
 
                 battle_row = claim_next_battle(conn)
                 if battle_row is None:
-                    break  # Queue empty — exit
+                    battle_row = claim_next_theoretical_battle(conn)
+                    is_theoretical = battle_row is not None
+                conn.commit()
+
+                if battle_row is None:
+                    break  # Both queues empty — exit
 
                 t1_profile = load_profile(battle_row["logic_profile_trainer1"] or "random")
                 t2_profile = load_profile(battle_row["logic_profile_trainer2"] or "random")
 
-                # Load type chart once; it never changes
-                from repository.trainer_repo import get_type_chart
-                type_chart = get_type_chart(conn)
-
                 trainer1 = get_trainer(conn, battle_row["fk_trainer1_id"], t1_profile)
                 trainer2 = get_trainer(conn, battle_row["fk_trainer2_id"], t2_profile)
+                conn.commit()  # release the SELECT FOR UPDATE lock promptly
 
-            def _move_loader(move_name: str):
-                with get_connection() as c:
-                    return get_move_by_name(c, move_name)
+                battle = Battle(
+                    battle_queue_id=battle_row["id"],
+                    trainer1=trainer1,
+                    trainer2=trainer2,
+                    logic_profile_1=battle_row["logic_profile_trainer1"] or "random",
+                    logic_profile_2=battle_row["logic_profile_trainer2"] or "random",
+                    seed=seed + battle_row["id"],  # Unique seed per battle
+                    max_turns=max_turns,
+                    type_chart=type_chart,
+                    move_loader=_move_loader,
+                )
+                result = battle.run()
 
-            battle = Battle(
-                battle_queue_id=battle_row["id"],
-                trainer1=trainer1,
-                trainer2=trainer2,
-                logic_profile_1=battle_row["logic_profile_trainer1"] or "random",
-                logic_profile_2=battle_row["logic_profile_trainer2"] or "random",
-                seed=seed + battle_row["id"],  # Unique seed per battle
-                max_turns=max_turns,
-                type_chart=type_chart,
-                move_loader=_move_loader,
-            )
-            result = battle.run()
+                record = result_to_record(result)
+                append_to_jsonl(record, jsonl_path)
+                buffer.append(record)
+                battles_run += 1
 
-            record = result_to_record(result)
-            append_to_jsonl(record, jsonl_path)
-            buffer.append(record)
-            battles_run += 1
+                if len(buffer) >= flush_every:
+                    flush_records_to_db(buffer)
+                    buffer.clear()
+                    print(f"[worker {worker_id}] Flushed {flush_every} battles to DB.", flush=True)
 
-            if len(buffer) >= flush_every:
-                flush_records_to_db(buffer)
-                buffer.clear()
-                print(f"[worker {worker_id}] Flushed {flush_every} battles to DB.", flush=True)
+                if is_theoretical:
+                    mark_theoretical_battle_done(conn, battle_row["id"])
+                else:
+                    mark_battle_done(conn, battle_row["id"])
+                conn.commit()
 
-            with get_connection() as conn:
-                mark_battle_done(conn, battle_row["id"])
+                print(f"[worker {worker_id}] Battle {battle_row['id']} done — "
+                      f"winner: {result.winner_trainer_id}, turns: {result.total_turns}", flush=True)
 
-            print(f"[worker {worker_id}] Battle {battle_row['id']} done — "
-                  f"winner: {result.winner_trainer_id}, turns: {result.total_turns}", flush=True)
-
-        except Exception:
-            print(f"[worker {worker_id}] ERROR on battle {battle_row}: {traceback.format_exc()}", flush=True)
-            # Do not mark as done — it will be requeued by the stale sweeper
-
-    # Flush remaining buffer on exit
-    if buffer:
-        flush_records_to_db(buffer)
-        print(f"[worker {worker_id}] Final flush: {len(buffer)} battles.", flush=True)
+            except psycopg2.OperationalError:
+                print(f"[worker {worker_id}] Lost DB connection, reconnecting...", flush=True)
+                try:
+                    conn.close()
+                except Exception:
+                    pass
+                conn = open_connection()
+            except Exception:
+                print(f"[worker {worker_id}] ERROR on battle {battle_row}: {traceback.format_exc()}", flush=True)
+                conn.rollback()
+                # Do not mark as done — it will be requeued by the stale sweeper
+    finally:
+        if buffer:
+            flush_records_to_db(buffer)
+            print(f"[worker {worker_id}] Final flush: {len(buffer)} battles.", flush=True)
+        conn.close()
 
     print(f"[worker {worker_id}] Done. Ran {battles_run} battles.", flush=True)
 

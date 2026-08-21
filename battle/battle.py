@@ -76,6 +76,24 @@ class DecisionEvent:
     opp_pokemon_id: int
     opp_hp: int
     opp_status: Optional[str]
+    opp_atk_stage: int
+    opp_def_stage: int
+    opp_spe_stage: int
+    opp_spc_stage: int
+    active_reflect_turns: int
+    active_light_screen_turns: int
+    opp_reflect_turns: int
+    opp_light_screen_turns: int
+    active_substitute_hp: int
+    opp_substitute_hp: int
+    active_is_seeded: bool
+    opp_is_seeded: bool
+    active_toxic_counter: int
+    opp_toxic_counter: int
+    active_pokemon_remaining: int
+    opp_pokemon_remaining: int
+    active_bench_pokemon_ids: List[int]
+    opp_bench_pokemon_ids: List[int]
     moves: List[Dict]
     chosen_action: str
     chosen_move_id: Optional[int]
@@ -227,21 +245,27 @@ class Battle:
 
         # Thrash/Petal Dance lock
         if poke.is_thrashing and poke.thrash_turns_remaining > 0:
-            move = next((m for m in poke.moves if m.id == poke.thrash_move_id), None)
-            self._record_decision(trainer, opponent, "attack", move.id if move else None)
-            return "attack", move, None
+            move = next((m for m in poke.moves if m.id == poke.thrash_move_id and m.has_pp), None)
+            if move:
+                self._record_decision(trainer, opponent, "attack", move.id)
+                return "attack", move, None
+            poke.is_thrashing = False  # PP gone — break lock, fall through to normal decision
 
         # Rage lock
         if poke.is_raging:
-            move = next((m for m in poke.moves if m.id == poke.rage_move_id), None)
-            self._record_decision(trainer, opponent, "attack", move.id if move else None)
-            return "attack", move, None
+            move = next((m for m in poke.moves if m.id == poke.rage_move_id and m.has_pp), None)
+            if move:
+                self._record_decision(trainer, opponent, "attack", move.id)
+                return "attack", move, None
+            poke.is_raging = False  # PP gone — break lock, fall through to normal decision
 
         # Bide lock
         if poke.bide_active:
-            bide_move = next((m for m in poke.moves if m.name == "bide"), None)
-            self._record_decision(trainer, opponent, "attack", bide_move.id if bide_move else None)
-            return "attack", bide_move, None
+            bide_move = next((m for m in poke.moves if m.name == "bide" and m.has_pp), None)
+            if bide_move:
+                self._record_decision(trainer, opponent, "attack", bide_move.id)
+                return "attack", bide_move, None
+            poke.bide_active = False  # PP gone — break lock, fall through to normal decision
 
         # Normal decision
         action = trainer.logic_profile.decide_action(trainer, opponent, self.rng)
@@ -293,6 +317,11 @@ class Battle:
         # Charge release (two-turn move, second turn)
         if action == "charge_release":
             self._execute_charge_release(attacker, defender, move)
+            return
+
+        # Guard: move should never be None for an attack action
+        if move is None:
+            self._execute_struggle(attacker, defender)
             return
 
         # Normal move
@@ -870,6 +899,24 @@ class Battle:
             opp_pokemon_id=opp.id,
             opp_hp=opp.hp,
             opp_status=", ".join(opp_status_parts) if opp_status_parts else None,
+            opp_atk_stage=opp.stages["attack"],
+            opp_def_stage=opp.stages["defense"],
+            opp_spe_stage=opp.stages["speed"],
+            opp_spc_stage=opp.stages["special"],
+            active_reflect_turns=self.reflect_turns.get(trainer.id, 0),
+            active_light_screen_turns=self.light_screen_turns.get(trainer.id, 0),
+            opp_reflect_turns=self.reflect_turns.get(opponent.id, 0),
+            opp_light_screen_turns=self.light_screen_turns.get(opponent.id, 0),
+            active_substitute_hp=active.substitute_hp,
+            opp_substitute_hp=opp.substitute_hp,
+            active_is_seeded=active.is_seeded,
+            opp_is_seeded=opp.is_seeded,
+            active_toxic_counter=active.toxic_counter,
+            opp_toxic_counter=opp.toxic_counter,
+            active_pokemon_remaining=len(trainer.conscious_pokemon),
+            opp_pokemon_remaining=len(opponent.conscious_pokemon),
+            active_bench_pokemon_ids=[p.id for p in trainer.bench],
+            opp_bench_pokemon_ids=[p.id for p in opponent.bench],
             moves=[{"id": m.id, "pp": m.pp_curr} for m in active.moves],
             chosen_action=action,
             chosen_move_id=chosen_move_id,
