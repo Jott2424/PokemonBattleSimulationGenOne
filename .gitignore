@@ -1,1 +1,9 @@
-# config.json
+config.json
+
+__pycache__/
+*.pyc
+
+.DS_Store
+
+output/battle_logs/
+*.jsonl
