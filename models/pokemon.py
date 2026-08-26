@@ -204,10 +204,6 @@ class Pokemon:
             if m.has_pp and m.id != self.disabled_move_id
         ]
 
-    def all_moves_disabled_or_no_pp(self) -> bool:
-        """True if no usable moves remain — must use Struggle."""
-        return len(self.usable_moves()) == 0
-
     def reset_volatile_conditions(self):
         """Called when this Pokemon switches out."""
         self.confused = False

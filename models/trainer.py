@@ -16,6 +16,10 @@ class Trainer:
     # Active index into team; always points to a conscious Pokemon
     _active_index: int = field(default=0, repr=False)
 
+    # Last-move tracking (for Mirror Move, Mimic, Counter)
+    last_move_used_id: Optional[int] = field(default=None)
+    last_move_used_name: Optional[str] = field(default=None)
+
     def __post_init__(self):
         # Ensure starting Pokemon is conscious (should always be true at battle start)
         self._active_index = 0
@@ -48,10 +52,6 @@ class Trainer:
         self.active.reset_volatile_conditions()
         idx = self.team.index(pokemon)
         self._active_index = idx
-
-    # --- Last-move tracking (for Mirror Move, Mimic, Counter) ---
-    last_move_used_id: Optional[int] = field(default=None)
-    last_move_used_name: Optional[str] = field(default=None)
 
     def __repr__(self):
         return f"Trainer({self.name}, active={self.active.name}, conscious={len(self.conscious_pokemon)}/{len(self.team)})"

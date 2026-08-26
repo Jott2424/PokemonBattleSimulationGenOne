@@ -2,7 +2,8 @@
 Gen 1 battle engine — full move effect dispatch.
 
 Turn flow:
-1. Decrement screen/volatile counters (Reflect, Light Screen, Mist, Disable).
+1. Decrement volatile counters (Mist, Disable). Reflect/Light Screen have no
+   turn counter — they last until the trainer's active Pokemon switches out.
 2. Reset per-turn volatiles (flinch, last_physical_damage_taken).
 3. Each trainer decides action. Locked states (recharge, charge, thrash, rage, bide)
    override the decision.
@@ -80,6 +81,7 @@ class DecisionEvent:
     opp_def_stage: int
     opp_spe_stage: int
     opp_spc_stage: int
+    # 0/1 flags, not turn counts — Reflect/Light Screen last until switch-out.
     active_reflect_turns: int
     active_light_screen_turns: int
     opp_reflect_turns: int
@@ -176,7 +178,6 @@ class Battle:
 
     def _run_turn(self):
         t1, t2 = self.trainer1, self.trainer2
-        self._tick_screen_counters()
         self._reset_per_turn_volatiles(t1, t2)
 
         # Collect decisions
@@ -411,7 +412,7 @@ class Battle:
 
         # --- Damage calculation ---
         damage, is_crit = self._calc_move_damage(effect, effect_data, move,
-                                                   poke, target, hit, high_crit)
+                                                   poke, target, hit, high_crit, defender.id)
 
         # --- Apply damage (to substitute if present, else directly) ---
         actually_hit_target = False
@@ -449,21 +450,18 @@ class Battle:
             target_fainted=fainted,
         ))
 
-        # --- Effect dispatch (only if hit target directly, not substitute) ---
+        # --- Effect dispatch ---
         handler = EFFECT_HANDLERS.get(effect)
         if handler:
-            if effect == "recoil_crash":
-                handler(effect_data, attacker, defender, self, move, self.rng, damage, hit)
-            elif effect in ("bide", "counter", "thrash", "rage", "two_turn", "binding",
-                            "hyper_beam", "self_destruct"):
+            if effect in ("recoil", "recoil_crash", "bide", "counter", "thrash", "rage",
+                          "two_turn", "binding", "hyper_beam", "self_destruct"):
+                # These key off whether the move connected at all (including a
+                # hit absorbed by a Substitute), not whether it landed on the
+                # target's own HP.
                 handler(effect_data, attacker, defender, self, move, self.rng, damage, hit)
             else:
                 handler(effect_data, attacker, defender, self, move, self.rng, damage,
                         hit and actually_hit_target)
-
-        # --- Rage: attacker's own attack raises when hit ---
-        if poke.is_raging and hit and damage > 0:
-            pass  # Rage raises attack when the raging pokemon is HIT, handled in end of attacker's turn
 
         if fainted:
             self._handle_faint(defender)
@@ -493,7 +491,7 @@ class Battle:
 
     def _calc_move_damage(self, effect: str, effect_data: dict, move: Move,
                            poke: Pokemon, target: Pokemon, hit: bool,
-                           high_crit: bool) -> Tuple[int, bool]:
+                           high_crit: bool, defender_id: int) -> Tuple[int, bool]:
         """Compute damage for a move based on its effect type."""
         if not hit:
             return 0, False
@@ -540,14 +538,12 @@ class Battle:
         if effect in ("recoil", "recoil_crash"):
             return calc_damage(poke, target, move, self.type_chart, self.rng, high_crit=high_crit)
 
-        # Reflect halves physical damage
+        # Reflect/Light Screen halve non-crit damage of the matching category
         dmg, crit = calc_damage(poke, target, move, self.type_chart, self.rng, high_crit=high_crit)
-        if not crit and move.damage_category == "physical":
-            if self.reflect_turns.get(self.trainer1.id if self.trainer1 is not self._get_defender_trainer(poke) else self.trainer2.id, 0) > 0:
-                dmg = max(1, dmg // 2)
-        if not crit and move.damage_category == "special":
-            if self.light_screen_turns.get(self.trainer1.id if self.trainer1 is not self._get_defender_trainer(poke) else self.trainer2.id, 0) > 0:
-                dmg = max(1, dmg // 2)
+        if not crit and move.damage_category == "physical" and self.reflect_turns.get(defender_id, 0) > 0:
+            dmg = max(1, dmg // 2)
+        if not crit and move.damage_category == "special" and self.light_screen_turns.get(defender_id, 0) > 0:
+            dmg = max(1, dmg // 2)
         return dmg, crit
 
     def _calc_multi_hit(self, effect_data: dict, poke: Pokemon, target: Pokemon,
@@ -565,10 +561,6 @@ class Battle:
             d, _ = calc_damage(poke, target, move, self.type_chart, self.rng, high_crit=high_crit)
             total += d
         return total, False
-
-    def _get_defender_trainer(self, poke: Pokemon) -> Trainer:
-        """Return the trainer who owns poke."""
-        return self.trainer1 if poke in [p for p in self.trainer1.team] else self.trainer2
 
     def _bypasses_substitute(self, move: Move) -> bool:
         """Some moves bypass substitute. In Gen 1, very few do."""
@@ -695,6 +687,17 @@ class Battle:
 
         effect_data = MOVE_EFFECTS.get(_ekey(move_name), {"effect": "pure_damage"})
         effect = effect_data.get("effect", "pure_damage")
+
+        # two_turn/thrash/rage store the move's id/name into a lock that gets
+        # looked up against the user's OWN moveset on a later turn (see
+        # _collect_decision). A move dispatched here — chiefly Mirror Move,
+        # which can copy any move the opponent has used — isn't necessarily in
+        # that moveset, so the lock would silently fail to resume next turn
+        # while this turn still played out as if it were real (e.g. a
+        # two-turn move dealing instant damage with no charge-up turn). Fail
+        # the move instead of half-applying it.
+        if effect in ("two_turn", "thrash", "rage"):
+            return
 
         if effect in NON_DAMAGING_EFFECTS:
             handler = EFFECT_HANDLERS.get(effect)
@@ -843,6 +846,10 @@ class Battle:
     def _do_swap(self, trainer: Trainer, target: Pokemon, forced: bool):
         old = trainer.active
         trainer.swap_to(target)
+        # Reflect/Light Screen have no turn timer — they end when the trainer's
+        # active Pokemon leaves the field, whether by choice or by fainting.
+        self.reflect_turns[trainer.id] = 0
+        self.light_screen_turns[trainer.id] = 0
         self._emit(TurnEvent(turn=self.turn, trainer_id=trainer.id,
                               pokemon_id=old.id,
                               action="forced_swap" if forced else "swap",
@@ -855,16 +862,8 @@ class Battle:
                 self._do_swap(trainer, bench[0], forced=True)
 
     # ------------------------------------------------------------------
-    # Screen / volatile counter ticks
+    # Per-turn volatile resets
     # ------------------------------------------------------------------
-
-    def _tick_screen_counters(self):
-        for trainer_id in list(self.reflect_turns):
-            if self.reflect_turns[trainer_id] > 0:
-                self.reflect_turns[trainer_id] -= 1
-        for trainer_id in list(self.light_screen_turns):
-            if self.light_screen_turns[trainer_id] > 0:
-                self.light_screen_turns[trainer_id] -= 1
 
     def _reset_per_turn_volatiles(self, t1: Trainer, t2: Trainer):
         for t in (t1, t2):

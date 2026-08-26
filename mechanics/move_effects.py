@@ -441,15 +441,16 @@ def handle_substitute(effect_data, attacker, defender, battle, move, rng):
 
 
 # ---------------------------------------------------------------------------
-# Reflect / Light Screen
+# Reflect / Light Screen — no turn timer in Gen 1; stays active until the
+# trainer's active Pokemon switches out (cleared in Battle._do_swap).
 # ---------------------------------------------------------------------------
 
 def handle_reflect(effect_data, attacker, defender, battle, move, rng):
-    battle.reflect_turns[attacker.id] = 5
+    battle.reflect_turns[attacker.id] = 1
 
 
 def handle_light_screen(effect_data, attacker, defender, battle, move, rng):
-    battle.light_screen_turns[attacker.id] = 5
+    battle.light_screen_turns[attacker.id] = 1
 
 
 # ---------------------------------------------------------------------------

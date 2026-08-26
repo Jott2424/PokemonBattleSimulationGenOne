@@ -1,0 +1,17 @@
+{
+    "database": {
+        "host": "your-db-host",
+        "port": 5432,
+        "dbname": "pokemon_battlesim_gen1",
+        "user": "your-username",
+        "password": "your-password",
+        "options": "-c search_path=silver,bronze,public"
+    },
+    "simulation": {
+        "seed": 42,
+        "max_turns": 200,
+        "default_workers": 8,
+        "flush_every_n_battles": 500,
+        "insert_battle_limit": 1000000
+    }
+}
