@@ -1,19 +1,13 @@
 """
-Writes battle results to disk (JSONL) and/or Postgres.
+Converts battle results into DB-ready records and bulk-writes them to Postgres.
 
-Strategy:
-- Each worker appends completed battle records to a local JSONL file.
-- After every `flush_every_n` battles, the buffer is bulk-inserted into Postgres.
-- A separate ingest.py script can replay any JSONL file into Postgres independently.
-
-JSONL format: one JSON object per line, with keys:
+Records are kept in memory for the whole batch and flushed straight to
+Postgres — no local file involved. A record is a dict with keys:
   "meta"       - sim_battles row
   "snapshots"  - list of sim_battle_team_snapshots rows
   "turns"      - list of sim_battle_turns rows
   "decisions"  - list of sim_battle_decisions rows
 """
-import json
-import os
 from typing import List, Optional
 
 import psycopg2.extras
@@ -108,68 +102,94 @@ def result_to_record(result: BattleResult) -> dict:
     }
 
 
-def append_to_jsonl(record: dict, jsonl_path: str):
-    """Append one battle record as a single line to the JSONL file."""
-    os.makedirs(os.path.dirname(jsonl_path), exist_ok=True)
-    with open(jsonl_path, "a") as f:
-        f.write(json.dumps(record) + "\n")
+def flush_records_to_db(records: List[dict], conn=None, mark_done=None):
+    """
+    Bulk-insert a batch of battle records into Postgres — one execute_values
+    call per table for the WHOLE batch, not one per record, so a 500-battle
+    flush is ~4 round trips instead of ~2000.
+
+    conn: if given, the insert runs on this connection and the caller owns
+    commit/rollback (main.py uses this to fold mark-done into the same
+    transaction as the flush). If None, opens and commits its own connection
+    — used by ingest.py for standalone replay.
+
+    mark_done: optional zero-arg callable invoked with the cursor after the
+    inserts succeed but before commit, e.g. to batch-update battles_to_sim
+    in the same transaction. Only used when conn is passed in.
+    """
+    if not records:
+        return
+    if conn is not None:
+        _flush_batch(conn, records, mark_done)
+        return
+    with get_connection() as c:
+        _flush_batch(c, records, None)
 
 
-def flush_records_to_db(records: List[dict]):
-    """Bulk-insert a list of battle records into Postgres."""
-    with get_connection() as conn:
-        for rec in records:
-            _insert_record(conn, rec)
+def _flush_batch(conn, records: List[dict], mark_done):
+    # page_size must cover the whole batch or execute_values silently splits
+    # it into multiple round trips (default page_size is only 100).
+    page_size = len(records) + 1
 
-
-def _insert_record(conn, rec: dict):
     with get_cursor(conn) as cur:
-        # 1. Insert battle meta, get generated id
-        cur.execute("""
+        # 1. Insert all battle metas in one statement, get all generated ids back.
+        #    RETURNING on a multi-row VALUES insert preserves input row order,
+        #    so zip(records, battle_ids) below lines up correctly.
+        result_rows = psycopg2.extras.execute_values(cur, """
             INSERT INTO sim_battles
                 (fk_trainer1_id, fk_trainer2_id, logic_profile_1, logic_profile_2,
                  seed, winner_trainer_id, total_turns, is_draw)
-            VALUES
-                (%(fk_trainer1_id)s, %(fk_trainer2_id)s, %(logic_profile_1)s, %(logic_profile_2)s,
-                 %(seed)s, %(winner_trainer_id)s, %(total_turns)s, %(is_draw)s)
+            VALUES %s
             RETURNING id
-        """, rec["meta"])
-        battle_id = cur.fetchone()["id"]
+        """, [rec["meta"] for rec in records], template="""(
+            %(fk_trainer1_id)s, %(fk_trainer2_id)s, %(logic_profile_1)s, %(logic_profile_2)s,
+            %(seed)s, %(winner_trainer_id)s, %(total_turns)s, %(is_draw)s
+        )""", page_size=page_size, fetch=True)
+        battle_ids = [row["id"] for row in result_rows]
 
-        # 2. Team snapshots
-        for snap in rec["snapshots"]:
-            snap["fk_battle_id"] = battle_id
-        psycopg2.extras.execute_batch(cur, """
-            INSERT INTO sim_battle_team_snapshots
-                (fk_battle_id, fk_trainer_id, fk_pokemon_id, party_order, level,
-                 hp, attack, defense, special, speed,
-                 fk_move1_id, fk_move2_id, fk_move3_id, fk_move4_id)
-            VALUES
-                (%(fk_battle_id)s, %(trainer_id)s, %(pokemon_id)s, %(party_order)s, %(level)s,
-                 %(hp)s, %(attack)s, %(defense)s, %(special)s, %(speed)s,
-                 %(move1_id)s, %(move2_id)s, %(move3_id)s, %(move4_id)s)
-        """, rec["snapshots"])
+        all_snapshots, all_turns, all_decisions = [], [], []
+        for rec, battle_id in zip(records, battle_ids):
+            for snap in rec["snapshots"]:
+                snap["fk_battle_id"] = battle_id
+                all_snapshots.append(snap)
+            for t in rec["turns"]:
+                t["fk_battle_id"] = battle_id
+                all_turns.append(t)
+            for d in rec["decisions"]:
+                d["fk_battle_id"] = battle_id
+                all_decisions.append(d)
 
-        # 3. Turn events
-        for t in rec["turns"]:
-            t["fk_battle_id"] = battle_id
-        if rec["turns"]:
-            psycopg2.extras.execute_batch(cur, """
+        # 2. Team snapshots — one statement for every snapshot row across the whole batch.
+        if all_snapshots:
+            psycopg2.extras.execute_values(cur, """
+                INSERT INTO sim_battle_team_snapshots
+                    (fk_battle_id, fk_trainer_id, fk_pokemon_id, party_order, level,
+                     hp, attack, defense, special, speed,
+                     fk_move1_id, fk_move2_id, fk_move3_id, fk_move4_id)
+                VALUES %s
+            """, all_snapshots, template="""(
+                %(fk_battle_id)s, %(trainer_id)s, %(pokemon_id)s, %(party_order)s, %(level)s,
+                %(hp)s, %(attack)s, %(defense)s, %(special)s, %(speed)s,
+                %(move1_id)s, %(move2_id)s, %(move3_id)s, %(move4_id)s
+            )""", page_size=len(all_snapshots) + 1)
+
+        # 3. Turn events — one statement for every turn event across the whole batch.
+        if all_turns:
+            psycopg2.extras.execute_values(cur, """
                 INSERT INTO sim_battle_turns
                     (fk_battle_id, turn_number, fk_trainer_id, fk_pokemon_id,
                      action_type, fk_move_id, is_critical, hit, damage_dealt,
                      fk_target_pokemon_id, target_hp_before, target_hp_after, target_fainted)
-                VALUES
-                    (%(fk_battle_id)s, %(turn_number)s, %(fk_trainer_id)s, %(fk_pokemon_id)s,
-                     %(action_type)s, %(fk_move_id)s, %(is_critical)s, %(hit)s, %(damage_dealt)s,
-                     %(fk_target_pokemon_id)s, %(target_hp_before)s, %(target_hp_after)s, %(target_fainted)s)
-            """, rec["turns"])
+                VALUES %s
+            """, all_turns, template="""(
+                %(fk_battle_id)s, %(turn_number)s, %(fk_trainer_id)s, %(fk_pokemon_id)s,
+                %(action_type)s, %(fk_move_id)s, %(is_critical)s, %(hit)s, %(damage_dealt)s,
+                %(fk_target_pokemon_id)s, %(target_hp_before)s, %(target_hp_after)s, %(target_fainted)s
+            )""", page_size=len(all_turns) + 1)
 
-        # 4. Decision events
-        for d in rec["decisions"]:
-            d["fk_battle_id"] = battle_id
-        if rec["decisions"]:
-            psycopg2.extras.execute_batch(cur, """
+        # 4. Decision events — one statement for every decision event across the whole batch.
+        if all_decisions:
+            psycopg2.extras.execute_values(cur, """
                 INSERT INTO sim_battle_decisions
                     (fk_battle_id, turn_number, fk_trainer_id,
                      fk_active_pokemon_id, active_hp, active_status,
@@ -186,20 +206,26 @@ def _insert_record(conn, rec: dict):
                      move1_id, move1_pp, move2_id, move2_pp,
                      move3_id, move3_pp, move4_id, move4_pp,
                      chosen_action, chosen_move_id)
-                VALUES
-                    (%(fk_battle_id)s, %(turn_number)s, %(fk_trainer_id)s,
-                     %(fk_active_pokemon_id)s, %(active_hp)s, %(active_status)s,
-                     %(atk_stage)s, %(def_stage)s, %(spe_stage)s, %(spc_stage)s,
-                     %(fk_opp_pokemon_id)s, %(opp_hp)s, %(opp_status)s,
-                     %(opp_atk_stage)s, %(opp_def_stage)s, %(opp_spe_stage)s, %(opp_spc_stage)s,
-                     %(active_reflect_turns)s, %(active_light_screen_turns)s,
-                     %(opp_reflect_turns)s, %(opp_light_screen_turns)s,
-                     %(active_substitute_hp)s, %(opp_substitute_hp)s,
-                     %(active_is_seeded)s, %(opp_is_seeded)s,
-                     %(active_toxic_counter)s, %(opp_toxic_counter)s,
-                     %(active_pokemon_remaining)s, %(opp_pokemon_remaining)s,
-                     %(active_bench_pokemon_ids)s, %(opp_bench_pokemon_ids)s,
-                     %(move1_id)s, %(move1_pp)s, %(move2_id)s, %(move2_pp)s,
-                     %(move3_id)s, %(move3_pp)s, %(move4_id)s, %(move4_pp)s,
-                     %(chosen_action)s, %(chosen_move_id)s)
-            """, rec["decisions"])
+                VALUES %s
+            """, all_decisions, template="""(
+                %(fk_battle_id)s, %(turn_number)s, %(fk_trainer_id)s,
+                %(fk_active_pokemon_id)s, %(active_hp)s, %(active_status)s,
+                %(atk_stage)s, %(def_stage)s, %(spe_stage)s, %(spc_stage)s,
+                %(fk_opp_pokemon_id)s, %(opp_hp)s, %(opp_status)s,
+                %(opp_atk_stage)s, %(opp_def_stage)s, %(opp_spe_stage)s, %(opp_spc_stage)s,
+                %(active_reflect_turns)s, %(active_light_screen_turns)s,
+                %(opp_reflect_turns)s, %(opp_light_screen_turns)s,
+                %(active_substitute_hp)s, %(opp_substitute_hp)s,
+                %(active_is_seeded)s, %(opp_is_seeded)s,
+                %(active_toxic_counter)s, %(opp_toxic_counter)s,
+                %(active_pokemon_remaining)s, %(opp_pokemon_remaining)s,
+                %(active_bench_pokemon_ids)s, %(opp_bench_pokemon_ids)s,
+                %(move1_id)s, %(move1_pp)s, %(move2_id)s, %(move2_pp)s,
+                %(move3_id)s, %(move3_pp)s, %(move4_id)s, %(move4_pp)s,
+                %(chosen_action)s, %(chosen_move_id)s
+            )""", page_size=len(all_decisions) + 1)
+
+        # 5. Mark-done, folded into the same transaction as the results —
+        #    closes the gap where a battle could be 'done' before its rows exist.
+        if mark_done is not None:
+            mark_done(cur)

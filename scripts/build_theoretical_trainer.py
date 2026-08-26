@@ -1,8 +1,8 @@
 """
 Insert a theoretical (synthetic) trainer and team into the database.
 
-Usage:
-    python build_theoretical_trainer.py --label "All-Dragon Experiment" --team team.json
+Usage (run from output/):
+    python scripts/build_theoretical_trainer.py --label "All-Dragon Experiment" --team team.json
 
 team.json is a list of 1-6 slots, each:
     {"pokemon_id": 149, "level": 55, "move_ids": [82, 91, 34, 44]}
@@ -13,7 +13,7 @@ import json
 import os
 import sys
 
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from db.connection import get_connection, get_cursor
 

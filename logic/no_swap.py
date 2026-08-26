@@ -17,13 +17,13 @@ if TYPE_CHECKING:
 
 class NoSwapProfile(BaseProfile):
 
-    def decide_action(self, trainer, opponent, rng: random.Random) -> str:
+    def decide_action(self, trainer, opponent, type_chart, rng: random.Random) -> str:
         return "attack"
 
     def decide_move(self, trainer, opponent, type_chart, rng: random.Random):
         return rng.choice(trainer.active.usable_moves())
 
-    def decide_swap(self, trainer, opponent, rng: random.Random):
+    def decide_swap(self, trainer, opponent, type_chart, rng: random.Random):
         # Should never be called for this profile, but provide a safe fallback
         return rng.choice(trainer.bench)
 

@@ -1,9 +1,9 @@
 """
 Queue battles for a theoretical trainer against a set of opponents.
 
-Usage:
-    python populate_theoretical_battles.py --trainer-id 20000 --against real
-    python populate_theoretical_battles.py --trainer-id 20000 --against theoretical
+Usage (run from output/):
+    python scripts/populate_theoretical_battles.py --trainer-id 20000 --against real
+    python scripts/populate_theoretical_battles.py --trainer-id 20000 --against theoretical
 """
 import argparse
 import os
@@ -11,7 +11,7 @@ import sys
 
 import psycopg2.extras
 
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from db.connection import get_connection, get_cursor
 from repository.trainer_repo import THEORETICAL_ID_OFFSET

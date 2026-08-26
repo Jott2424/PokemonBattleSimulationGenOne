@@ -1,8 +1,8 @@
 """
 Battle replay printer.
 
-Usage:
-    python replay.py <battle_id>
+Usage (run from output/):
+    python scripts/replay.py <battle_id>
 
 Prints a turn-by-turn log showing each trainer's available options,
 what they chose, and what happened.
@@ -10,7 +10,7 @@ what they chose, and what happened.
 import sys
 import os
 
-sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
 from db.connection import get_connection, get_cursor
 
@@ -361,10 +361,10 @@ def print_replay(battle_id: int):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python replay.py <battle_id>")
+        print("Usage: python scripts/replay.py <battle_id>")
         sys.exit(1)
     battle_id = int(sys.argv[1])
-    out_path = os.path.join(os.path.dirname(__file__), f"battle_{battle_id}.txt")
+    out_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), f"battle_{battle_id}.txt")
     with open(out_path, "w") as f:
         sys.stdout = f
         print_replay(battle_id)

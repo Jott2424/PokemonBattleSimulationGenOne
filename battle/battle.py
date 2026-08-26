@@ -268,7 +268,7 @@ class Battle:
             poke.bide_active = False  # PP gone — break lock, fall through to normal decision
 
         # Normal decision
-        action = trainer.logic_profile.decide_action(trainer, opponent, self.rng)
+        action = trainer.logic_profile.decide_action(trainer, opponent, self.type_chart, self.rng)
         if action == "swap" and not trainer.bench:
             action = "attack"
 
@@ -282,7 +282,7 @@ class Battle:
             else:
                 action = "struggle"
         elif action == "swap":
-            swap_target = trainer.logic_profile.decide_swap(trainer, opponent, self.rng)
+            swap_target = trainer.logic_profile.decide_swap(trainer, opponent, self.type_chart, self.rng)
 
         self._record_decision(trainer, opponent, action, move.id if move else None)
         return action, move, swap_target

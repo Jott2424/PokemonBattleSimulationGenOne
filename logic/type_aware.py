@@ -16,7 +16,7 @@ if TYPE_CHECKING:
 
 class TypeAwareProfile(BaseProfile):
 
-    def decide_action(self, trainer, opponent, rng: random.Random) -> str:
+    def decide_action(self, trainer, opponent, type_chart, rng: random.Random) -> str:
         return "attack"
 
     def decide_move(self, trainer, opponent, type_chart, rng: random.Random):
@@ -42,7 +42,7 @@ class TypeAwareProfile(BaseProfile):
 
         return rng.choice(best_moves)
 
-    def decide_swap(self, trainer, opponent, rng: random.Random):
+    def decide_swap(self, trainer, opponent, type_chart, rng: random.Random):
         return rng.choice(trainer.bench)
 
 

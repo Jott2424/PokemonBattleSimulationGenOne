@@ -3,8 +3,9 @@ import os
 import psycopg2
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.dirname(SCRIPT_DIR)
 
-with open(os.path.join(SCRIPT_DIR, "config.json")) as f:
+with open(os.path.join(OUTPUT_DIR, "config.json")) as f:
     config = json.load(f)
 
 db = config["database"]
@@ -17,7 +18,7 @@ conn = psycopg2.connect(
     options=db.get("options", "")
 )
 
-sql_path = os.path.join(SCRIPT_DIR, "schema_silver.sql")
+sql_path = os.path.join(OUTPUT_DIR, "sql", "schema_silver.sql")
 with open(sql_path) as f:
     sql = f.read()
 

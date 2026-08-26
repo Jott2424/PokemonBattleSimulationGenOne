@@ -4,19 +4,30 @@
 -- =============================================================================
 
 -- -----------------------------------------------------------------------
--- Extend battles_to_sim with distributed-safe columns
--- (Only adds columns — does not drop or alter existing ones.)
+-- battles_to_sim — the simulation queue.
 -- -----------------------------------------------------------------------
-ALTER TABLE battles_to_sim
-    ADD COLUMN IF NOT EXISTS status              VARCHAR(10)  DEFAULT 'pending',
-    ADD COLUMN IF NOT EXISTS claimed_at          TIMESTAMP,
-    ADD COLUMN IF NOT EXISTS logic_profile_trainer1 VARCHAR(50),
-    ADD COLUMN IF NOT EXISTS logic_profile_trainer2 VARCHAR(50);
+CREATE TABLE IF NOT EXISTS battles_to_sim (
+    pk_battles_to_sim_id     SERIAL       PRIMARY KEY,
+    fk_trainers_id_one       INT          NOT NULL REFERENCES bronze.trainers(pk_trainers_id),
+    fk_trainers_id_two       INT          NOT NULL REFERENCES bronze.trainers(pk_trainers_id),
+    logic_profile_trainer1   VARCHAR(50)  NOT NULL DEFAULT 'random',
+    logic_profile_trainer2   VARCHAR(50)  NOT NULL DEFAULT 'random',
+    status                   VARCHAR(10)  NOT NULL DEFAULT 'pending',
+    claimed_at               TIMESTAMP,
+    sample_index             SMALLINT     NOT NULL DEFAULT 1
+);
 
 -- Index to make the SKIP LOCKED queue claim fast
 CREATE INDEX IF NOT EXISTS idx_battles_to_sim_status
     ON battles_to_sim (status)
     WHERE status = 'pending';
+
+-- Enforces one row per (trainer pair, profile combo, sample number) — makes
+-- populate_battles.py safe to re-run without duplicating work, and backs the
+-- NOT EXISTS / ON CONFLICT checks it relies on.
+CREATE UNIQUE INDEX IF NOT EXISTS idx_battles_to_sim_combo_sample
+    ON battles_to_sim (fk_trainers_id_one, fk_trainers_id_two,
+                        logic_profile_trainer1, logic_profile_trainer2, sample_index);
 
 -- -----------------------------------------------------------------------
 -- sim_battles — one row per completed simulation
@@ -33,6 +44,15 @@ CREATE TABLE IF NOT EXISTS sim_battles (
     is_draw             BOOLEAN      NOT NULL    DEFAULT FALSE,
     run_at              TIMESTAMP    NOT NULL    DEFAULT NOW()
 );
+
+-- Backs populate_battles.py's per-matchup GROUP BY (target-count evaluation)
+-- and any duplicate/analysis queries keyed on the same matchup — without it,
+-- that GROUP BY is a full sequential scan + sort over the whole table.
+-- (Built CONCURRENTLY on the live DB to avoid blocking writers; plain
+-- CREATE INDEX here since this file runs inside setup_silver.py's single
+-- transaction, where CONCURRENTLY isn't allowed.)
+CREATE INDEX IF NOT EXISTS idx_sim_battles_matchup
+    ON sim_battles (fk_trainer1_id, fk_trainer2_id, logic_profile_1, logic_profile_2);
 
 -- -----------------------------------------------------------------------
 -- sim_battle_team_snapshots — full team state at battle start
@@ -99,6 +119,28 @@ CREATE TABLE IF NOT EXISTS sim_battle_decisions (
     fk_opp_pokemon_id       INT          NOT NULL,
     opp_hp                  SMALLINT     NOT NULL,
     opp_status              VARCHAR(30),
+    opp_atk_stage           SMALLINT,
+    opp_def_stage           SMALLINT,
+    opp_spe_stage           SMALLINT,
+    opp_spc_stage           SMALLINT,
+
+    -- Screens, Substitute, Leech Seed, Toxic — both sides
+    active_reflect_turns       SMALLINT,
+    active_light_screen_turns  SMALLINT,
+    opp_reflect_turns          SMALLINT,
+    opp_light_screen_turns     SMALLINT,
+    active_substitute_hp       SMALLINT,
+    opp_substitute_hp          SMALLINT,
+    active_is_seeded           BOOLEAN,
+    opp_is_seeded               BOOLEAN,
+    active_toxic_counter        SMALLINT,
+    opp_toxic_counter           SMALLINT,
+
+    -- Remaining/bench Pokemon — both sides
+    active_pokemon_remaining    SMALLINT,
+    opp_pokemon_remaining       SMALLINT,
+    active_bench_pokemon_ids    SMALLINT[],
+    opp_bench_pokemon_ids       SMALLINT[],
 
     -- Available moves and remaining PP
     move1_id                INT,
@@ -116,31 +158,6 @@ CREATE TABLE IF NOT EXISTS sim_battle_decisions (
 );
 
 CREATE INDEX IF NOT EXISTS idx_decisions_battle_id ON sim_battle_decisions (fk_battle_id);
-
--- -----------------------------------------------------------------------
--- Decision-model recording gaps — the battle engine already tracks all of
--- this state in memory (models/pokemon.py, battle/battle.py) but never
--- wrote it out to sim_battle_decisions.
--- -----------------------------------------------------------------------
-ALTER TABLE sim_battle_decisions
-    ADD COLUMN IF NOT EXISTS opp_atk_stage SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_def_stage SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_spe_stage SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_spc_stage SMALLINT,
-    ADD COLUMN IF NOT EXISTS active_reflect_turns SMALLINT,
-    ADD COLUMN IF NOT EXISTS active_light_screen_turns SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_reflect_turns SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_light_screen_turns SMALLINT,
-    ADD COLUMN IF NOT EXISTS active_substitute_hp SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_substitute_hp SMALLINT,
-    ADD COLUMN IF NOT EXISTS active_is_seeded BOOLEAN,
-    ADD COLUMN IF NOT EXISTS opp_is_seeded BOOLEAN,
-    ADD COLUMN IF NOT EXISTS active_toxic_counter SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_toxic_counter SMALLINT,
-    ADD COLUMN IF NOT EXISTS active_pokemon_remaining SMALLINT,
-    ADD COLUMN IF NOT EXISTS opp_pokemon_remaining SMALLINT,
-    ADD COLUMN IF NOT EXISTS active_bench_pokemon_ids SMALLINT[],
-    ADD COLUMN IF NOT EXISTS opp_bench_pokemon_ids SMALLINT[];
 
 -- =============================================================================
 -- Theoretical (synthetic) trainers — kept fully separate from bronze trainers.

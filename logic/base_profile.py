@@ -27,6 +27,7 @@ class BaseProfile(ABC):
         self,
         trainer: "Trainer",
         opponent: "Trainer",
+        type_chart: Dict[Tuple[int, int], float],
         rng: random.Random,
     ) -> str:
         """
@@ -53,6 +54,7 @@ class BaseProfile(ABC):
         self,
         trainer: "Trainer",
         opponent: "Trainer",
+        type_chart: Dict[Tuple[int, int], float],
         rng: random.Random,
     ) -> "Pokemon":
         """
