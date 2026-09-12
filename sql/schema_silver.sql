@@ -3,6 +3,8 @@
 -- Run this once against pokemon_battlesim_g1 before starting simulations.
 -- =============================================================================
 
+CREATE SCHEMA IF NOT EXISTS silver;
+
 -- -----------------------------------------------------------------------
 -- battles_to_sim — the simulation queue.
 -- -----------------------------------------------------------------------
