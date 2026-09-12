@@ -10,3 +10,5 @@ output/battle_logs/
 
 *.parquet
 ml/**/win_probability_model*.json
+
+deploy*.ps1
