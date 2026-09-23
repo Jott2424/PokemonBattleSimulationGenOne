@@ -15,6 +15,7 @@ Usage (run from output/):
     python scripts/load_bronze_csvs.py path/to/csv_dir
 """
 import argparse
+import csv
 import json
 import os
 
@@ -22,6 +23,21 @@ import numpy as np
 import pandas as pd
 import psycopg2
 from psycopg2.extras import execute_values
+
+# Different export tools default to different delimiters (comma, pipe, ...).
+# csv.Sniffer's unrestricted mode will happily "detect" any repeating
+# character (e.g. the underscores in column names like pk_pokemon_stats_id),
+# so the candidate set is restricted to delimiters anyone would plausibly use.
+_CANDIDATE_DELIMITERS = ",|;\t"
+
+
+def _detect_delimiter(path):
+    with open(path, newline="") as f:
+        sample = f.read(4096)
+    try:
+        return csv.Sniffer().sniff(sample, delimiters=_CANDIDATE_DELIMITERS).delimiter
+    except csv.Error:
+        return ","
 
 # FK dependency order: each table here only references tables earlier in
 # this list, so loading in this order never violates a foreign key.
@@ -53,7 +69,7 @@ def load_table(cur, csv_dir, table):
         print(f"  Skipping bronze.{table}: already has rows")
         return
 
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, sep=_detect_delimiter(path))
     df = df.replace({np.nan: None})
 
     columns = ",".join(df.columns)
